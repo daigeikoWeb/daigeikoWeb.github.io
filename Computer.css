@@ -121,9 +121,19 @@ h1 {
 .arts-right-bottom {
   display: flex;
   width: 100%;
-}
-.art1 img .art2 img .art3 img .art4 img.art5 img.art6 img.art7 img {
+}/*
+img.art1, img.art2, img.art3, img.art4, img.art5, img.art6, img.art7, img {
   margin: 10px;
+}*/
+div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
+  position: relative;
+  overflow: hidden;
+}
+.futa{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #182987;
 }
 .more {
   color: white;
