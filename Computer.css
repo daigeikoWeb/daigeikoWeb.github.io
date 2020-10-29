@@ -3,7 +3,7 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: kan48typos-std, sans-serif;
+  font-family: DIN Alternate Bold;
   font-weight: 400;
   font-style: normal;
 }
@@ -92,7 +92,7 @@ h1 {
   justify-content: center;
 }
 .arts-left {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
 }
@@ -100,31 +100,35 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 .arts-left-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 50%;
 }
 .arts-right {
-  width: 100%;
+  width: 50%;
+  height:100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .arts-right-top {
   width: 100%;
+  height: 65%;
 }
 .arts-right-bottom {
   display: flex;
   width: 100%;
-}/*
-img.art1, img.art2, img.art3, img.art4, img.art5, img.art6, img.art7, img {
-  margin: 10px;
-}*/
+}
+.art1 img,.art2 img,.art3 img,.art4 img,.art5 img,.art6 img,.art7 img {
+  margin: 20px;
+  width: 100%;
+  height:100%;
+}
 div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
   position: relative;
   overflow: hidden;
@@ -138,13 +142,23 @@ div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
 .more {
   color: white;
   font-size: 12px;
-  margin-top: 650px;
+  margin-top: 900px;
   margin-left: 800px;
   position: absolute;
 }
 .more a {
   color: white;
   font-size: 12px;
+}
+.Exhibition2020-box{
+  width: 45%;
+}
+.Exhibition2020-box h1{
+  margin-bottom: 20px;
+}
+.Exhibition2020-box p{
+  color: white;
+  font-size: 16px;
 }
 .About-box {
   width: 46%;
@@ -190,11 +204,58 @@ div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
   display: flex;
   justify-content: space-around;
 }
+.name1 .name2 .name3 {
+  display: flex;
+  flex-direction: column;
+}
+.name1 img .name2 img .name3 img{
+  position: relative;
+}
 .names p {
   color: white;
   text-align: center;
 }
-.name1 .name2 .name3 {
+div .look{
+  position: absolute;
+  display: none;
+}
+.Contact-box p{
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0 10px 0;
+}
+form ul{
   display: flex;
   flex-direction: column;
+}
+form ul li{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+label{
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+}
+input, textarea {
+  border: none;
+  font: 16px sans-serif;
+  width: 450px;
+}
+input{
+  height: 40px;
+}
+textarea{
+  height: 90px;
+}
+button{
+  padding: 5px 33px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  color: #182987;
+  font-size: 16px;
+  margin:30px auto
 }
