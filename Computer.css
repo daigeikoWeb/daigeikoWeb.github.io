@@ -70,9 +70,12 @@ main {
 }
 .head_sns ul {
   display: flex;
+  position: absolute;
+  top: 75%;
+
 }
 .head_sns li {
-  margin: 20px 0 0 20px;
+  margin: 0 0 0 20px;
 }
 .head_sns a {
   text-decoration: none;
@@ -92,7 +95,7 @@ h1 {
   justify-content: center;
 }
 .arts-left {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
 }
@@ -110,7 +113,7 @@ h1 {
   width: 50%;
 }
 .arts-right {
-  width: 50%;
+  width: 55%;
   height:100%;
   display: flex;
   flex-direction: column;
@@ -118,14 +121,13 @@ h1 {
 }
 .arts-right-top {
   width: 100%;
-  height: 65%;
 }
 .arts-right-bottom {
   display: flex;
   width: 100%;
 }
 .art1 img,.art2 img,.art3 img,.art4 img,.art5 img,.art6 img,.art7 img {
-  margin: 20px;
+  margin: 10px;
   width: 100%;
   height:100%;
 }
@@ -150,6 +152,16 @@ div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
   color: white;
   font-size: 12px;
 }
+.slide{
+  position: absolute;
+  top:0;
+  display: flex;
+  width: 100%;
+}
+.slide img{
+  margin: 0 1px;
+  width: 20%;
+}
 .Exhibition2020-box{
   width: 45%;
 }
@@ -159,6 +171,39 @@ div.art1, div.art2, div.art3, div.art4, div.art5, div.art6, div.art7{
 .Exhibition2020-box p{
   color: white;
   font-size: 16px;
+}
+.arts_2020_box{
+  color: white;
+}
+.arts_2020_box p{
+  position: absolute;
+  top: 85%;
+  left: 6%;
+}
+.arts_2020_box i{
+  position: absolute;
+  top: 85.4%;
+  left: 15%;
+}
+.arts_2020_box a{
+  position: absolute;
+  top: 77%;
+  right: 6%;
+}
+.arts_2020{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top:90%;
+  margin:0 5% 5%;
+}
+.arts_2020 a{
+  width: 24%; 
+  margin: 0 3px;
+}
+.arts_2020 img{
+  width: 100%;
 }
 .About-box {
   width: 46%;
