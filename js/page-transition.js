@@ -9,11 +9,14 @@ const link_map = [
     tag: 'About',
     link: 'About.html'
   },{
+    tag: 'Judge',
+    link: 'Judge.html'
+  },{
     tag: 'Message',
     link: 'Message.html'
   },{
-    tag: 'Live',
-    link: 'Live.html'
+    tag: 'Cooperation',
+    link: 'Cooperation.html'
   },{
     tag: 'Contact',
     link: 'Contact.html'
