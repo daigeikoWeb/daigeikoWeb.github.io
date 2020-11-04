@@ -32,6 +32,15 @@ main {
   height: 100%;
   position: relative;
 }
+#main-cover{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #182987;
+}
 .logo {
   margin: 10px;
   width: 150px;
@@ -51,7 +60,7 @@ main {
   text-decoration: none;
   color: #182987;
   font-size: 17px;
-}
+}/*
 #Exhibition {
   background-color: #182987;
 }
@@ -60,11 +69,23 @@ main {
 }
 .fas fa-chevron-down {
   color: white;
-}
+}*/
 #Exhibition i {
   color: white;
   font-size: 18px;
   margin-left: 30px;
+}
+.current{
+  color: white;
+}
+#menu-back{
+  /*display: none;*/
+  color: #182987;
+  background-color: #182987;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 .head_sns ul {
   display: flex;
