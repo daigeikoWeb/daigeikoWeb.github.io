@@ -32,13 +32,9 @@ var prev_menu = null;
 if (prev != "")  prev_menu = document.querySelector(prev);
 
 const main_cov = document.querySelector('#main-cover');
-/*
-const main_cov = document.createElement('div');
-main_cov.id = 'main-cover';
-document.querySelector('main').appendChild(main_cov);
-*/
+
 const menu_back = document.createElement('li');
-menu_back.innerHTML = '<a><br></a>';
+menu_back.innerHTML = '<a>あ</a>';
 menu_back.id = 'menu-back';
 document.querySelector('.header-nav').appendChild(menu_back);
 
