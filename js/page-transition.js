@@ -94,6 +94,9 @@ document.querySelector('.header-nav').appendChild(menu_back);
     });
     cov_anim.onfinish = function(){
       del_main_cov();
+      //ハッシュ削除 from https://gist.github.com/matori/9d195d051e03c884f009
+      var hashString = location.hash.substr(1); // remove '#'
+      history.replaceState('', document.title, window.location.pathname);
     }
   } else {
     del_main_cov();

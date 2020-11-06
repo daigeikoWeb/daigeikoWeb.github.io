@@ -7,6 +7,8 @@ futaTemplate.classList.add('futa');
 
 const futas = [];
 
+const main = document.querySelector('main');
+
 for (var gr of grids) {
   const futaCopy = futaTemplate.cloneNode(true);
   if (Math.random() < 0.5){
@@ -14,6 +16,26 @@ for (var gr of grids) {
   }
   gr.appendChild(futaCopy);
   futas.push(futaCopy);
+
+  grid_sizing(gr);
+}
+
+window.onresize = function(){
+  for (var gr of grids) {
+    grid_sizing(gr);
+  }
+}
+
+function grid_sizing(grid) {
+  var margin = main.clientWidth * 4 / 704;
+  grid.style.margin = margin + 'px';
+  if (grid.classList.contains('arts-cube-dai')){
+    grid.style.height = grid.clientWidth / 331 * 321 + 'px';
+  } else if (grid.classList.contains('arts-tate')){
+    grid.style.height = grid.clientWidth / 161 * 321 + 'px';
+  } else if (grid.classList.contains('arts-cube-mini')){
+    grid.style.height = grid.clientWidth + 'px';
+  }
 }
 
 
