@@ -17,8 +17,8 @@ body {
   width: 100%;
 }
 header {
-  /* background-color: pink;*/
-  /*height: 700px;*/
+  /* background-color: pink; */
+  height: 700px;
   width: 31%;
   flex-grow: 1;
 }
@@ -32,26 +32,17 @@ main {
   height: 100%;
   position: relative;
 }
-#main-cover{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background-color: #182987;
-}
 .logo {
   margin: 10px;
   width: 150px;
 }
 .header-nav {
   margin-top: 50px;
-  position: relative;
 }
 .header-nav li {
   list-style: none;
   text-decoration: none;
+  color: black;
   width: 100%;
   padding: 15px 20px;
 }
@@ -60,16 +51,19 @@ main {
   color: #182987;
   font-size: 17px;
 }
-.current a{
+#Exhibition {
+  background-color: #182987;
+}
+#Exhibition a {
   color: white;
 }
-#menu-back{
-  color: #182987;
-  background-color: #182987;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
+.fas fa-chevron-down {
+  color: white;
+}
+#Exhibition i {
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
 }
 .head_sns ul {
   display: flex;
@@ -92,8 +86,8 @@ h1 {
 }
 .arts {
   width: 100%;
+  height: 95%;
   display: flex;
-  justify-content: center;
 }
 .arts-left {
   width: 50%;
@@ -126,14 +120,7 @@ h1 {
 .arts-right-bottom {
   display: flex;
   width: 100%;
-}/*
-.arts-left, .arts-left-left, .arts-left-right, .arts-right,.arts-right-top,.arts-right-bottom {
-  background-color: #f00;
-}*/
-.arts-right-bottom-child{
-  width: 50%;
 }
-
 .art1 img,
 .art2 img,
 .art3 img,
@@ -141,6 +128,7 @@ h1 {
 .art5 img,
 .art6 img,
 .art7 img {
+  margin: 10px;
   width: 100%;
   height: 100%;
 }
@@ -151,8 +139,6 @@ div.art4,
 div.art5,
 div.art6,
 div.art7 {
-  /*box-sizing: border-box;*/
-  margin: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -160,9 +146,6 @@ div.art7 {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
-  transform: translateX(100%);
   background-color: #182987;
 }
 .more {
@@ -203,7 +186,7 @@ div.art7 {
 .arts_2020_box p {
   position: absolute;
   top: 85%;
-  left: 6%;
+  left: 8%;
 }
 .arts_2020_box i {
   position: absolute;
@@ -220,23 +203,40 @@ div.art7 {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 90%;
+  top: 91%;
   margin: 0 5% 0;
+  width: 90%;
 }
-.arts_2020 a {
-  width: 24%;
-  margin: 0 3px;
+.arts_2020_01 {
+  width: 23%;
+  margin: 3px;
+  overflow: hidden;
+}
+.arts_2020_01:hover {
+  background-color: rgb(22, 22, 22);
 }
 .arts_2020 img {
   width: 100%;
+  height: 100%;
+}
+.arts_2020 img:hover {
+  display: none;
+}
+.arts_2020_01 p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:  100%;
+  user-select: none;
 }
 .About-box {
   width: 46%;
   height: 45%;
 }
-.questionnaire{
+.questionnaire {
   position: absolute;
-  top:2000px;
+  top: 2000px;
   width: 45%;
   height: 100%;
   display: flex;
@@ -244,13 +244,13 @@ div.art7 {
   justify-content: center;
   align-items: center;
 }
-.questionnaire p{
+.questionnaire p {
   color: white;
   text-align: center;
   font-size: 16px;
   margin: 40px 0 40px 0;
 }
-.questionnaire a{
+.questionnaire a {
   color: #182987;
   text-align: center;
   font-size: 16px;
@@ -297,6 +297,7 @@ div.art7 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .Live-box h1 {
   margin-bottom: 30px;
@@ -313,23 +314,84 @@ div.art7 {
   justify-content: space-around;
   width: 60%;
   margin-top: 50px;
+  height: 100%;
 }
-.name1 .name2 .name3 {
+.names .name1,
+.names .name2,
+.names .name3{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 23%;
+  margin: 0 5%;
+  background-color: rgb(22, 22, 22);
 }
-.name1 img .name2 img .name3 img {
-  position: relative;
+.name1 a,
+.name2 a,
+.name3 a{
+  width: 100%;
+}
+.name1 img,
+.name2 img,
+.name3 img{
+  width: 100%;
+  height: 100%;
+}
+.names img:hover {
+  display: none;
 }
 .names p {
   color: white;
   text-align: center;
   font-size: 20px;
-  margin-top: 10px;
+}
+.judge-name{
+  position: absolute;
+  top: 520px;
 }
 div .look {
   position: absolute;
+  top:420px;
+  user-select: none;
+}
+.introduction{
+  position: absolute;
+  background-color:rgb(22, 22, 22);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   display: none;
+}
+.introduction i{
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 40px;
+}
+.large{
+  font-size: 20px;
+}
+.explanation{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.explanation p{
+  margin-top: 10px;
+}
+.judge-arts{
+  display: flex;
+  margin-top: 50px;
+}
+.judge-art1,.judge-art2,.judge-art3{
+  margin: 0 25px;
+  text-align: center;
 }
 .Cooperation-box {
   width: 50%;
