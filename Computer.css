@@ -222,14 +222,6 @@ div.art7 {
 .arts_2020 img:hover {
   display: none;
 }
-.arts_2020_01 p {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:  100%;
-  user-select: none;
-}
 .About-box {
   width: 46%;
   height: 45%;
