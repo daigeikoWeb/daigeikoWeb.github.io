@@ -20,70 +20,86 @@
     <link href="Computer.css" rel="stylesheet" type="text/css">
     <meta name="keywords" content="大芸工展">
     <script src="https://kit.fontawesome.com/45d6264d1d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="daigeiko.js" defer></script>
+    <script type="text/javascript" src="js/grid-animation.js" defer></script>
+    <script type="text/javascript" src="js/page-transition.js" defer></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
   <body>
      <header>
-        <img src="images/logo.png" class="logo" alt="logo">
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
         <nav class="header-nav">
           <ul>
-            <li id="Exhibition"><a href="index.html">Exhibition</a><i class="fas fa-chevron-down"></i></li>
-            <li id="Exhibition2020"><a href="Exhibition2020.html">Exhibition2020</a></li>
-             <li id="About"><a href="About.html">About</a></li>
-             <li id="Message"><a href="Message.html">Message</a></li>
-             <li id="Live"><a href="Live.html">Live</a></li>
-            <li id="Contact"><a href="Contact.html">Contact</a></li>
+            <li id="Exhibition" class="current"><a href="index.html">トップ</a></li>
+            <li id="Exhibition2020"><a href="Exhibition2020.html">作品一覧</a></li>
+             <li id="About"><a href="About.html">大芸工展について</a></li>
+             <li id="Judge"><a href="Judge.html">審査員紹介</a></li>
+             <li id="Message"><a href="Message.html">代表挨拶</a></li>
+             <li id="Cooperation"><a href="Cooperation.html">ご協力</a></li>
+            <li id="Contact"><a href="Contact.html">お問い合わせ</a></li>
           </ul>
         </nav>
         <div class="head_sns">
-            <ul>
-                <li>
-                  <a href="https://www.instagram.com/daigeikouten2020/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/daigeikouten" target="_blank"><i class="fab fa-twitter"></i></a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://twitter.com/daigeikouten"   target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/daigeikoten/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/daigeikouten2020/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
         </div>
      </header>
      <main>
+       <div id="main-cover">
+         <!--ページ移動のアニメーションで使っています！消さないようにお願いします！-->
+       </div>
        <div class="arts">
          <div class="arts-left">
             <div class="arts-left-left">
-                <div class="art1"><a href="art1.html"
-                  ><img src="images/art1.png" class="art1" alt="art1"
-                /></a></div>
-                <div class="art2"><a href="art2.html"
-                  ><img src="images/art2.png" class="art2" alt="art2"
-                /></a></div>
+              <div class="art1 arts-tate">
+                <a href="art1.html"><img src="images/art1.png" alt="art1" /></a>
+              </div>
+              <div class="art2 arts-cube-mini">
+                <a href="art2.html"><img src="images/art2.png" alt="art2"/></a>
+              </div>
             </div>
+
             <div class="arts-left-right">
-              <div class="art3"><a href="art3.html"
-                ><img src="images/art2.png" class="art3" alt="art3"
-              /></a></div>
-              <div class="art4"><a href="art4.html"
-                ><img src="images/art1.png" class="art4" alt="art4"
-              /></a></div>
+              <div class="art3 arts-cube-mini">
+                <a href="art3.html"><img src="images/art2.png" alt="art3"/></a>
+              </div>
+              <div class="art4 arts-tate">
+                <a href="art4.html" ><img src="images/art1.png" alt="art4"/></a>
+              </div>
             </div>
           </div>
+
          <div class="arts-right">
+
            <div class="arts-right-top">
-               <div class="art5"><a href="art5.html"
-                ><img src="images/art3.png" class="art5" alt="art5"
-              /></a></div>
+             <div class="art5 arts-cube-dai">
+               <a href="art5.html"><img src="images/art3.png" alt="art5"/></a>
+             </div>
            </div>
            <div class="arts-right-bottom">
-              <div class="art6"><a href="art6.html"
-                ><img src="images/art2.png" class="art6" alt="art6"
-              /></a></div>
-              <div class="art7"><a href="art7.html"
-                ><img src="images/art2.png" class="art7" alt="art7"
-              /></a></div>
-           </div>
+             <div class="arts-right-bottom-child">
+               <div class="art6 arts-cube-mini">
+                 <a href="art6.html"><img src="images/art2.png" alt="art6"/></a>
+               </div>
+             </div>
+             <div class="arts-right-bottom-child">
+               <div class="art7 arts-cube-mini">
+                 <a href="art7.html"><img src="images/art2.png" alt="art7"/></a>
+               </div>
+             </div>
+          </div>
+
         </div>
         <div class="more">
-          <a href="index.html">→more</a>
+          <a href="index.html">作品一覧</a>
         </div>
        </main>
       </div>
