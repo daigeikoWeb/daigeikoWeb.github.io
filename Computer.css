@@ -21,16 +21,13 @@ header {
   height: 700px;
   width: 31%;
   flex-grow: 1;
+  user-select: none;
 }
 main {
-  background-color: #3f6096;
-  flex-grow: 3;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 69%;
   height: 100%;
-  position: relative;
 }
 .logo {
   margin: 10px;
@@ -50,6 +47,7 @@ main {
   text-decoration: none;
   color: #182987;
   font-size: 17px;
+  cursor: pointer;
 }
 #Exhibition {
   background-color: #182987;
@@ -79,14 +77,24 @@ main {
   font-size: 25px;
   padding: 0;
 }
+.head_sns img {
+  height: 25px;
+}
 h1 {
   color: white;
   text-align: center;
   font-size: 27px;
 }
+#top {
+  background-color: #3f6096;
+  flex-grow: 3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .arts {
   width: 100%;
-  height: 95%;
+  height: 100%;
   display: flex;
 }
 .arts-left {
@@ -116,10 +124,16 @@ h1 {
 }
 .arts-right-top {
   width: 100%;
+  overflow: hidden;
 }
 .arts-right-bottom {
   display: flex;
   width: 100%;
+}
+.arts-right-bottom-child {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 }
 .art1 img,
 .art2 img,
@@ -128,7 +142,6 @@ h1 {
 .art5 img,
 .art6 img,
 .art7 img {
-  margin: 10px;
   width: 100%;
   height: 100%;
 }
@@ -148,30 +161,17 @@ div.art7 {
   left: 0px;
   background-color: #182987;
 }
-.more {
-  background-color: white;
-  margin-top: 660px;
-  margin-left: 800px;
-  position: absolute;
-}
-.more a {
-  color: #182987;
-  font-size: 12px;
-  text-decoration: none;
-  padding: 10px;
-}
-.slide {
-  position: absolute;
-  top: 0;
+#exhibition2020 {
   display: flex;
-  width: 100%;
-}
-.slide img {
-  margin: 0 1px;
-  width: 20%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 2500px;
 }
 .Exhibition2020-box {
   width: 45%;
+  position: absolute;
+  top: 120px;
 }
 .Exhibition2020-box h1 {
   margin-bottom: 20px;
@@ -182,55 +182,60 @@ div.art7 {
 }
 .arts_2020_box {
   color: white;
+  width: 100%;
 }
 .arts_2020_box p {
-  position: absolute;
-  top: 85%;
   left: 8%;
+  top:500px;
+  position: absolute;
 }
 .arts_2020_box i {
-  position: absolute;
-  top: 85.4%;
   left: 15%;
+  top:505px;
+  position: absolute;
 }
 .arts_2020_box a {
-  position: absolute;
-  top: 77%;
   right: 6%;
+  position: absolute;
+  top:450px;
 }
 .arts_2020 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 91%;
+  top: 550px;
   margin: 0 5% 0;
   width: 90%;
 }
 .arts_2020_01 {
   width: 23%;
   margin: 3px;
+  background-color: black;
   overflow: hidden;
+  position: relative;
 }
-.arts_2020_01:hover {
-  background-color: rgb(22, 22, 22);
+.arts_2020_01 a {
+  z-index: 3;
 }
-.arts_2020 img {
+.arts_2020_01 p {
+  color: white;
+  position: absolute;
+  top: 90px;
+  font-size: 20px;
+  z-index: 2;
+}
+.arts_2020_01 img {
   width: 100%;
   height: 100%;
 }
 .arts_2020 img:hover {
-  display: none;
-}
-.About-box {
-  width: 46%;
-  height: 45%;
+  opacity: 0.2;
 }
 .questionnaire {
   position: absolute;
-  top: 2000px;
+  top: 2100px;
   width: 45%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,10 +256,156 @@ div.art7 {
   width: 120px;
   padding: 10px 17px;
 }
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.About-box {
+  width: 46%;
+}
 .About-box p {
   color: white;
   font-size: 16px;
   margin-top: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+#judge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Judge-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Judge-box h1 {
+  margin-bottom: 30px;
+}
+.judge-intro p {
+  color: white;
+  font-size: 15px;
+  line-height: 35px;
+}
+.judge-intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.names {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 50px;
+  height: 100%;
+}
+.names .name1,
+.names .name2,
+.names .name3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  margin: 0 5%;
+  background-color: black;
+}
+.name1 a,
+.name2 a,
+.name3 a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+.name1 img,
+.name2 img,
+.name3 img {
+  width: 100%;
+  height: 100%;
+}
+.name1 img:hover,
+.name2 img:hover,
+.name3 img:hover {
+  opacity: 0.2;
+}
+.names p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  z-index: 2;
+}
+.judge-name {
+  position: absolute;
+  top: 4380px;
+}
+div .look {
+  position: absolute;
+  top: 4480px;
+  user-select: none;
+}
+.introduction {
+  position: absolute;
+  background-color: rgb(22, 22, 22);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  z-index: 4;
+  display: none;
+}
+.close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 40px;
+}
+.large {
+  font-size: 20px;
+}
+.explanation {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.explanation img {
+  width: 130px;
+}
+.explanation p {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 15px;
+}
+.judge-arts {
+  display: flex;
+  margin-top: 50px;
+}
+.judge-art1,
+.judge-art2,
+.judge-art3 {
+  margin: 0 25px;
+  text-align: center;
+}
+.judge-art1 img,
+.judge-art2 img,
+.judge-art3 img{
+  width: 150px;
+}
+#message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .Message-box {
   width: 55%;
@@ -270,6 +421,7 @@ div.art7 {
 .Message-box p {
   color: white;
   font-size: 16px;
+  line-height: 25px;
 }
 .representative {
   display: flex;
@@ -285,114 +437,41 @@ div.art7 {
 .words {
   width: 70%;
 }
-.Live-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.Live-box h1 {
-  margin-bottom: 30px;
-}
-.judge p {
-  color: white;
-  font-size: 15px;
-}
-.judge {
-  width: 50%;
-}
-.names {
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
-  margin-top: 50px;
-  height: 100%;
-}
-.names .name1,
-.names .name2,
-.names .name3{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 23%;
-  margin: 0 5%;
-  background-color: rgb(22, 22, 22);
-}
-.name1 a,
-.name2 a,
-.name3 a{
-  width: 100%;
-}
-.name1 img,
-.name2 img,
-.name3 img{
-  width: 100%;
-  height: 100%;
-}
-.names img:hover {
-  display: none;
-}
-.names p {
-  color: white;
-  text-align: center;
+.words .itome {
   font-size: 20px;
+  margin-bottom: 10px;
 }
-.judge-name{
-  position: absolute;
-  top: 520px;
-}
-div .look {
-  position: absolute;
-  top:420px;
-  user-select: none;
-}
-.introduction{
-  position: absolute;
-  background-color:rgb(22, 22, 22);
-  height: 100%;
-  color: white;
+#cooperation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  display: none;
-}
-.introduction i{
-  position: absolute;
-  right: 50px;
-  top: 50px;
-  font-size: 40px;
-}
-.large{
-  font-size: 20px;
-}
-.explanation{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.explanation p{
-  margin-top: 10px;
-}
-.judge-arts{
-  display: flex;
-  margin-top: 50px;
-}
-.judge-art1,.judge-art2,.judge-art3{
-  margin: 0 25px;
-  text-align: center;
+  height: 100%;
 }
 .Cooperation-box {
-  width: 50%;
+  width: 80%;
+  height: 80%;
+  padding: 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.Cooperation-box h1 {
+  color: #182987;
+}
+.Cooperation-logo{
+  display: flex;
+}
+.Cooperation-logo img{
+  width: 120px;
+  margin: 20px 40px 0px;
 }
 .Cooperation-box p {
-  color: white;
+  color: #182987;
   text-align: center;
   font-size: 16px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .Cooperation {
   display: flex;
@@ -402,6 +481,12 @@ div .look {
 }
 .Cooperation p {
   margin: 3px 30px;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .Contact-box {
   width: 50%;
@@ -416,6 +501,7 @@ div .look {
   text-align: center;
   font-size: 16px;
   margin: 40px 0 40px 0;
+  line-height: 30px;
 }
 .Contact-box a {
   color: #182987;
