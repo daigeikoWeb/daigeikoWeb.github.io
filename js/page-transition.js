@@ -1,9 +1,9 @@
 const link_map = [
   {
-    tag: 'Exhibition',
+    tag: 'Top',
     link: 'index.html'
   },{
-    tag: 'Exhibition2020',
+    tag: 'Works',
     link: 'Exhibition2020.html'
   },{
     tag: 'About',
@@ -54,8 +54,8 @@ document.querySelector('.header-nav').appendChild(menu_back);
     //current_menu、prev_menu内の全ての子要素の色をアニメーション
     for (var prev_child of prev_menu.children){
       prev_child.animate([
-        {color: '#fff'},
-        {color: '#182987'}
+        {color: '#182987'},
+        {color: '#FFFFFF'}
       ],{
         duration: 1000,
         easing: 'ease-in-out',
@@ -65,8 +65,8 @@ document.querySelector('.header-nav').appendChild(menu_back);
 
     for (var current_child of current_menu.children){
       current_child.animate([
-        {color: '#182987'},
-        {color: '#fff'}
+        {color: '#FFFFFF'},
+        {color: '#182987'}
       ],{
         duration: 1000,
         easing: 'ease-in-out',
