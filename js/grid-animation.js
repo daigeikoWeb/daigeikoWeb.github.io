@@ -136,3 +136,20 @@
 //   option['fill'] = 'forwards';
 //   return option;
 // }
+
+const works = document.querySelectorAll('.works-cover');
+document.onload = setWorksSize();
+
+window.onresize = function(){
+  setWorksSize();
+}
+
+function setWorksSize(){
+  var work_width = works[0].clientWidth;
+  var work_margin = window.innerWidth * 0.01;
+  console.log(work_margin);
+  for (var work of works) {
+    work.style.height = work_width + 'px';
+    work.style.marginBottom = work_margin + 'px';
+  }
+}
