@@ -1011,14 +1011,20 @@ div .look {
   z-index: 4;
   display: none;
 }
+.introduction1 a,
+.introduction2 a,
+.introduction3 a{
+  font-size: 12px;
+  color: white;
+}
 .close {
   position: absolute;
   right: 50px;
   top: 50px;
   font-size: 40px;
 }
-.large {
-  font-size: 20px;
+.explanation .explanation-name {
+  font-size: 18px;
 }
 .explanation {
   width: 40%;
@@ -1276,11 +1282,13 @@ div .look {
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
 }
-.contact-cover .contact-btn-cover {
+.contact-cover .contact-btn-cover,
+.about-cover .about-btn-cover{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.contact-cover .contact-btn {
+.contact-cover .contact-btn,
+.about-cover .about-btn{
   background-color: white;
   color: #182987;
   padding-top: 2%;
@@ -1288,11 +1296,13 @@ div .look {
   text-align: center;
   transition: all 0.3s ease 0s;
 }
-.contact-cover .contact-btn:hover {
+.contact-cover .contact-btn:hover,
+.about-cover .about-btn:hover{
   color: #eee;
   background-color: #182987;
 }
-.contact-cover a{
+.contact-cover a,
+.about-cover a{
   text-decoration: none;
   background-color: #FFFFFF;
   cursor: pointer;
