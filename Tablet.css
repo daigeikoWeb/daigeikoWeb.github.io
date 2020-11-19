@@ -1,5 +1,5 @@
-@media screen and (max-width: 560px){
-	* {
+@media screen and (min-width: 560px) and (max-width: 960px){
+  * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -8,42 +8,38 @@
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.1em;
-  line-height: 23px;
+  line-height: 30px;
 }
 html {
   height: 100%;
-	width: 100%;
+  width: 100%;
 }
 body {
+  display: flex;
   height: 100%;
-	width: 100%;
+  width: 100%;
 }
 header {
   background-color: #182987;
-	height: 10%;
-	width: 100%;
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-	position: fixed;
-	z-index: 5;
+  height: 100%;
+  width: 25%;
+  flex-grow: 1;
+  user-select: none;
 }
 main {
   display: block;
   flex-direction: column;
   background-color: #eee;
-  width: 100%;
-	height: 100%;
-	margin-top: 10%;
+  width: 75%;
+  height: 100%;
 }
 .logo {
-  margin: 10px;
-  width: 75px;
+  margin: 20px;
+  width: 150px;
 }
 
 .header-nav {
-	margin-top: 50px;
-	display: none;
+  margin-top: 50px;
 }
 .header-nav li {
   list-style: none;
@@ -56,12 +52,10 @@ main {
 .header-nav a {
   text-decoration: none;
   color: #eee;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
 }
-.head_sns{
-	display: none;
-}
+
 .head_sns ul {
   display: flex;
   position: absolute;
@@ -79,53 +73,11 @@ main {
 .head_sns img {
   height: 23px;
 }
-.smart-btn i{
-	color:#eee ;
-	font-size: 25px;
-	margin-right: 20px;
+.smart-btn{
+  display: none;
 }
 .smart-menu{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #182987;
-	position: fixed;
-	z-index: 4;
-	display: none;
-}
-.smart-menu .close{
-	top:50px;
-	right: 25px;
-}
-.smart-nav ul{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:100px 0 50px;
-}
-.smart-nav li{
-	margin: 10px 0;
-}
-.smart-nav a {
-  text-decoration: none;
-  color: #eee;
-  font-size: 20px;
-	cursor: pointer;
-}
-.smart-sns ul{
-	display: flex;
-}
-.smart-sns  li{
-	margin: 0 10px;
-}
-.smart-sns i{
-	color: #eee;
-	font-size: 20px;
-}
-.smart-sns img{
-	height: 20px;
+  display: none;
 }
 h1 {
   color: #182987;
@@ -145,13 +97,12 @@ h1 {
   grid-row-gap: 1%;
   grid-column-gap: 1%;
   position: relative;
-	grid-template-rows: 24.25% 24.25% 24.25% 24.25%;
-  grid-template-columns: 	32.6666% 32.6666% 32.6666%;
+  grid-template-rows: 32.6666% 32.6666% 32.6666%;
+  grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
   grid-template-areas:
-    "area5 area5 area6"
-    "area5 area5 area7"
-		"area3 area4 area4"
-		"area1 area1 area2";
+    "area1 area3 area5 area5"
+    "area1 area4 area5 area5"
+    "area2 area4 area6 area7";
 }
 .grid-container p {
 
@@ -189,7 +140,7 @@ h1 {
   transform: translate(-50%, -25%);
 }
 .grid-area1 .cover-image img {
- width: 100%;
+  height: 67%;
 }
 .grid-area1 .cover-content-container {
   margin-bottom: 0%;
@@ -246,7 +197,7 @@ h1 {
   width: 100%;
 }
 .grid-area2 .cover-image img {
-  width: 135%;
+  width: 250%;
 }
 .grid-area2 .cover-content-container {
   margin-bottom: 0%;
@@ -303,7 +254,7 @@ h1 {
   width: 100%;
 }
 .grid-area3 .cover-image img {
-  width: 135%;
+  width: 250%;
 }
 .grid-area3 .cover-content-container {
   margin-bottom: 0%;
@@ -362,7 +313,7 @@ h1 {
   transform: translate(-50%, -25%);
 }
 .grid-area4 .cover-image img {
-  width: 100%;
+  height: 67%;
 }
 .grid-area4 .cover-content-container {
   margin-bottom: 0%;
@@ -413,16 +364,16 @@ h1 {
 }
 .grid-area5 .cover-image {
   float: left;
-  height: 10%;
+  height: 100%;
   object-fit: cover;
   position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, 0%);
-  width: 100%;
+  width: 250%;
 }
 .grid-area5 .cover-image img {
-  width: 135%;
+  width: 110%;
 }
 .grid-area5 .cover-content-container {
   margin-bottom: 0%;
@@ -482,7 +433,7 @@ h1 {
   width: 100%;
 }
 .grid-area6 .cover-image img {
-  width: 135%;
+  width: 250%;
 }
 .grid-area6 .cover-content-container {
   margin-bottom: 0%;
@@ -542,7 +493,7 @@ h1 {
   width: 100%;
 }
 .grid-area7 .cover-image img {
-  width: 135%;
+  width: 250%;
 }
 .grid-area7 .cover-content-container {
   margin-bottom: 0%;
@@ -676,7 +627,7 @@ div.art7 {
   height: 100%
 }
 .theme-cover {
-  width: 70%;
+  width: 60%;
   left: 50%;
   object-fit: cover;
   position: relative;
@@ -688,7 +639,7 @@ div.art7 {
   margin-left: 0 auto;
   margin-right: 0 auto;
   padding-bottom: 10%;
-  margin: 30px auto 0;
+  margin: 0 auto;
   width: 60%;
 }
 .theme-cover h1 {
@@ -696,12 +647,11 @@ div.art7 {
 }
 .theme-cover p {
   color: #182987;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
-	-ms-text-justify: inter-ideograph;
-	margin-bottom: 20px;
+  -ms-text-justify: inter-ideograph;
 }
 .theme-cover .questionnaire-btn-cover {
   padding-top: 5%;
@@ -774,7 +724,7 @@ div.art7 {
   margin-right: 1%;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 49%;
+  width: 24.25%;
 }
 .works-cover:nth-of-type(4n) {
   margin-right: 0;
@@ -790,14 +740,14 @@ div.art7 {
   margin-right: 0px;
   margin-top: 0px;
   position: relative;
-	width:100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .works-cover .cover-image-wrap {
   overflow: hidden;
   position: relative;
-	width:100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .works-cover .cover-image {
   float: left;
@@ -913,7 +863,7 @@ div.art7 {
   height: 100%
 }
 .about-cover {
-  width: 70%;
+  width: 60%;
   object-fit: cover;
   position: relative;
 }
@@ -922,12 +872,11 @@ div.art7 {
 }
 .about-cover p {
   color: #182987;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
-	-ms-text-justify: inter-ideograph;
-	margin-top: 40px;
+  -ms-text-justify: inter-ideograph;
 }
 
 #judge {
@@ -935,10 +884,10 @@ div.art7 {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 200%;
+  height: 100%;
 }
 .judge-cover {
-  width: 95%;
+  width: 90%;
   position: absolute;
   object-fit: cover;
   flex-direction: column;
@@ -953,20 +902,17 @@ div.art7 {
 }
 .judge-abstract p {
   color: #182987;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
-	-ms-text-justify: inter-ideograph;
-	margin-top: 40px;
+  -ms-text-justify: inter-ideograph;
 }
 
 .judge-content {
   display: block;
   display: inline-flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   margin-left: 0%;
   margin-right: 0%;
@@ -977,12 +923,13 @@ div.art7 {
   display: block;
   position: relative;
   clear: left;
-  width: 60%;
+  width: 32%;
 }
 .judge-content .judge-content-container {
-  margin-bottom: 0;
+  margin-bottom: 0%;
   margin-left: 0px;
-  margin-top: 30px;
+  margin-right: 2%;
+  margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
 }
@@ -1022,7 +969,6 @@ div.art7 {
   color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  margin-bottom: 0;
 }
 
 .judge-content-container .judge-details-wrap:hover {
@@ -1041,9 +987,6 @@ div.art7 {
   padding-bottom: 5%;
   text-align: center;
 }
-.judge-name{
-	font-size: 13px;
-}
 
 
 
@@ -1056,29 +999,35 @@ div .look {
 .introduction1,
 .introduction2,
 .introduction3{
-	position: absolute;
+  position: absolute;
   background-color: rgb(22, 22, 22);
-  height: 50%;
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 16px;
 	z-index: 4;
 	display: none;
 }
+.introduction1 a,
+.introduction2 a,
+.introduction3 a{
+  font-size: 12px;
+  color: white;
+}
 .close {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 50px;
+  top: 50px;
   font-size: 40px;
 }
-.large {
-  font-size: 20px;
+.explanation .explanation-name {
+  font-size: 18px;
 }
 .explanation {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1090,7 +1039,7 @@ div .look {
 .explanation p {
   margin-top: 10px;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .judge-arts {
   display: flex;
@@ -1105,7 +1054,7 @@ div .look {
 .judge-art1 img,
 .judge-art2 img,
 .judge-art3 img{
-  width: 100px;
+  width: 130px;
 }
 
 
@@ -1114,47 +1063,48 @@ div .look {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 150%;
+  height: 100%;
 }
 .message-cover {
-  width: 80%;
+  width: 70%;
 }
 .message-cover h1 {
   margin-bottom: 40px;
 }
 .message-cover h2 {
   color: #182987;
-  line-height: 14px;
-  font-size: 14px;
+  line-height: 16px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .message-cover p {
   color: #182987;
   font-family: "ヒラギノ角ゴ ProN W3";
-  font-size: 12px;
+  font-size: 16px;
   text-align: justify;
   text-justify: inter-ideograph;
-  -ms-text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph;
+	margin-top: 10px;
 }
 .representative-cover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
   width: 100%;
 }
 .representative-img {
   margin: 0 0 10px 0;
-  width: 40%;
+  width: 30%;
 }
 .representative-img img {
   width: 100%;
 }
 .words {
   width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 #cooperation {
@@ -1166,7 +1116,7 @@ div .look {
 }
 .cooperation-cover {
   height: 100%;
-  width: 80%;
+  width: 70%;
   left: 50%;
   object-fit: cover;
   position: relative;
@@ -1189,7 +1139,7 @@ div .look {
 }
 .cooperation-list .cooperation-caption p {
   color: #182987;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
@@ -1200,30 +1150,21 @@ div .look {
   display: grid;
   position: relative;
   height: 100%;
-	grid-template-rows: 5% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
+  grid-template-rows: 7% 5% 5% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
     "gold1 gold1 gold1 gold1"
     "silver1 silver1 silver2 silver2"
     "silver3 silver3 silver4 silver4"
-		"n1 n1 n2 n2"
-    "n3 n3 n4 n4"
-    "n5 n5 n6 n6"
-		"n7 n7 n8 n8"
-		"n9 n9 n10 n10"
-    "n11 n11 n12 n12"
-    "n13 n13 n14 n14"
-		"n15 n15 n16 n16"
-		"n17 n17 n18 n18"
-    "n19 n19 n20 n20"
-    "n21 n21 n22 n22"
-		"n23 n23 n24 n24"
-		"n25 n25 n26 n26"
-    "n27 n27 n28 n28"
-    "n29 n29 n30 n30"
-		"n31 n31 n32 n32"
-		"n33 n33 n34 n34"
-    "n35 n35 n36 n36";
+    "n1 n2 n3 n4"
+    "n5 n6 n7 n8"
+    "n9 n10 n11 n12"
+    "n13 n14 n15 n16"
+    "n17 n18 n19 n20"
+    "n21 n22 n23 n24"
+    "n25 n26 n27 n28"
+    "n29 n30 n31 n32"
+    "n33 n34 n35 n36";
 }
 .area-gold1 {
   grid-area: gold1;
@@ -1301,81 +1242,9 @@ div .look {
 .area-n12 {
   grid-area: n12;
 }
-.area-n13 {
-  grid-area: n13;
-}
-.area-n14 {
-  grid-area: n14;
-}
-.area-n15 {
-  grid-area: n15;
-}
-.area-n16 {
-  grid-area: n16;
-}
-.area-n17 {
-  grid-area: n17;
-}
-.area-n18 {
-  grid-area: n18;
-}
-.area-n19 {
-  grid-area: n19;
-}
-.area-n20 {
-  grid-area: n20;
-}
-.area-n21 {
-  grid-area: n21;
-}
-.area-n22 {
-  grid-area: n22;
-}
-.area-n23 {
-  grid-area: n23;
-}
-.area-n24 {
-  grid-area: n24;
-}
-.area-n25 {
-  grid-area: n25;
-}
-.area-n26 {
-  grid-area: n26;
-}
-.area-n27 {
-  grid-area: n27;
-}
-.area-n28 {
-  grid-area: n28;
-}
-.area-n29 {
-  grid-area: n29;
-}
-.area-n30 {
-  grid-area: n30;
-}
-.area-n31 {
-  grid-area: n31;
-}
-.area-n32 {
-  grid-area: n32;
-}
-.area-n33 {
-  grid-area: n33;
-}
-.area-n34 {
-  grid-area: n34;
-}
-.area-n35 {
-  grid-area: n35;
-}
-.area-n36 {
-  grid-area: n36;
-}
 .supporters-container {
   color: #182987;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
   align-items: center;
 }
@@ -1401,7 +1270,7 @@ div .look {
   height: 100%
 }
 .contact-cover {
-  width: 80%;
+  width: 70%;
   left: 50%;
   object-fit: cover;
   position: relative;
@@ -1413,19 +1282,19 @@ div .look {
 }
 .contact-cover p {
   color: #182987;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
 }
 .contact-cover .contact-btn-cover,
-.about-cover .about-btn-cover {
+.about-cover .about-btn-cover{
   padding-top: 5%;
   padding-bottom: 5%;
 }
 .contact-cover .contact-btn,
-.about-cover .about-btn {
+.about-cover .about-btn{
   background-color: white;
   color: #182987;
   padding-top: 2%;
@@ -1434,7 +1303,7 @@ div .look {
   transition: all 0.3s ease 0s;
 }
 .contact-cover .contact-btn:hover,
-.about-cover .about-btn:hover {
+.about-cover .about-btn:hover{
   color: #eee;
   background-color: #182987;
 }
@@ -1445,33 +1314,10 @@ div .look {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-.contact-cover a:hover,
-.about-cover a:hover{
+.contact-cover a:hover{
   color: #182987;
 }
-.contact-btn,
-.about-btn{
-	font-size: 15px;
-}
 .foot_sns{
-	height: 10%;
-	background-color: #182987;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: sticky;
-}
-.foot_sns ul{
-	display: flex;
-}
-.foot_sns li{
-	margin: 0 15px;
-}
-.foot_sns i{
-	color: #eee;
-	font-size: 20px;
-}
-.foot_sns img{
-	height: 20px;
+display: none;
 }
 }
