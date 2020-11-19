@@ -4,9 +4,8 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: "ヒラギノ角ゴ ProN W6";
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:700;
   letter-spacing: 0.1em;
   line-height: 23px;
 }
