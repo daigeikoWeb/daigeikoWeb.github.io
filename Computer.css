@@ -1,4 +1,4 @@
-@media screen and (min-width:960px){
+@media screen and (min-width:1024px){
   * {
   margin: 0;
   padding: 0;
@@ -853,6 +853,13 @@ div.art7 {
   width: 120px;
   padding: 10px 17px;
 }
+.award{
+  width: 135px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: -20px;
+}
 
 #about {
   display: flex;
@@ -1062,7 +1069,7 @@ div .look {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100%;
+  height: 150%;
 }
 .message-cover {
   width: 60%;
@@ -1109,7 +1116,7 @@ div .look {
 }
 .cooperation-cover {
   height: 100%;
-  width: 60%;
+  width: 70%;
   left: 50%;
   object-fit: cover;
   position: relative;
@@ -1132,7 +1139,7 @@ div .look {
 }
 .cooperation-list .cooperation-caption p {
   color: #182987;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;

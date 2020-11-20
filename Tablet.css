@@ -1,4 +1,4 @@
-@media screen and (min-width: 560px) and (max-width: 960px){
+@media screen and (min-width: 560px) and (max-width: 1024px){
   * {
   margin: 0;
   padding: 0;
@@ -96,12 +96,13 @@ h1 {
   grid-row-gap: 1%;
   grid-column-gap: 1%;
   position: relative;
-  grid-template-rows: 32.6666% 32.6666% 32.6666%;
-  grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+	grid-template-rows: 24.25% 24.25% 24.25% 24.25%;
+  grid-template-columns: 	32.6666% 32.6666% 32.6666%;
   grid-template-areas:
-    "area1 area3 area5 area5"
-    "area1 area4 area5 area5"
-    "area2 area4 area6 area7";
+    "area5 area5 area6"
+    "area5 area5 area7"
+		"area3 area4 area4"
+		"area1 area1 area2";
 }
 .grid-container p {
 
@@ -853,6 +854,13 @@ div.art7 {
   width: 120px;
   padding: 10px 17px;
 }
+.award{
+  width: 70px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: -10px;
+}
 
 #about {
   display: flex;
@@ -1049,7 +1057,7 @@ div .look {
 .judge-art3 {
   margin: 0 10px;
   text-align: center;
-}
+}1
 .judge-art1 img,
 .judge-art2 img,
 .judge-art3 img{
@@ -1062,7 +1070,7 @@ div .look {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 200%;
+  height: 150%;
 }
 .message-cover {
   width: 70%;
@@ -1149,21 +1157,30 @@ div .look {
   display: grid;
   position: relative;
   height: 100%;
-  grid-template-rows: 7% 5% 5% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+	grid-template-rows: 5% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
     "gold1 gold1 gold1 gold1"
     "silver1 silver1 silver2 silver2"
     "silver3 silver3 silver4 silver4"
-    "n1 n2 n3 n4"
-    "n5 n6 n7 n8"
-    "n9 n10 n11 n12"
-    "n13 n14 n15 n16"
-    "n17 n18 n19 n20"
-    "n21 n22 n23 n24"
-    "n25 n26 n27 n28"
-    "n29 n30 n31 n32"
-    "n33 n34 n35 n36";
+		"n1 n1 n2 n2"
+    "n3 n3 n4 n4"
+    "n5 n5 n6 n6"
+		"n7 n7 n8 n8"
+		"n9 n9 n10 n10"
+    "n11 n11 n12 n12"
+    "n13 n13 n14 n14"
+		"n15 n15 n16 n16"
+		"n17 n17 n18 n18"
+    "n19 n19 n20 n20"
+    "n21 n21 n22 n22"
+		"n23 n23 n24 n24"
+		"n25 n25 n26 n26"
+    "n27 n27 n28 n28"
+    "n29 n29 n30 n30"
+		"n31 n31 n32 n32"
+		"n33 n33 n34 n34"
+    "n35 n35 n36 n36";
 }
 .area-gold1 {
   grid-area: gold1;
@@ -1241,9 +1258,81 @@ div .look {
 .area-n12 {
   grid-area: n12;
 }
+.area-n13 {
+  grid-area: n13;
+}
+.area-n14 {
+  grid-area: n14;
+}
+.area-n15 {
+  grid-area: n15;
+}
+.area-n16 {
+  grid-area: n16;
+}
+.area-n17 {
+  grid-area: n17;
+}
+.area-n18 {
+  grid-area: n18;
+}
+.area-n19 {
+  grid-area: n19;
+}
+.area-n20 {
+  grid-area: n20;
+}
+.area-n21 {
+  grid-area: n21;
+}
+.area-n22 {
+  grid-area: n22;
+}
+.area-n23 {
+  grid-area: n23;
+}
+.area-n24 {
+  grid-area: n24;
+}
+.area-n25 {
+  grid-area: n25;
+}
+.area-n26 {
+  grid-area: n26;
+}
+.area-n27 {
+  grid-area: n27;
+}
+.area-n28 {
+  grid-area: n28;
+}
+.area-n29 {
+  grid-area: n29;
+}
+.area-n30 {
+  grid-area: n30;
+}
+.area-n31 {
+  grid-area: n31;
+}
+.area-n32 {
+  grid-area: n32;
+}
+.area-n33 {
+  grid-area: n33;
+}
+.area-n34 {
+  grid-area: n34;
+}
+.area-n35 {
+  grid-area: n35;
+}
+.area-n36 {
+  grid-area: n36;
+}
 .supporters-container {
   color: #182987;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   align-items: center;
 }

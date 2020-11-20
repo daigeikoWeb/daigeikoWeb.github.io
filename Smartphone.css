@@ -903,6 +903,14 @@ div.art7 {
   width: 120px;
   padding: 10px 17px;
 }
+.award{
+  width: 135px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: -20px;
+}
+
 
 #about {
   display: flex;
