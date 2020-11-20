@@ -1,146 +1,217 @@
-// const link_map = [
-//   {
-//     tag: 'Top',
-//     link: 'index.html'
-//   },{
-//     tag: 'Works',
-//     link: 'Exhibition2020.html'
-//   },{
-//     tag: 'About',
-//     link: 'About.html'
-//   },{
-//     tag: 'Judge',
-//     link: 'Judge.html'
-//   },{
-//     tag: 'Message',
-//     link: 'Message.html'
-//   },{
-//     tag: 'Cooperation',
-//     link: 'Cooperation.html'
-//   },{
-//     tag: 'Contact',
-//     link: 'Contact.html'
-//   }];
+const sections = [{tag: 'top', style: 'flex'},
+                  {tag: 'theme', style: 'flex'},
+                  {tag: 'works', style: 'flex'},
+                  {tag: 'about', style: 'flex'},
+                  {tag: 'judge', style: 'flex'},
+                  {tag: 'message', style: 'flex'},
+                  {tag: 'cooperation', style: 'block'},
+                  {tag: 'contact', style: 'block'}
+                ];
 
-// function map_index(tag_name){
-//   return link_map.findIndex((map) => map.tag == tag_name);
-// }
+const sec_nodes = [];
 
-// const prev = location.hash;
-// const current_menu = document.querySelector('.current');
-// var prev_menu = null;
-// if (prev != "")  prev_menu = document.querySelector(prev);
+function sec_index(id_name){
+  return sections.findIndex((sec) => "#" + sec.tag == id_name);
+}
 
-// const main_cov = document.querySelector('#main-cover');
+var current_sec = location.hash;
 
-// const menu_back = document.createElement('li');
-// menu_back.innerHTML = '<a>あ</a>';
-// menu_back.id = 'menu-back';
-// document.querySelector('.header-nav').appendChild(menu_back);
+const senni = document.querySelector('#senni-part');
 
-// //window.onload = function(){
-//   const menu = document.querySelector('ul');
-//   var menu_top_y = menu.getBoundingClientRect();
+const main_cov = document.querySelector('#main-cover');
+const menu_back = document.querySelector('#menu-back');
 
-//   var current_y = current_menu.getBoundingClientRect();
-//   var out_y = (current_y.top - menu_top_y.top) + 'px';
-//   menu_back.style.top = out_y;
+for (var sec of sections) {
+  var sec_node = document.getElementById(sec.tag);
+  sec_nodes.push(sec_node);
+}
+//console.log(sec_nodes);
 
-//   if (prev != ""){
-//     const prev_menu = document.querySelector(prev);
-//     var prev_y = prev_menu.getBoundingClientRect();
-//     var in_y = (prev_y.top - menu_top_y.top) + 'px';
+if (current_sec == ""){
+  senni.style.display = 'block';
 
-//     //current_menu、prev_menu内の全ての子要素の色をアニメーション
-//     for (var prev_child of prev_menu.children){
-//       prev_child.animate([
-//         {color: '#182987'},
-//         {color: '#FFFFFF'}
-//       ],{
-//         duration: 1000,
-//         easing: 'ease-in-out',
-//         fill: 'forwards'
-//       });
-//     }
+  //1000ms待機してからfadeout
+  setTimeout(() => {
+    var senni_fade = senni.animate([
+      {opacity: 1}, {opacity: 0}
+    ],{
+      duration: 3000
+    });
 
-//     for (var current_child of current_menu.children){
-//       current_child.animate([
-//         {color: '#FFFFFF'},
-//         {color: '#182987'}
-//       ],{
-//         duration: 1000,
-//         easing: 'ease-in-out',
-//         fill: 'forwards'
-//       });
-//     }
+    senni_fade.onfinish = function(){
+      senni.style.display = 'none';
+    }
+  }, 1000);
 
-//     //メニューの後ろにある青いやつをアニメーション
-//     menu_back.animate([
-//       {top: in_y},
-//       {top: out_y}
-//     ],{
-//       duration: 1000,
-//       easing: 'ease-in-out'
-//     });
+  location.hash = 'top';
+  current_sec = location.hash;
 
-//     var prev_menu_index = map_index(prev_menu.id);
-//     var current_menu_index = map_index(current_menu.id);
+} else {
+  senni.style.display = 'none';
+}
 
-//     var cov_anim = main_cov.animate(
-//       main_cov_keyframes(false, prev_menu_index < current_menu_index)
-//     ,{
-//       duration: 1000,
-//       easing: 'ease-in-out'
-//     });
-//     cov_anim.onfinish = function(){
-//       del_main_cov();
-//       //ハッシュ削除 from https://gist.github.com/matori/9d195d051e03c884f009
-//       var hashString = location.hash.substr(1); // remove '#'
-//       history.replaceState('', document.title, window.location.pathname);
-//     }
-//   } else {
-//     del_main_cov();
-//   }
+hide_sections(current_sec);
 
-// //}
+function hide_sections(current_id){
+  console.log(current_id);
+  for (var i = 0; i < sections.length; i++) {
+    var show = 'none';
+    //console.log(sections[i].tag);
+    if (current_id == '#' + sections[i].tag){
+      show = sections[i].style;
+    }
+    console.log(show);
+    sec_nodes[i].style.display = show;
+  }
+}
 
-// function del_main_cov(){
-//   main_cov.style.display = 'none';
-// }
+function move_menu(last){
+  var last_top = menu_back.style.top;
+  var menu_top = document.querySelector('.header-nav').getBoundingClientRect();
+  var current_menu = document.querySelector('.header-nav .current');
+  var btn_rect = current_menu.getBoundingClientRect();
+  var goal = (btn_rect.top - menu_top.top) + 'px';
+  //console.log( last_top );
+  //console.log( menu_top.top );
+  if (last != ""){
+    menu_back.animate([
+      {top: last_top}, {top: goal}
+    ],{
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+
+    current_menu.firstElementChild.animate([
+      {color: '#FFFFFF'},
+      {color: '#182987'}
+    ],{
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+
+    last.firstElementChild.animate([
+      {color: '#182987'},
+      {color: '#FFFFFF'}
+    ],{
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+  }
+  menu_back.style.top = goal;
+}
 
 
-// const menu_btns = document.querySelectorAll('ul li');
+const pc_menus = document.querySelectorAll('.header-nav ul li');
+const sp_menus = document.querySelectorAll('.smart-nav ul li');
 
-// for (const btn of menu_btns){
-//   var tagA = btn.firstElementChild;
-//   tagA.removeAttribute('href');
-//   btn.addEventListener('click', () => {
-//     if (current_menu == btn) return;
+for (const btn of pc_menus) {
+  btn.addEventListener('click', () =>{
+    if (btn.classList.contains('current')) {
+      return;
+    }
+    var last_menu = document.querySelector('.header-nav .current');
+    last_menu.classList.remove('current');
+    btn.classList.add('current');
+    move_menu(last_menu);
 
-//     main_cov.style.display = 'block';
-//     var current_menu_index = map_index(current_menu.id);
-//     var next_menu_index = map_index(btn.id);
-//     var pageTransition = main_cov.animate(
-//       main_cov_keyframes(true, (current_menu_index < next_menu_index))
-//     ,{
-//       duration: 1000,
-//       easing: 'ease-in-out'
-//     });
+    var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
+    var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
+    //console.log(last_menu.firstElementChild.getAttribute('href') + "," + btn.firstElementChild.getAttribute('href'));
+    //console.log(last_index + "," + current_index);
+    main_cov.style.display = 'block';
 
-//     pageTransition.onfinish = function(){
-//       window.location.href = link_map[next_menu_index].link + '#' + current_menu.id;
-//     }
-//   });
-// }
+    var page_in = main_cov.animate(
+      main_cov_keyframes(true, last_index < current_index),{
+        duration: 1000,
+        easing: 'ease-in-out'
+      }
+    );
 
-// function main_cov_keyframes(is_in, is_up){
-//   //キーフレームを格納する配列
-//   const key = [{transform: 'translateY(0%)'}];
-//   if (is_up == is_in) transition = {transform: 'translateY(100%)'};
-//   else transition = {transform: 'translateY(-100%)'};
+    page_in.onfinish = function(){
+      hide_sections(btn.firstElementChild.getAttribute('href'));
+      location.hash = btn.firstElementChild.getAttribute('href');
 
-//   if(is_in) key.unshift(transition);
-//   else key.push(transition);
+      setWorksSize(); //from grid-animation.js
+      var page_out = main_cov.animate(
+        main_cov_keyframes(false, last_index < current_index),{
+          duration: 1000,
+          easing: 'ease-in-out'
+        }
+      );
+      page_out.onfinish = () => {
+        main_cov.style.display = 'none';
+      }
+    }
+  });
+}
 
-//   return key;
-// }
+
+for (const btn of sp_menus) {
+  btn.addEventListener('click', () => {
+    var last_menu = document.querySelector('.smart-nav .current');
+    last_menu.classList.remove('current');
+    btn.classList.add('current');
+
+    menu_closing(); //from toggle-display.js
+
+    var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
+    var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
+
+    main_cov.style.display = 'block';
+
+    var page_in = main_cov.animate(
+      main_cov_keyframes(true, last_index < current_index),{
+        duration: 1000,
+        easing: 'ease-in-out'
+      }
+    );
+
+    page_in.onfinish = function(){
+      hide_sections(btn.firstElementChild.getAttribute('href'));
+      location.hash = btn.firstElementChild.getAttribute('href');
+
+      setWorksSize(); //from grid-animation.js
+      var page_out = main_cov.animate(
+        main_cov_keyframes(false, last_index < current_index),{
+          duration: 1000,
+          easing: 'ease-in-out'
+        }
+      );
+      page_out.onfinish = () => {
+        main_cov.style.display = 'none';
+      }
+    }
+  });
+}
+
+find_menu(current_sec);
+move_menu("");
+
+function find_menu(current_id){
+  for (const btn of pc_menus) {
+    if (btn.firstElementChild.getAttribute('href') == current_id){
+      btn.classList.add('current');
+    } else {
+      btn.classList.remove('current');
+    }
+  }
+  for (const btn of sp_menus) {
+    if (btn.firstElementChild.getAttribute('href') == current_id){
+      btn.classList.add('current');
+    } else {
+      btn.classList.remove('current');
+    }
+  }
+}
+
+function main_cov_keyframes(is_in, is_up){
+  //キーフレームを格納する配列
+  const key = [{transform: 'translateY(0%)'}];
+  if (is_up == is_in) transition = {transform: 'translateY(100%)'};
+  else transition = {transform: 'translateY(-100%)'};
+
+  if(is_in) key.unshift(transition);
+  else key.push(transition);
+
+  return key;
+}
