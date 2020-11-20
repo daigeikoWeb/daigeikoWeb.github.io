@@ -78,4 +78,4 @@ const data = [
   Original: ''
 }];
 
-console.log(data[0]['author'][0]['name']);
+//console.log(data[0]['author'][0]['name']);
