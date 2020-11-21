@@ -664,7 +664,6 @@ div.art7 {
 .theme-cover p {
   color: #182987;
   font-size: 16px;
-  font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
@@ -810,7 +809,6 @@ div.art7 {
 }
 .works-cover  .details-award {
   padding-top: 10%;
-  font-family: "ヒラギノ角ゴ ProN W3";
   font-size: 12px;
 }
 
@@ -873,7 +871,7 @@ div.art7 {
 .award{
   width: 70px;
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   top: 0;
   left: -10px;
 }
@@ -896,7 +894,6 @@ div.art7 {
 .about-cover p {
   color: #182987;
   font-size: 16px;
-  font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
@@ -926,7 +923,6 @@ div.art7 {
 .judge-abstract p {
   color: #182987;
   font-size: 16px;
-  font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
@@ -1045,6 +1041,7 @@ div .look {
   right: 50px;
   top: 50px;
   font-size: 40px;
+  cursor: pointer;
 }
 .explanation .explanation-name {
   font-size: 18px;
@@ -1086,7 +1083,7 @@ div .look {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 150%;
+  height: 100%;
 }
 .message-cover {
   width: 70%;
@@ -1096,14 +1093,12 @@ div .look {
 }
 .message-cover h2 {
   color: #182987;
-  line-height: 16px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .message-cover p {
   color: #182987;
-  font-family: "ヒラギノ角ゴ ProN W3";
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
   text-justify: inter-ideograph;
 	-ms-text-justify: inter-ideograph;
@@ -1163,7 +1158,6 @@ div .look {
 .cooperation-list .cooperation-caption p {
   color: #182987;
   font-size: 16px;
-  font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
@@ -1387,7 +1381,6 @@ div .look {
 .contact-cover p {
   color: #182987;
   font-size: 16px;
-  font-family: "ヒラギノ角ゴ ProN W3";
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
