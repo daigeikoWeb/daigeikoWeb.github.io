@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 550;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.hide-menu {
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+	background-color: #182987;
+	height: 100vh;
+	display: none;
+}
+.hide-nav {
+	margin-top: 120px;
+}
+.hide-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hide-nav li{
+	margin: 15px 0;
+}
+.hide-nav a {
+  text-decoration: none;
+	font-size: 18px;
+	color: white;
+}
+.hide-sns{
+	width: 100%;
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.hide-sns ul{
+  display: flex;
+  justify-content: space-around;
+	width: 25%;
+}
+.hide-sns i{
+	color: white;
+	font-size: 25px;
+}
+.hide-sns img{
+	width:20px;
+}
+.logo {
+  margin: 20px;
+  width: 120px;
+}
+.smart-btn i {
+  color: #182987;
+  font-size: 35px;
+	margin: 0 20px 0 0;
+}
+.smart-btn img {
+  color: #182987;
+  font-size: 40px;
+	margin: 0 20px 0 0;
+	display: none;
+}
+.works {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+}
+.main-visual {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-visual img {
+  width: 70%;
+  height: auto;
+}
+.explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 80px;
+}
+.explanation h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.explanation p {
+  margin-bottom: 20px;
+}
+.item1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 80px;
+}
+.item1 h2 {
+  margin-bottom: 40px;
+}
+.item p {
+  margin-bottom: 30px;
+}
+.photos {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+  width: 80%;
+  margin-top: 100px;
+}
+.photos img {
+  width: 350px;
+  margin: 20px 0;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	margin-top: 100px;
+	width: 80%;
+}
+.profile img {
+  width: 250px;
+  margin-bottom: 50px;
+}
+.profile-name {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.frigana {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.belonging {
+  margin-bottom: 20px;
+}
+.sns a {
+  color: #182987;
+  font-size: 30px;
+}
+.before-next {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px 0;
+}
+.before-next a {
+  color: #182987;
+  text-decoration: none;
+  font-size: 20px;
+}
+.back {
+  width: 100%;
+  background-color: #182987;
+  text-align: center;
+  padding: 10px 0;
+}
+.back a {
+  color: white;
+}
