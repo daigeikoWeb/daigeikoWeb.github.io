@@ -137,17 +137,29 @@
 //   return option;
 // }
 
+function query_mode(){
+
+}
+
 const works = document.querySelectorAll('.works-cover');
-document.onload = setWorksSize();
+
+setWorksSize();
+
+window.onload = function(){
+  setWorksSize();
+}
 
 window.onresize = function(){
   setWorksSize();
+  find_menu(location.hash); // from page-page-transition.js
+  move_menu(""); // from page-page-transition.js
 }
 
 function setWorksSize(){
   var work_width = works[0].clientWidth;
   var work_margin = window.innerWidth * 0.01;
-  console.log(work_margin);
+
+  //console.log(work_margin);
   for (var work of works) {
     work.style.height = work_width + 'px';
     work.style.marginBottom = work_margin + 'px';
