@@ -64,8 +64,8 @@ main {
   color: #182987;
 }
 .header-nav #menu-back{
-  background-color: #fff;
-  color: #fff;
+  background-color: #eee;
+  color: #eee;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -183,7 +183,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -240,7 +240,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -297,7 +297,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -356,7 +356,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -416,7 +416,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -476,7 +476,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -536,7 +536,7 @@ h1 {
   position: absolute;
   top: 0;
   background-color: black;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -555,80 +555,13 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
 #top {
   flex-grow: 3;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.arts {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.arts-left {
-  width: 50%;
-  height: 100%;
-  display: flex;
-}
-.arts-left-left {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-}
-.arts-left-right {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.arts-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.arts-right-top {
-  width: 100%;
-  overflow: hidden;
-}
-.arts-right-bottom {
-  display: flex;
-  width: 100%;
-}
-.arts-right-bottom-child {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
-.art1 img,
-.art2 img,
-.art3 img,
-.art4 img,
-.art5 img,
-.art6 img,
-.art7 img {
-  width: 100%;
-  height: 100%;
-}
-div.art1,
-div.art2,
-div.art3,
-div.art4,
-div.art5,
-div.art6,
-div.art7 {
-  position: relative;
-  overflow: hidden;
-}
+
 .futa {
   position: absolute;
   top: 0px;
@@ -686,7 +619,7 @@ div.art7 {
 }
 .theme-cover a{
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -694,23 +627,6 @@ div.art7 {
   color: #182987;
 }
 
-.arts_2020_box {
-  color: white;
-  width: 100%;
-  margin-top: 0px;
-}
-.arts_2020_box p {
-  left: 8%;
-  position: absolute;
-}
-.arts_2020_box i {
-  left: 15%;
-  position: absolute;
-}
-.arts_2020_box a {
-  right: 6%;
-  position: absolute;
-}
 
 #works {
   display: block;
@@ -790,7 +706,7 @@ div.art7 {
   opacity: 0;
   position: absolute;
   top: 0;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -812,62 +728,7 @@ div.art7 {
   font-size: 12px;
 }
 
-.arts_2020 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: absolute;
-  margin: 0;
-  width: 100%;
-}
-.arts_2020_01 {
-  width: 23%;
-  margin: 3px;
-  /* background-color: black; */
-  overflow: hidden;
-  position: relative;
-}
-.arts_2020_01 a {
-  z-index: 3;
-}
-.arts_2020_01 p {
-  color: white;
-  position: absolute;
-  font-size: 20px;
-  z-index: 2;
-}
-.arts_2020_01 img {
-  width: 100%;
-  height: 100%;
-}
-.arts_2020 img:hover {
-  opacity: 0.2;
-}
 
-.questionnaire {
-  position: absolute;
-  top: 2100px;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.questionnaire p {
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  margin: 40px 0 40px 0;
-}
-.questionnaire a {
-  color: #182987;
-  text-align: center;
-  font-size: 16px;
-  background-color: white;
-  text-decoration: none;
-  width: 120px;
-  padding: 10px 17px;
-}
 .award{
   width: 70px;
   position: absolute;
@@ -875,6 +736,7 @@ div.art7 {
   top: 0;
   left: -10px;
 }
+
 
 #about {
   display: flex;
@@ -985,7 +847,7 @@ div.art7 {
   opacity: 0;
   position: absolute;
   top: 0;
-  color: #FFFFFF;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -1000,7 +862,7 @@ div.art7 {
   text-align: center;
 }
 .judge-content-container .judge-name {
-  background-color: white;
+  background-color: #eee;
   color: #182987;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -1021,7 +883,7 @@ div .look {
   position: absolute;
   background-color: rgb(22, 22, 22);
   height: 100%;
-  color: white;
+  color: #eee;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1034,7 +896,7 @@ div .look {
 .introduction2 a,
 .introduction3 a{
   font-size: 12px;
-  color: white;
+  color: #eee;
 }
 .close {
   position: absolute;
@@ -1070,7 +932,7 @@ div .look {
 .judge-art3 {
   margin: 0 10px;
   text-align: center;
-}1
+}
 .judge-art1 img,
 .judge-art2 img,
 .judge-art3 img{
@@ -1354,12 +1216,6 @@ div .look {
   margin: 0 auto;
   width: 60%;
 }
-.cooperation-list .silver-sponcer-logo img {
-
-}
-.cooperation-list .supporter p {
-
-}
 
 #contact {
   display: block;
@@ -1385,13 +1241,11 @@ div .look {
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
 }
-.contact-cover .contact-btn-cover,
-.about-cover .about-btn-cover{
+.contact-cover .contact-btn-cover{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.contact-cover .contact-btn,
-.about-cover .about-btn{
+.contact-cover .contact-btn{
   background-color: white;
   color: #182987;
   padding-top: 2%;
@@ -1399,15 +1253,13 @@ div .look {
   text-align: center;
   transition: all 0.3s ease 0s;
 }
-.contact-cover .contact-btn:hover,
-.about-cover .about-btn:hover{
+.contact-cover .contact-btn:hover{
   color: #eee;
   background-color: #182987;
 }
-.contact-cover a,
-.about-cover a{
+.contact-cover a{
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: #eee;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
