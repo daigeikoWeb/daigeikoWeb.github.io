@@ -1,5 +1,6 @@
 const sections = [{tag: 'top', style: 'flex'},
-                  {tag: 'theme', style: 'flex'},
+                  //{tag: 'sakuhin', style: 'block'},
+                  {tag: 'theme', style: 'block'},
                   {tag: 'works', style: 'flex'},
                   {tag: 'about', style: 'flex'},
                   {tag: 'judge', style: 'flex'},
@@ -53,14 +54,19 @@ if (current_sec == ""){
 hide_sections(current_sec);
 
 function hide_sections(current_id){
-  console.log(current_id);
+  //console.log(current_id);
   for (var i = 0; i < sections.length; i++) {
     var show = 'none';
     //console.log(sections[i].tag);
     if (current_id == '#' + sections[i].tag){
       show = sections[i].style;
+      if (current_id == '#works'){
+        sec_nodes[1].style.display = sections[1].style;
+        //document.querySelector('main').scrollBy(0,-500000);
+        //sec_nodes[1].scrollBy(0,-500000);
+      }
     }
-    console.log(show);
+    //console.log(show);
     sec_nodes[i].style.display = show;
   }
 }
@@ -148,6 +154,9 @@ for (const btn of pc_menus) {
 
 for (const btn of sp_menus) {
   btn.addEventListener('click', () => {
+    if (btn.classList.contains('current')) {
+      return;
+    }
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
@@ -156,6 +165,7 @@ for (const btn of sp_menus) {
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
     var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
+    //console.log(last_index + ',' + current_index);
 
     main_cov.style.display = 'block';
 
