@@ -1,30 +1,40 @@
 const smart_open = document.querySelector('.smart-btn i');
-const smart_close = document.querySelector('.smart-menu .close');
+//const smart_close = document.querySelector('.smart-menu .close');
 const smart_menu = document.querySelector('.smart-menu');
 
 smart_open.addEventListener('click', () => {
-  smart_menu.style.display = 'flex';
-  smart_menu.animate([
-    {opacity: 0}, {opacity: 1}
-  ],{
-    duration: 500,
-    fill: 'forwards'
-  });
+  if (smart_menu.classList.contains('hide')){
+    smart_menu.classList.remove('hide');
+    smart_menu.style.display = 'flex';
+    smart_menu.animate([
+      {transform: 'translateY(-100%)'}, {transform: 'translateY(0%)'}
+    ],{
+      duration: 400,
+      easing: 'ease-out',
+      fill: 'forwards'
+    });
+  } else {
+    menu_closing();
+  }
+
 });
 
+/*
 smart_close.addEventListener('click', () => {
   menu_closing();
 });
-
+*/
 function menu_closing(){
   var menu_close = smart_menu.animate([
-    {opacity: 1}, {opacity: 0}
+    {transform: 'translateY(0%)'}, {transform: 'translateY(-100%)'}
   ],{
-    duration: 500,
+    duration: 400,
+    easing: 'ease-out',
     fill: 'forwards'
   });
   menu_close.onfinish = () => {
     smart_menu.style.display = 'none';
+    smart_menu.classList.add('hide');
   }
 }
 
