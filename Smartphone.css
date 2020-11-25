@@ -732,6 +732,12 @@
     padding-right: 5%;
     user-select: none;
   }
+  .works-cover .details a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
   .works-cover .details-award {
     padding-top: 10%;
     font-size: 12px;
