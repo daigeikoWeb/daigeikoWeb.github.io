@@ -162,8 +162,8 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-container .cover-image-wrap:hover {
-    opacity: 0.4;
+  .grid-container .cover-image-wrap:active {
+    opacity: 0.6;
   }
   .grid-container .details-wrap {
     position: relative;
@@ -215,13 +215,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area1 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area1 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area1 .details {
     position: absolute;
@@ -229,8 +228,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area1 .details-title {
+    top: 70px;
   }
 
   .grid-area2 {
@@ -272,13 +270,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area2 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area2 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area2 .details {
     position: absolute;
@@ -286,8 +283,6 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area2 .details-title {
   }
 
   .grid-area3 {
@@ -329,13 +324,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area3 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area3 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area3 .details {
     position: absolute;
@@ -343,8 +337,6 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area3 .details-title {
   }
 
   .grid-area4 {
@@ -388,13 +380,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area4 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area4 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area4 .details {
     position: absolute;
@@ -402,8 +393,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area4 .details-title {
+    top: 70px;
   }
 
   .grid-area5 {
@@ -448,13 +438,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area5 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area5 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area5 .details {
     position: absolute;
@@ -462,8 +451,6 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area5 .details-title {
   }
 
   .grid-area6 {
@@ -508,13 +495,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area6 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area6 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area6 .details {
     position: absolute;
@@ -522,8 +508,6 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .grid-area6 .details-title {
   }
 
   .grid-area7 {
@@ -568,13 +552,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .grid-area7 .details-wrap:hover {
-    opacity: 0.6;
+  .grid-area7 .details-wrap:active {
+    opacity: 1;
   }
   .grid-area7 .details {
     position: absolute;
@@ -642,7 +625,7 @@
     text-align: center;
     transition: all 0.3s ease 0s;
   }
-  .theme-cover .questionnaire-btn:hover {
+  .theme-cover .questionnaire-btn:active {
     color: #eee;
     background-color: #182987;
   }
@@ -652,7 +635,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .theme-cover a:hover {
+  .theme-cover a:active {
     color: #182987;
   }
 
@@ -734,11 +717,11 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    color:  #eee;
+    color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .works-cover .details-wrap:hover {
+  .works-cover .details-wrap:active {
     opacity: 0.6;
   }
   .works-cover .details {
@@ -747,8 +730,13 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    user-select: none;
   }
-  .works-cover .details-title {
+  .works-cover .details a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
   }
   .works-cover .details-award {
     padding-top: 10%;
@@ -756,7 +744,7 @@
   }
 
   .award {
-    width: 135px;
+    width: 100px;
     position: absolute;
     z-index: 3;
     top: 0;
@@ -875,13 +863,13 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    color:  #eee;
+    color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-bottom: 0;
   }
 
-  .judge-content-container .judge-details-wrap:hover {
+  .judge-content-container .judge-details-wrap:active {
     opacity: 0.6;
   }
 
@@ -891,7 +879,7 @@
     text-align: center;
   }
   .judge-content-container .judge-name {
-    background-color:  #eee;
+    background-color: #eee;
     color: #182987;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -911,15 +899,17 @@
   .introduction3 {
     position: absolute;
     background-color: rgb(22, 22, 22);
-    height: 50%;
-    color:  #eee;
+    height: 100%;
+    color: #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    z-index: 4;
+    z-index: 10;
     display: none;
+    position: fixed;
+    top: 0;
   }
   .close {
     position: absolute;
@@ -950,7 +940,7 @@
   .introduction2 a,
   .introduction3 a {
     font-size: 12px;
-    color:  #eee;
+    color: #eee;
     margin-top: 5px;
   }
   .judge-arts {
@@ -1057,7 +1047,7 @@
     display: grid;
     position: relative;
     height: 100%;
-    grid-template-rows: 5% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
+    grid-template-rows: 5% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
       "gold1 gold1 gold1 gold1"
@@ -1076,11 +1066,7 @@
       "n21 n21 n22 n22"
       "n23 n23 n24 n24"
       "n25 n25 n26 n26"
-      "n27 n27 n28 n28"
-      "n29 n29 n30 n30"
-      "n31 n31 n32 n32"
-      "n33 n33 n34 n34"
-      "n35 n35 n36 n36";
+      "n27 n27 n28 n28";
   }
   .area-gold1 {
     grid-area: gold1;
@@ -1281,29 +1267,31 @@
     text-align: center;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover .contact-btn:hover {
+  .contact-cover .contact-btn:active{
     color: #eee;
     background-color: #182987;
   }
   .contact-cover a {
     text-decoration: none;
-    background-color:  #eee;
+    background-color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover a:hover {
+  .contact-cover a:active{
     color: #182987;
   }
   .contact-btn {
     font-size: 15px;
   }
   .foot_sns {
-    height: 10%;
+    height: 9%;
     background-color: #182987;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   .foot_sns ul {
     display: flex;
