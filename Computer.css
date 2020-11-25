@@ -125,7 +125,7 @@
     transition: all 0.3s ease 0s;
   }
   .grid-container .cover-image-wrap:hover {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   .grid-container .details-wrap {
     position: relative;
@@ -154,10 +154,7 @@
     height: 100%;
   }
   .grid-area1 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: 0;
     position: relative;
   }
   .grid-area1 .cover-image-wrap {
@@ -177,13 +174,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area1 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area1 .details {
     position: absolute;
@@ -191,6 +187,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top:220px;
   }
 
   .grid-area2 {
@@ -232,13 +229,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area2 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area2 .details {
     position: absolute;
@@ -246,6 +242,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top:100px;
   }
 
   .grid-area3 {
@@ -287,13 +284,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area3 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area3 .details {
     position: absolute;
@@ -301,6 +297,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top:100px;
   }
 
   .grid-area4 {
@@ -344,13 +341,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area4 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area4 .details {
     position: absolute;
@@ -358,6 +354,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top:220px;
   }
 
   .grid-area5 {
@@ -402,13 +399,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area5 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area5 .details {
     position: absolute;
@@ -416,6 +412,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top: 220px;
   }
 
   .grid-area6 {
@@ -460,13 +457,12 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area6 .details-wrap:hover {
-    opacity: 0.6;
+    opacity:1;
   }
   .grid-area6 .details {
     position: absolute;
@@ -474,6 +470,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top: 100px;
   }
 
   .grid-area7 {
@@ -495,10 +492,7 @@
     height: 100%;
   }
   .grid-area7 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: 0;
     position: relative;
   }
   .grid-area7 .cover-image-wrap {
@@ -514,17 +508,15 @@
     height: 100%;
     max-width: 100%;
     width: 100%;
-
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: black;
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
   .grid-area7 .details-wrap:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
   .grid-area7 .details {
     position: absolute;
@@ -532,6 +524,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    top: 100px;
   }
 
   #top {
