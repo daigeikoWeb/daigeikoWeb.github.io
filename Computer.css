@@ -848,11 +848,7 @@
     text-align: center;
   }
 
-  div .look {
-    position: absolute;
-    top: 4480px;
-    user-select: none;
-  }
+
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -864,7 +860,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 15px;
     z-index: 4;
     display: none;
   }
@@ -873,6 +869,7 @@
   .introduction3 a {
     font-size: 12px;
     color: #eee;
+    font-weight: 300;
   }
   .close {
     position: absolute;
@@ -882,7 +879,11 @@
     cursor: pointer;
   }
   .explanation .explanation-name {
-    font-size: 18px;
+    font-size: 23px;
+    font-weight: 550;
+  }
+  .explanation .explanation-title{
+    font-weight: 550;
   }
   .explanation {
     width: 40%;
@@ -892,16 +893,17 @@
     align-items: center;
   }
   .explanation img {
-    width: 130px;
+    width: 120px;
   }
   .explanation p {
     margin-top: 10px;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 300;
   }
   .judge-arts {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .judge-art1,
   .judge-art2,

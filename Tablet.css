@@ -857,11 +857,7 @@
     text-align: center;
   }
 
-  div .look {
-    position: absolute;
-    top: 4480px;
-    user-select: none;
-  }
+
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -900,13 +896,20 @@
     justify-content: center;
     align-items: center;
   }
+  .explanation .explanation-name {
+    font-size: 23px;
+    font-weight: 550;
+  }
+  .explanation .explanation-title{
+    font-weight: 550;
+  }
   .explanation img {
-    width: 130px;
+    width: 150px;
   }
   .explanation p {
     margin-top: 10px;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .judge-arts {
     display: flex;
