@@ -137,9 +137,45 @@
 //   return option;
 // }
 
-function query_mode(){
+const works_in = document.querySelector('.works-covers');
+const work_temp = document.querySelector('.works-cover');
+work_temp.remove();
+console.log(work_temp);
 
+for (var d of data){
+  var copy = work_temp.cloneNode(true);
+  var children = copy.firstElementChild.children;
+  //console.log(children);
+  var award_icon = children[0];
+  var img = children[1].firstElementChild.firstElementChild;
+  var detail = children[2].firstElementChild.children;
+  var link = detail[0];
+  var title = detail[1];
+  var award_name = detail[2];
+
+
+  if (d['award'] == 0) {
+    award_icon.src = 'images/aikon1.png';
+    award_name.innerHTML = 'グランプリ';
+  } else if (d['award'] == 1){
+    award_icon.src = 'images/aikon2.png';
+    award_name.innerHTML = '審査員賞（糸目華賞）';
+  } else {
+    award_icon.remove();
+    award_name.remove();
+  }
+
+  img.src = d['thomb'][6];
+  link.href = d['link'];
+  title.innerHTML = d['title'];
+  if (d['title'] == ''){
+    title.innerHTML = 'wakaran';
+  }
+
+  works_in.appendChild(copy);
 }
+
+
 
 const works = document.querySelectorAll('.works-cover');
 
