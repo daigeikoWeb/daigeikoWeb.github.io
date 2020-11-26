@@ -88,7 +88,7 @@ function move_menu(last){
     });
 
     current_menu.firstElementChild.animate([
-      {color: '#FFFFFF'},
+      {color: '#eee'},
       {color: '#182987'}
     ],{
       duration: 1000,
@@ -97,7 +97,7 @@ function move_menu(last){
 
     last.firstElementChild.animate([
       {color: '#182987'},
-      {color: '#FFFFFF'}
+      {color: '#eee'}
     ],{
       duration: 1000,
       easing: 'ease-in-out'
@@ -112,13 +112,19 @@ const sp_menus = document.querySelectorAll('.smart-nav ul li');
 
 for (const btn of pc_menus) {
   btn.addEventListener('click', () =>{
+    /*
     if (btn.classList.contains('current')) {
       return;
-    }
+    }*/
+
     var last_menu = document.querySelector('.header-nav .current');
-    last_menu.classList.remove('current');
-    btn.classList.add('current');
-    move_menu(last_menu);
+
+    if (!(btn.classList.contains('current'))) {
+      last_menu.classList.remove('current');
+      btn.classList.add('current');
+      move_menu(last_menu);
+    }
+
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
     var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
@@ -154,9 +160,10 @@ for (const btn of pc_menus) {
 
 for (const btn of sp_menus) {
   btn.addEventListener('click', () => {
+    /*
     if (btn.classList.contains('current')) {
       return;
-    }
+    }*/
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
