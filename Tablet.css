@@ -823,6 +823,7 @@
     width: 100%;
   }
   .judge-content-container .judge-details-wrap {
+    /*
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -838,6 +839,8 @@
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    */
+    display: none;
   }
 
   .judge-content-container .judge-details-wrap:hover {

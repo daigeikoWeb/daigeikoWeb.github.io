@@ -38,6 +38,7 @@ function menu_closing(){
   }
 }
 
+/*
 const judge_covers = document.querySelectorAll('.judge-details-wrap');
 const intros = document.querySelectorAll('.introduction1, .introduction2, .introduction3');
 const intro_close = document.querySelectorAll('.introduction1 .close, .introduction2 .close, .introduction3 .close');
@@ -68,4 +69,4 @@ for (var i = 0; i < intros.length; i++) {
       intros[link].style.display = 'none';
     }
   });
-}
+}*/

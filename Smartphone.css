@@ -15,6 +15,10 @@
   body {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   header {
     background-color: #182987;
@@ -25,14 +29,16 @@
     align-items: center;
     position: fixed;
     z-index: 5;
+    top: 0;
   }
   main {
     display: block;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #eee;
     width: 100%;
-    height: 100%;
-    margin-top: 10%;
+    height: 80%;
   }
   #main-cover {
     width: 100%;
@@ -728,9 +734,11 @@
     position: absolute;
     justify-content: center;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
     user-select: none;
+    height: 100%;
+    width: 100%;
   }
   .works-cover .details a{
     height: 100%;
@@ -851,6 +859,7 @@
     width: 100%;
   }
   .judge-content-container .judge-details-wrap {
+    /*
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -867,6 +876,8 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-bottom: 0;
+    */
+    display: none;
   }
 
   .judge-content-container .judge-details-wrap:active {
@@ -889,11 +900,7 @@
     font-size: 16px;
   }
 
-  div .look {
-    position: absolute;
-    top: 4480px;
-    user-select: none;
-  }
+
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -918,9 +925,9 @@
     font-size: 40px;
     cursor: pointer;
   }
-  .large {
+  /* .large {
     font-size: 20px;
-  }
+  } */
   .explanation {
     width: 80%;
     display: flex;
@@ -934,14 +941,23 @@
   .explanation p {
     margin-top: 10px;
     line-height: 20px;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 300;
   }
   .introduction1 a,
   .introduction2 a,
   .introduction3 a {
-    font-size: 12px;
+    font-size: 11px;
     color: #eee;
     margin-top: 5px;
+    font-weight: 300;
+  }
+  .explanation .explanation-name {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .explanation .explanation-title{
+    font-weight: 550;
   }
   .judge-arts {
     display: flex;
@@ -970,16 +986,17 @@
     width: 80%;
   }
   .message-cover h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .message-cover h2 {
     color: #182987;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   .message-cover p {
     color: #182987;
     font-size: 12px;
+    font-weight: 300;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1284,7 +1301,7 @@
     font-size: 15px;
   }
   .foot_sns {
-    height: 9%;
+    height: 10%;
     background-color: #182987;
     display: flex;
     align-items: center;
@@ -1292,6 +1309,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 5;
   }
   .foot_sns ul {
     display: flex;
