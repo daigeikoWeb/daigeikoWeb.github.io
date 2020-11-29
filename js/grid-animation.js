@@ -137,9 +137,44 @@
 //   return option;
 // }
 
-function query_mode(){
+const works_in = document.querySelector('.works-covers');
+const work_temp = document.querySelector('.works-cover');
+work_temp.remove();
+console.log(work_temp);
 
+for (var d of data){
+  var copy = work_temp.cloneNode(true);
+  var children = copy.firstElementChild.children;
+  //console.log(children);
+  var award_icon = children[0];
+  var img = children[1].firstElementChild.firstElementChild;
+  var detail = children[2].firstElementChild.children;
+  var link = detail[0];
+  var title = detail[1];
+  var award_name = detail[2];
+
+
+  award_icon.remove();
+  award_name.remove();
+
+  img.src = d['thomb'][6];
+  link.removeAttribute('href');
+  title.innerHTML = 'Coming Soon…';
+
+  works_in.appendChild(copy);
 }
+
+
+const grids = document.querySelectorAll('.grid-area1, .grid-area2, .grid-area3, .grid-area4,' +
+                                         '.grid-area5, .grid-area6, .grid-area7');
+for (var grid of grids) {
+  var grid_child = grid.firstElementChild.firstElementChild.children;
+  var grid_img = grid_child[0].firstElementChild;
+  var grid_title = grid_child[1].firstElementChild.firstElementChild;
+
+  grid_title.innerHTML = 'Coming Soon…';
+}
+
 
 const works = document.querySelectorAll('.works-cover');
 
