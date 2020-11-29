@@ -154,23 +154,12 @@ for (var d of data){
   var award_name = detail[2];
 
 
-  if (d['award'] == 0) {
-    award_icon.src = 'images/aikon1.png';
-    award_name.innerHTML = 'グランプリ';
-  } else if (d['award'] == 1){
-    award_icon.src = 'images/aikon2.png';
-    award_name.innerHTML = '審査員賞（糸目華賞）';
-  } else {
-    award_icon.remove();
-    award_name.remove();
-  }
+  award_icon.remove();
+  award_name.remove();
 
   img.src = d['thomb'][6];
-  link.href = d['link'];
-  title.innerHTML = d['title'];
-  if (d['title'] == ''){
-    title.innerHTML = 'wakaran';
-  }
+  link.removeAttribute('href');
+  title.innerHTML = 'Coming Soon…';
 
   works_in.appendChild(copy);
 }
