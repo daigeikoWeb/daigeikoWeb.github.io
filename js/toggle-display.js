@@ -1,5 +1,4 @@
 const smart_open = document.querySelector('.smart-btn i');
-//const smart_close = document.querySelector('.smart-menu .close');
 const smart_menu = document.querySelector('.smart-menu');
 
 smart_open.addEventListener('click', () => {
@@ -19,11 +18,6 @@ smart_open.addEventListener('click', () => {
 
 });
 
-/*
-smart_close.addEventListener('click', () => {
-  menu_closing();
-});
-*/
 function menu_closing(){
   var menu_close = smart_menu.animate([
     {transform: 'translateY(0%)'}, {transform: 'translateY(-100%)'}
@@ -38,7 +32,6 @@ function menu_closing(){
   }
 }
 
-/*
 const judge_covers = document.querySelectorAll('.judge-details-wrap');
 const intros = document.querySelectorAll('.introduction1, .introduction2, .introduction3');
 const intro_close = document.querySelectorAll('.introduction1 .close, .introduction2 .close, .introduction3 .close');
@@ -69,4 +62,4 @@ for (var i = 0; i < intros.length; i++) {
       intros[link].style.display = 'none';
     }
   });
-}*/
+}

@@ -165,6 +165,16 @@ for (var d of data){
 }
 
 
+const grids = document.querySelectorAll('.grid-area1, .grid-area2, .grid-area3, .grid-area4,' +
+                                         '.grid-area5, .grid-area6, .grid-area7');
+for (var grid of grids) {
+  var grid_child = grid.firstElementChild.firstElementChild.children;
+  var grid_img = grid_child[0].firstElementChild;
+  var grid_title = grid_child[1].firstElementChild.firstElementChild;
+
+  grid_title.innerHTML = 'Coming Soon…';
+}
+
 
 const works = document.querySelectorAll('.works-cover');
 

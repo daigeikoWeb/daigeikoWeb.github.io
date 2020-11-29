@@ -625,15 +625,18 @@
   }
   .theme-cover .questionnaire-btn {
     background-color: white;
+    background-color: gray;
     color: #182987;
+    color: #eee;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
+    /*
     transition: all 0.3s ease 0s;
   }
   .theme-cover .questionnaire-btn:active {
     color: #eee;
-    background-color: #182987;
+    background-color: #182987;*/
   }
   .theme-cover a {
     text-decoration: none;
@@ -859,7 +862,6 @@
     width: 100%;
   }
   .judge-content-container .judge-details-wrap {
-    /*
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -876,8 +878,6 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-bottom: 0;
-    */
-    display: none;
   }
 
   .judge-content-container .judge-details-wrap:active {
