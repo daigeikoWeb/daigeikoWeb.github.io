@@ -534,14 +534,6 @@
     position: relative;
   }
 
-
-  .futa {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #182987;
-  }
-
   #theme {
     display: block;
     justify-content: center;
@@ -807,7 +799,7 @@
     object-fit: cover;
     position: relative;
     top: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     width: 100%;
   }
   .judge-content-container .judge-image img {
@@ -1182,4 +1174,21 @@
   background-color: #182987;
   z-index: 4;
   display: none;
+}
+
+.futa{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #182987;
+  transform: translateX(100%);
+}
+
+.details-wrap a{
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
 }
