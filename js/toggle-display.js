@@ -9,8 +9,8 @@ smart_open.addEventListener('click', () => {
     smart_menu.animate([
       {transform: 'translateY(-100%)'}, {transform: 'translateY(0%)'}
     ],{
-      duration: 400,
-      easing: 'ease-out',
+      duration: 1000,
+      easing: 'cubic-bezier(.44,.01,.42,1)',
       fill: 'forwards'
     });
   } else {
@@ -28,8 +28,8 @@ function menu_closing(){
   var menu_close = smart_menu.animate([
     {transform: 'translateY(0%)'}, {transform: 'translateY(-100%)'}
   ],{
-    duration: 400,
-    easing: 'ease-out',
+    duration: 1000,
+    easing: 'cubic-bezier(.44,.01,.42,1)',
     fill: 'forwards'
   });
   menu_close.onfinish = () => {
