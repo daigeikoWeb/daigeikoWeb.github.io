@@ -43,7 +43,7 @@ main {
 	display: none;
 }
 .hide-nav {
-	margin-top: 120px;
+  margin-top: 100px;
 }
 .hide-nav ul {
   display: flex;
@@ -51,7 +51,7 @@ main {
   align-items: center;
 }
 .hide-nav li{
-	margin: 15px 0;
+	margin: 10px 0;
 }
 .hide-nav a {
   text-decoration: none;
@@ -66,19 +66,19 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
+  width: 50%;
   display: flex;
   justify-content: space-around;
-	width: 25%;
 }
 .hide-sns i{
 	color: #182987;
-	font-size: 25px;
+  font-size: 25px;
 }
 .hide-sns img{
 	width:20px;
 }
 .logo {
-  margin: 13px;
+  margin: 5px 13px;
   width: 100px;
 }
 .smart-btn i {
