@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 550;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  text-align: center;
+}
+html {
+  width: 100%;
+  overscroll-behavior: none;
+}
+body {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  z-index: 10;
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.hide-menu {
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+	background-color: white;
+	height: 100vh;
+	display: none;
+}
+.hide-nav {
+  margin-top: 100px;
+}
+.hide-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hide-nav li{
+	margin: 10px 0;
+}
+.hide-nav a {
+  text-decoration: none;
+	font-size: 18px;
+	color: #182987;
+}
+.hide-sns{
+	width: 100%;
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.hide-sns ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.hide-sns i{
+	color: #182987;
+  font-size: 25px;
+}
+.hide-sns img{
+	width:20px;
+}
+.logo {
+  margin: 5px 13px;
+  width: 100px;
+}
+.smart-btn i {
+  color: #182987;
+  font-size: 35px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+.smart-btn img {
+  color: #182987;
+  font-size: 40px;
+  margin: 0 20px 0 0;
+  display: none;
+}
+.works {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 70px;
+}
+.main-visual {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  position: relative;
+}
+.main-visual-photo {
+  width: 100%;
+  height: auto;
+}
+.small-logo1{
+  position: absolute;
+  width: 250px;
+  top: 100px;
+  right: 150px;
+}
+.explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 80px;
+}
+.explanation h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #293F8F;
+}
+.explanation p {
+  text-align: center;
+  color: #293F8F;
+}
+.item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 80px;
+  color: #293F8F;
+}
+.circle{
+  border: 2px solid #293F8F;
+  padding: 30px 100px;
+}
+.item p {
+  margin-bottom: 30px;
+}
+.photos1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+}
+.photos1 img {
+  width: 80%;
+  margin:0 50px;
+}
+.photos2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 50px 0 100px;
+  position: relative;
+}
+.photos2 img {
+  width: 100%;
+  margin: 20px 0;
+}
+.photos2 .small-logo2{
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+.profile img {
+  width: 250px;
+  margin-bottom: 50px;
+}
+.profile-name {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.frigana {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.belonging {
+  margin-bottom: 20px;
+}
+.sns a {
+  color: #182987;
+  font-size: 30px;
+}
+.before-next {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px 0;
+}
+.before-next a {
+  color: #182987;
+  text-decoration: none;
+  font-size: 20px;
+}
+.back {
+  width: 100%;
+  background-color: #182987;
+  text-align: center;
+  padding: 10px 0;
+}
+.back a {
+  color: white;
+  text-decoration: none;
+}
