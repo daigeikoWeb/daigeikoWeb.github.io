@@ -10,6 +10,7 @@
 }
 html {
   width: 100%;
+  overscroll-behavior: none;
 }
 body {
   width: 100%;
