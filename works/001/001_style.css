@@ -56,7 +56,7 @@ main {
 .hide-nav a {
   text-decoration: none;
 	font-size: 18px;
-	color: #182987;
+  color: #182987;
 }
 .hide-sns{
 	width: 100%;
@@ -66,16 +66,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -84,13 +88,13 @@ main {
 .smart-btn i {
   color: #182987;
   font-size: 35px;
-  margin: 0 20px 0 0;
+  margin: 0 20px;
   cursor: pointer;
 }
 .smart-btn img {
   color: #182987;
   font-size: 40px;
-	margin: 0 20px 0 0;
+	margin: 0 20px;
 	display: none;
 }
 .works {

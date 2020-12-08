@@ -565,6 +565,7 @@
   .theme-cover p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -729,6 +730,7 @@
   }
   .about-cover p {
     color: #182987;
+    font-weight: 350;
     font-size: 16px;
     text-align: justify;
     text-justify: inter-ideograph;
@@ -759,6 +761,7 @@
   .judge-abstract p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -876,25 +879,26 @@
   .explanation .explanation-name {
     font-size: 23px;
     font-weight: 550;
+    margin-top: 20px;
   }
   .explanation .explanation-title{
     font-weight: 550;
   }
   .explanation {
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .explanation img {
-    width: 120px;
+    width: 150px;
   }
   .explanation p {
-    margin-top: 10px;
-    line-height: 20px;
+    margin-top: 20px;
     font-size: 12px;
     font-weight: 300;
+    line-height: 24px;
   }
   .judge-arts {
     display: flex;
@@ -909,7 +913,7 @@
   .judge-art1 img,
   .judge-art2 img,
   .judge-art3 img {
-    width: 150px;
+    width: 180px;
   }
 
   #message {
@@ -934,6 +938,7 @@
   .message-cover p {
     color: #182987;
     font-size: 15px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -978,15 +983,14 @@
     height: 100%;
     overflow: hidden;
   }
-  .cooperation-title h1 {
-    margin-top: 10%;
-  }
   .cooperation-list .cooperation-title h1 {
     margin-bottom: 20px;
+    margin-top: 10%;
   }
   .cooperation-list .cooperation-caption p {
     color: #182987;
     font-size: 14px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1011,6 +1015,9 @@
       "n25 n26 n27 n28"
       "n29 n30 n31 n32"
       "n33 n34 n35 n36";
+  }
+  .supporters-container p{
+    font-weight: 350;
   }
   .area-gold1 {
     grid-area: gold1;
@@ -1123,6 +1130,7 @@
   .contact-cover p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;

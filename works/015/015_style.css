@@ -66,16 +66,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -125,15 +129,15 @@ main {
   margin-bottom: 20px;
 }
 .item1,
-.item2 {
+.photo-item{
   display: flex;
   flex-direction: column;
   width: 80%;
   margin-top: 80px;
 }
 .item1 h2,
-.item2 h2{
-  margin-bottom: 40px;
+.photo-item h2{
+  margin-bottom: 20px;
 }
 .item p {
   margin-bottom: 30px;
@@ -141,14 +145,14 @@ main {
 .photos {
 	display: flex;
   flex-wrap: wrap;
-	justify-content: space-around;
-  width: 80%;
-  margin-top: 100px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 .photos img {
-  width: 350px;
+  width: 330px;
   height: 100%;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 .profile {
   display: flex;
