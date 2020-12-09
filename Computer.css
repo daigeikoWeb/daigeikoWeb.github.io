@@ -1195,3 +1195,13 @@
   display: block;
   position: absolute;
 }
+
+.cross-top, .cross-bottom{
+  /*height: 1%;*/
+  width: 100%;
+  /*
+  position: absolute;
+  right: 0px;
+}
+.cross-top{top: -30px;}
+.cross-bottom{bottom: -30px;*/}
