@@ -888,7 +888,8 @@
     align-items: center;
   }
   .explanation img {
-    width: 150px;
+    width: 200px;
+    height: 200px;
   }
   .explanation p {
     margin-top: 20px;
@@ -901,18 +902,26 @@
   }
   .judge-arts {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
     margin-top: 30px;
   }
   .judge-art1,
   .judge-art2,
   .judge-art3 {
-    margin: 0 25px;
     text-align: center;
+    width: 230px;
+  }
+  .judge-art1 p,
+  .judge-art2 p,
+  .judge-art3 p{
+    font-weight: 550;
+    font-size: 12px;
   }
   .judge-art1 img,
   .judge-art2 img,
   .judge-art3 img {
-    width: 180px;
+    width: 100%;
   }
 
   #message {
