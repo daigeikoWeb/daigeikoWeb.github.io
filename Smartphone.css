@@ -104,9 +104,12 @@
     z-index: 4;
     display: none;
   }
-  .smart-menu .close {
-    top: 50px;
-    right: 25px;
+  .smart-btn .close {
+    position: absolute;
+    top: 3px;
+    right: 20.3px;
+    cursor: pointer;
+    display: none;
   }
   .smart-nav ul {
     display: flex;
