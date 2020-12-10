@@ -66,16 +66,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -122,14 +126,15 @@ main {
   font-size: 30px;
 }
 .explanation p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .item1,
 .item2 {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .item1 h2,
 .item2 h2{
@@ -143,7 +148,7 @@ main {
   flex-wrap: wrap;
 	justify-content: space-around;
   width: 80%;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .photos img {
   width: 350px;
@@ -172,9 +177,18 @@ main {
 .belonging {
   margin-bottom: 20px;
 }
+.sns{
+  display: flex;
+  justify-content: center;
+}
 .sns a {
   color: #182987;
   font-size: 30px;
+  margin: 0 5px;
+}
+.sns img{
+width: 26px;
+margin: 0 5px;
 }
 .before-next {
   display: flex;
@@ -197,3 +211,17 @@ main {
   color: white;
   text-decoration: none;
 }
+/* .video {
+  position: relative;
+  height: 0;
+  padding: 30px 0 56.25%;
+  overflow: hidden;
+  }
+  
+  .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  } */

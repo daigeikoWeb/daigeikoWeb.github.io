@@ -611,6 +611,7 @@
   .theme-cover p {
     color: #182987;
     font-size: 12px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -706,6 +707,7 @@
   }
   .works-cover .cover-image img {
     width: 100%;
+    height: 100%;
   }
   .works-cover .details-wrap {
     left: 50%;
@@ -774,6 +776,7 @@
   .about-cover p {
     color: #182987;
     font-size: 12px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -804,6 +807,7 @@
   .judge-abstract p {
     color: #182987;
     font-size: 12px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -923,7 +927,7 @@
     font-size: 20px;
   } */
   .explanation {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -955,18 +959,27 @@
   }
   .judge-arts {
     display: flex;
+    justify-content: space-between;
+    width: 90%;
     margin-top: 50px;
   }
   .judge-art1,
   .judge-art2,
   .judge-art3 {
-    margin: 0 10px;
     text-align: center;
+    width: 100px;
+  }
+  .judge-art1 p,
+  .judge-art2 p,
+  .judge-art3 p{
+    font-weight: 550;
+    font-size: 12px;
+    font-feature-settings:"palt";
   }
   .judge-art1 img,
   .judge-art2 img,
   .judge-art3 img {
-    width: 100px;
+    width: 100%;
   }
 
   #message {
@@ -990,7 +1003,7 @@
   .message-cover p {
     color: #182987;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1049,6 +1062,7 @@
   .cooperation-list .cooperation-caption p {
     color: #182987;
     font-size: 12px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1262,6 +1276,7 @@
   .contact-cover p {
     color: #182987;
     font-size: 12px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1313,11 +1328,12 @@
     width: 100%;
   }
   .foot_sns li {
-    margin: 0 15px;
+    margin: 0 20px;
   }
   .foot_sns i {
     color: #eee;
     font-size: 20px;
+    line-height: 50px
   }
   .foot_sns img {
     height: 20px;

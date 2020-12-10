@@ -190,7 +190,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    top:220px;
+    top: 220px;
   }
 
   .grid-area2 {
@@ -245,7 +245,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    top:100px;
+    top: 100px;
   }
 
   .grid-area3 {
@@ -300,7 +300,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    top:100px;
+    top: 100px;
   }
 
   .grid-area4 {
@@ -357,7 +357,7 @@
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    top:220px;
+    top: 220px;
   }
 
   .grid-area5 {
@@ -465,7 +465,7 @@
     transition: all 0.3s ease 0s;
   }
   .grid-area6 .details-wrap:hover {
-    opacity:1;
+    opacity: 1;
   }
   .grid-area6 .details {
     position: absolute;
@@ -565,6 +565,7 @@
   .theme-cover p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -594,8 +595,6 @@
   .theme-cover a:hover {
     color: #182987;
   }
-
-
 
   #works {
     display: block;
@@ -692,7 +691,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .works-cover .details a{
+  .works-cover .details a {
     height: 100%;
     width: 100%;
     display: block;
@@ -702,7 +701,6 @@
     padding-top: 10%;
     font-size: 12px;
   }
-
 
   .award {
     width: 135px;
@@ -729,6 +727,7 @@
   }
   .about-cover p {
     color: #182987;
+    font-weight: 350;
     font-size: 16px;
     text-align: justify;
     text-justify: inter-ideograph;
@@ -759,6 +758,7 @@
   .judge-abstract p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -843,7 +843,6 @@
     text-align: center;
   }
 
-
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -876,40 +875,53 @@
   .explanation .explanation-name {
     font-size: 23px;
     font-weight: 550;
+    margin-top: 20px;
   }
-  .explanation .explanation-title{
+  .explanation .explanation-title {
     font-weight: 550;
   }
   .explanation {
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .explanation img {
-    width: 120px;
+    width: 200px;
+    height: 200px;
   }
   .explanation p {
-    margin-top: 10px;
-    line-height: 20px;
+    margin-top: 20px;
     font-size: 12px;
     font-weight: 300;
+    line-height: 24px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    -ms-text-justify: inter-ideograph;
   }
   .judge-arts {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
     margin-top: 30px;
   }
   .judge-art1,
   .judge-art2,
   .judge-art3 {
-    margin: 0 25px;
     text-align: center;
+    width: 230px;
+  }
+  .judge-art1 p,
+  .judge-art2 p,
+  .judge-art3 p{
+    font-weight: 550;
+    font-size: 12px;
   }
   .judge-art1 img,
   .judge-art2 img,
   .judge-art3 img {
-    width: 150px;
+    width: 100%;
   }
 
   #message {
@@ -934,6 +946,7 @@
   .message-cover p {
     color: #182987;
     font-size: 15px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -978,15 +991,14 @@
     height: 100%;
     overflow: hidden;
   }
-  .cooperation-title h1 {
-    margin-top: 10%;
-  }
   .cooperation-list .cooperation-title h1 {
     margin-bottom: 20px;
+    margin-top: 10%;
   }
   .cooperation-list .cooperation-caption p {
     color: #182987;
     font-size: 14px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
@@ -1011,6 +1023,9 @@
       "n25 n26 n27 n28"
       "n29 n30 n31 n32"
       "n33 n34 n35 n36";
+  }
+  .supporters-container p {
+    font-weight: 350;
   }
   .area-gold1 {
     grid-area: gold1;
@@ -1123,15 +1138,16 @@
   .contact-cover p {
     color: #182987;
     font-size: 16px;
+    font-weight: 350;
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
   }
-  .contact-cover .contact-btn-cover{
+  .contact-cover .contact-btn-cover {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-  .contact-cover .contact-btn{
+  .contact-cover .contact-btn {
     background-color: #ffffff;
     color: #182987;
     padding-top: 2%;
@@ -1139,11 +1155,11 @@
     text-align: center;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover .contact-btn:hover{
+  .contact-cover .contact-btn:hover {
     color: #eee;
     background-color: #182987;
   }
-  .contact-cover a{
+  .contact-cover a {
     text-decoration: none;
     background-color: #eee;
     cursor: pointer;
@@ -1179,7 +1195,7 @@
   display: none;
 }
 
-.futa{
+.futa {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1189,7 +1205,7 @@
   transform: translateX(100%);
 }
 
-.details-wrap a{
+.details-wrap a {
   height: 100%;
   width: 100%;
   display: block;

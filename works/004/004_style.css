@@ -67,16 +67,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -129,6 +133,9 @@ main {
   font-size: 30px;
   color: #293F8F;
 }
+.name{
+  margin-bottom: 60px;
+}
 .explanation p {
   text-align: center;
   color: #293F8F;
@@ -143,27 +150,28 @@ main {
 }
 .circle{
   border: 2px solid #293F8F;
-  padding: 30px 100px;
+  padding: 30px 60px;
 }
 .item p {
   margin-bottom: 30px;
 }
 .photos1 {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   margin-top: 100px;
 }
 .photos1 img {
-  width: 80%;
-  margin:0 50px;
+  width: 300px;
+  margin:10px 10px;
 }
 .photos2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 65%;
   padding: 50px 0 100px;
   position: relative;
 }
