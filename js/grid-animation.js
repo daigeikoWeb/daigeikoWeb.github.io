@@ -35,7 +35,13 @@ for (var grid of grids) {
 
 var fRand = makeRandomArray(futas.length);
 
-//console.log(futas);
+
+var wRand = makeRandomArray(data.length);
+var wCount = 0;
+
+for (var fu of futas) {
+  fillWaku(fu);
+}
 
 setInterval(futaSlide, 5000);
 

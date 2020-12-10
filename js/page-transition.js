@@ -118,7 +118,7 @@ for (const btn of pc_menus) {
       btn.classList.add('current');
       move_menu(last_menu);
     }
-
+    hide_intro(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
     var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
@@ -162,7 +162,7 @@ for (const btn of sp_menus) {
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
-
+    
     menu_closing(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
