@@ -65,16 +65,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -128,7 +132,7 @@ main {
 .item1 {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin-top: 80px;
 }
 .item1 h2 {
@@ -147,7 +151,7 @@ main {
 .photos img {
   width: 350px;
   height: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .profile {
   display: flex;

@@ -66,16 +66,20 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
 	color: #182987;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
   margin: 5px 13px;
@@ -101,7 +105,7 @@ main {
   margin-top: 70px;
 }
 .main-visual {
-  width: 100%;
+  width: 80%;
   background-color: black;
   display: flex;
   align-items: center;
@@ -125,15 +129,16 @@ main {
   margin-bottom: 20px;
 }
 .item1,
-.item2 {
+.item2,
+.sub-profile{
   display: flex;
   flex-direction: column;
   width: 80%;
   margin-top: 80px;
 }
 .item1 h2,
-.item2 h2{
-  margin-bottom: 40px;
+.sub-profile h3{
+  margin-bottom: 10px;
 }
 .item p {
   margin-bottom: 30px;
