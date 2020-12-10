@@ -27,7 +27,7 @@ const data = [
   genre: -1,
   author: [{name: '小谷久美',  univ: 0,  grade: -1}],
   award: 0,
-  link: 'works//001.html',
+  link: 'works/001.html',
   thomb: ['','','',
           '','','',
           'images/works1.png']
@@ -37,7 +37,7 @@ const data = [
   genre: -1,
   author: [{name: '櫻井風土',  univ: 0,  grade: -1}],
   award: 1,
-  link: 'works//002.html',
+  link: 'works/002.html',
   thomb: ['','','',
           '','','',
           'images/works2.png']
@@ -47,7 +47,7 @@ const data = [
   genre: -1,
   author: [{name: '芝 光彩',  univ: 0,  grade: -1}],
   award: -1,
-  link: 'works//003.html',
+  link: 'works/003.html',
   thomb: ['','','',
           '','','',
           'images/works3.png']
@@ -57,7 +57,7 @@ const data = [
   genre: -1,
   author: [{name: '山地涼介',  univ: 0,  grade: -1}],
   award: -1,
-  link: 'works//004.html',
+  link: 'works/004.html',
   thomb: ['','','',
           '','','',
           'images/works4.png']
@@ -67,7 +67,7 @@ const data = [
   genre: -1,
   author: [{name: '緒方幸之郎',  univ: 0,  grade: -1}],
   award: -1,
-  link: 'works//005.html',
+  link: 'works/005.html',
   thomb: ['','','',
           '','','',
           'images/works5.png']
@@ -79,7 +79,7 @@ const data = [
            {name: '石川ひなた',  univ: 1,  grade: -1},
            {name: '工藤帆夏',  univ: 1,  grade: -1}],
   award: -1,
-  link: 'works//006.html',
+  link: 'works/006.html',
   thomb: ['','','',
           '','','',
           'images/works6.png']
@@ -89,7 +89,7 @@ const data = [
   genre: -1,
   author: [{name: '相原洸太',  univ: 1,  grade: -1}],
   award: -1,
-  link: 'works//007.html',
+  link: 'works/007.html',
   thomb: ['','','',
           '','','',
           'images/works7.png']
@@ -99,7 +99,7 @@ const data = [
   genre: -1,
   author: [{name: '新井大地',  univ: 1,  grade: -1}],
   award: -1,
-  link: 'works//008.html',
+  link: 'works/008.html',
   thomb: ['','','',
           '','','',
           'images/works8.png']
@@ -113,7 +113,7 @@ const data = [
            {name: '佐藤ななこ',  univ: 1,  grade: -1},
            {name: '松野晴彦',  univ: 1,  grade: -1},],
   award: -1,
-  link: 'works//009.html',
+  link: 'works/009.html',
   thomb: ['','','',
           '','','',
           'images/works9.png']
@@ -123,7 +123,7 @@ const data = [
   genre: -1,
   author: [{name: '甲斐翔',  univ: 1,  grade: -1}],
   award: -1,
-  link: 'works//010.html',
+  link: 'works/010.html',
   thomb: ['','','',
           '','','',
           'images/works1.png']
@@ -133,7 +133,7 @@ const data = [
   genre: -1,
   author: [{name: '寺島悠太郎',  univ: 2,  grade: -1}],
   award: -1,
-  link: 'works//011.html',
+  link: 'works/011.html',
   thomb: ['','','',
           '','','',
           'images/works2.png']
@@ -143,7 +143,7 @@ const data = [
   genre: -1,
   author: [{name: '安達大策',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//013.html',
+  link: 'works/013.html',
   thomb: ['','','',
           '','','',
           'images/works3.png']
@@ -154,7 +154,7 @@ const data = [
   author: [{name: '富嶋菜々香',  univ: 3,  grade: -1},
            {name: '寺崎薫',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//014.html',
+  link: 'works/014.html',
   thomb: ['','','',
           '','','',
           'images/works4.png']
@@ -164,7 +164,7 @@ const data = [
   genre: -1,
   author: [{name: '内尾良太朗',  univ: 3,  grade: 2}],
   award: -1,
-  link: 'works//015.html',
+  link: 'works/015.html',
   thomb: ['','','',
           '','','',
           'works/015/photos/015_thumbnail.png']
@@ -174,7 +174,7 @@ const data = [
   genre: -1,
   author: [{name: '西村息吹',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//016.html',
+  link: 'works/016.html',
   thomb: ['','','',
           '','','',
           'images/works5.png']
@@ -184,7 +184,7 @@ const data = [
   genre: -1,
   author: [{name: '大嶺太聖',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//017.html',
+  link: 'works/017.html',
   thomb: ['','','',
           '','','',
           'images/works6.png']
@@ -194,7 +194,7 @@ const data = [
   genre: -1,
   author: [{name: '墨田知世',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//018.html',
+  link: 'works/018.html',
   thomb: ['','','',
           '','','',
           'images/works7.png']
@@ -205,7 +205,7 @@ const data = [
   author: [{name: '密岡稜大',  univ: 3,  grade: -1},
            {name: '土肥真維華',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//019.html',
+  link: 'works/019.html',
   thomb: ['','','',
           '','','',
           'images/works8.png']
@@ -215,7 +215,7 @@ const data = [
   genre: -1,
   author: [{name: '凌亮太朗',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//020.html',
+  link: 'works/020.html',
   thomb: ['','','',
           '','','',
           'images/works9.png']
@@ -225,7 +225,7 @@ const data = [
   genre: -1,
   author: [{name: '甲斐隆児',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//021.html',
+  link: 'works/021.html',
   thomb: ['','','',
           '','','',
           'images/works1.png']
@@ -235,7 +235,7 @@ const data = [
   genre: -1,
   author: [{name: '山田和佳',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//022.html',
+  link: 'works/022.html',
   thomb: ['','','',
           '','','',
           'images/works2.png']
@@ -245,7 +245,7 @@ const data = [
   genre: -1,
   author: [{name: '小濵行秀',  univ: 3,  grade: -1}],
   award: -1,
-  link: 'works//023.html',
+  link: 'works/023.html',
   thomb: ['','','',
           '','','',
           'images/works3.png']
@@ -255,7 +255,7 @@ const data = [
   genre: -1,
   author: [{name: '佐名海斗',  univ: 0,  grade: -1}],
   award: -1,
-  link: 'works//024.html',
+  link: 'works/024.html',
   thomb: ['','','',
           '','','',
           'images/works4.png']
