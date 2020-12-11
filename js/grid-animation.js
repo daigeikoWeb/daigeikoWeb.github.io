@@ -122,13 +122,18 @@ function fillWaku(futa){
   var sakuhin = data[wRand[wCount]];
 
   var thomb_size = 0;
-  if (futa.classList.contains('thomb_M')) thomb_size = 1;
-  else if (futa.classList.contains('thomb_L')) thomb_size = 2;
+  var pathroot = 'images/thumbnails/rect/';
+  if (futa.classList.contains('thomb_M')){
+    thomb_size = 1;
+    pathroot = 'images/thumbnails/sq/';
+  }
+  //else if (futa.classList.contains('thomb_L')) thomb_size = 2;
 
   var query = 0;
   if (isTablet()) query = 3; //タブレット、スマホ版の場合サムネイルのインデックスをずらす
   // image.src = sakuhin['thomb'][thomb_size + query];
-  image.src = sakuhin['thomb'][6];
+
+  image.src = pathroot + sakuhin['thomb'][thomb_size];
 /*
   link.href = sakuhin['link'];
   //console.log(thomb_size + query);
@@ -161,7 +166,8 @@ for (var d of data){
   award_icon.remove();
   award_name.remove();
 
-  img.src = d['thomb'][6];
+  var pathroot = 'images/thumbnails/sq/';
+  img.src = pathroot + d['thomb'][1];
   link.removeAttribute('href');
   title.innerHTML = 'Coming Soon…';
 
