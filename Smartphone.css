@@ -742,10 +742,11 @@
     /* padding-left: 5%;
     padding-right: 5%; */
     user-select: none;
+    top: 40%;
     height: 100%;
     width: 100%;
   }
-  .works-cover .details a{
+  .works-cover .details a {
     height: 100%;
     width: 100%;
     display: block;
@@ -904,7 +905,6 @@
     font-size: 16px;
   }
 
-
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -960,7 +960,7 @@
     font-size: 20px;
     font-weight: 550;
   }
-  .explanation .explanation-title{
+  .explanation .explanation-title {
     font-weight: 550;
   }
   .judge-arts {
@@ -977,10 +977,10 @@
   }
   .judge-art1 p,
   .judge-art2 p,
-  .judge-art3 p{
+  .judge-art3 p {
     font-weight: 550;
     font-size: 12px;
-    font-feature-settings:"palt";
+    font-feature-settings: "palt";
   }
   .judge-art1 img,
   .judge-art2 img,
@@ -1299,7 +1299,7 @@
     text-align: center;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover .contact-btn:active{
+  .contact-cover .contact-btn:active {
     color: #eee;
     background-color: #182987;
   }
@@ -1309,7 +1309,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover a:active{
+  .contact-cover a:active {
     color: #182987;
   }
   .contact-btn {
@@ -1339,17 +1339,17 @@
   .foot_sns i {
     color: #eee;
     font-size: 20px;
-    line-height: 50px
+    line-height: 50px;
   }
   .foot_sns img {
     height: 20px;
   }
 
-  #senni-part .launch-mobile{
+  #senni-part .launch-mobile {
     height: 100%;
     width: auto;
   }
-  #senni-part .launch-pc{
+  #senni-part .launch-pc {
     display: none;
   }
 }
