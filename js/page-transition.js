@@ -16,7 +16,6 @@ function sec_index(id_name){
 
 var current_sec = location.hash;
 
-const senni = document.querySelector('#senni-part');
 
 const main_cov = document.querySelector('#main-cover');
 const menu_back = document.querySelector('#menu-back');
@@ -27,11 +26,21 @@ for (var sec of sections) {
 }
 //console.log(sec_nodes);
 
+const senni = document.querySelector('#senni-part');
+
 if (current_sec == ""){
   senni.style.display = 'block';
 
-  //1000ms待機してからfadeout
-  setTimeout(() => {
+  var vid_index = 0;
+  if (window.innerWidth < 560){
+    vid_index = 1;
+  }
+  const video = senni.children[vid_index];
+  video.addEventListener('play', () =>{
+    console.log('スタート！')
+  });
+  video.addEventListener('ended', () => {
+    console.log('終わったよ！')
     var senni_fade = senni.animate([
       {opacity: 1}, {opacity: 0}
     ],{
@@ -41,7 +50,10 @@ if (current_sec == ""){
     senni_fade.onfinish = function(){
       senni.style.display = 'none';
     }
-  }, 1000);
+  });
+  video.ended = () => {
+
+  };
 
   location.hash = 'top';
   current_sec = location.hash;
@@ -162,7 +174,7 @@ for (const btn of sp_menus) {
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
-    
+
     menu_closing(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
