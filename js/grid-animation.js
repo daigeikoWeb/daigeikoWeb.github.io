@@ -1,4 +1,3 @@
-
 const grids = document.querySelectorAll('.grid-area1, .grid-area2, .grid-area3, .grid-area4,' +
                                          '.grid-area5, .grid-area6, .grid-area7');
 
@@ -41,7 +40,13 @@ for (var grid of grids) {
 
 var fRand = makeRandomArray(futas.length);
 
-//console.log(futas);
+
+var wRand = makeRandomArray(data.length);
+var wCount = 0;
+
+for (var fu of futas) {
+  fillWaku(fu);
+}
 
 setInterval(futaSlide, 5000);
 
@@ -112,8 +117,8 @@ function fillWaku(futa){
   var children = futa.previousElementSibling.children;
   var image = children[0].firstElementChild;
   var detail = children[1].children;
-  /*var link = detail[0];
-  var title = detail[1].firstElementChild;*/
+  var link = detail[0];
+  var title = detail[1].firstElementChild;
   var sakuhin = data[wRand[wCount]];
 
   var thomb_size = 0;

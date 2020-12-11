@@ -10,6 +10,7 @@
 }
 html {
   width: 100%;
+  overscroll-behavior: none;
 }
 body {
   width: 100%;
@@ -21,6 +22,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
+  height: 10%;
   z-index: 10;
 }
 main {
@@ -36,12 +38,12 @@ main {
   flex-direction: column;
   position: fixed;
   width: 100%;
-	background-color: #182987;
+	background-color: white;
 	height: 100vh;
 	display: none;
 }
 .hide-nav {
-	margin-top: 120px;
+  margin-top: 100px;
 }
 .hide-nav ul {
   display: flex;
@@ -49,12 +51,12 @@ main {
   align-items: center;
 }
 .hide-nav li{
-	margin: 15px 0;
+	margin: 10px 0;
 }
 .hide-nav a {
   text-decoration: none;
 	font-size: 18px;
-	color: white;
+  color: #182987;
 }
 .hide-sns{
 	width: 100%;
@@ -64,30 +66,35 @@ main {
 	margin-top: 40px;
 }
 .hide-sns ul{
+  width: 80%;
   display: flex;
-  justify-content: space-around;
-	width: 25%;
+  align-items: center;
+  justify-content: center;
 }
 .hide-sns i{
-	color: white;
-	font-size: 25px;
+	color: #182987;
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 50px;
 }
 .hide-sns img{
-	width:20px;
+  width:17px;
+  margin: 0 20px;
 }
 .logo {
-  margin: 20px;
-  width: 120px;
+  margin: 5px 13px;
+  width: 100px;
 }
 .smart-btn i {
   color: #182987;
   font-size: 35px;
-	margin: 0 20px 0 0;
+  margin: 0 20px;
+  cursor: pointer;
 }
 .smart-btn img {
   color: #182987;
   font-size: 40px;
-	margin: 0 20px 0 0;
+	margin: 0 20px;
 	display: none;
 }
 .works {
@@ -95,7 +102,7 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .main-visual {
   width: 100%;
@@ -105,8 +112,7 @@ main {
   justify-content: center;
 }
 .main-visual img {
-  width: 70%;
-  height: auto;
+  width: 300%;
 }
 .explanation {
   display: flex;
@@ -122,13 +128,15 @@ main {
 .explanation p {
   margin-bottom: 20px;
 }
-.item1 {
+.item1,
+.item2 {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin-top: 80px;
 }
-.item1 h2 {
+.item1 h2,
+.item2 h2{
   margin-bottom: 40px;
 }
 .item p {
@@ -143,6 +151,7 @@ main {
 }
 .photos img {
   width: 350px;
+  height: 100%;
   margin: 20px 0;
 }
 .profile {

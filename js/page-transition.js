@@ -1,5 +1,4 @@
 const sections = [{tag: 'top', style: 'flex'},
-                  //{tag: 'sakuhin', style: 'block'},
                   {tag: 'theme', style: 'block'},
                   {tag: 'works', style: 'flex'},
                   {tag: 'about', style: 'flex'},
@@ -112,11 +111,6 @@ const sp_menus = document.querySelectorAll('.smart-nav ul li');
 
 for (const btn of pc_menus) {
   btn.addEventListener('click', () =>{
-    /*
-    if (btn.classList.contains('current')) {
-      return;
-    }*/
-
     var last_menu = document.querySelector('.header-nav .current');
 
     if (!(btn.classList.contains('current'))) {
@@ -124,7 +118,7 @@ for (const btn of pc_menus) {
       btn.classList.add('current');
       move_menu(last_menu);
     }
-
+    hide_intro(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
     var current_index = sec_index(btn.firstElementChild.getAttribute('href'));
@@ -142,6 +136,7 @@ for (const btn of pc_menus) {
     page_in.onfinish = function(){
       hide_sections(btn.firstElementChild.getAttribute('href'));
       location.hash = btn.firstElementChild.getAttribute('href');
+      current_sec = location.hash;
 
       setWorksSize(); //from grid-animation.js
       var page_out = main_cov.animate(
@@ -167,7 +162,7 @@ for (const btn of sp_menus) {
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
-
+    
     menu_closing(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));
@@ -186,6 +181,7 @@ for (const btn of sp_menus) {
     page_in.onfinish = function(){
       hide_sections(btn.firstElementChild.getAttribute('href'));
       location.hash = btn.firstElementChild.getAttribute('href');
+      current_sec = location.hash;
 
       setWorksSize(); //from grid-animation.js
       var page_out = main_cov.animate(
@@ -231,4 +227,87 @@ function main_cov_keyframes(is_in, is_up){
   else key.push(transition);
 
   return key;
+}
+
+var last_intersect = false;
+
+let options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5
+}
+
+let callback = (entries, observer) => {
+  entries.forEach(entry => {
+
+/*
+    console.log('交差検知');
+    console.log(entry);
+    if (!entry.isIntersecting) return;
+
+    var current_index = sec_index(current_sec);
+
+    var offset = 1;
+    if (entry.target == obs_top){
+      offset = -1;
+      if (current_index == 2) offset = -2;
+    } else {
+      if (current_index == 0) offset = 2;
+    }
+    next_index = current_index + offset;
+    if (next_index < 0 || next_index >= sec_nodes.length) return;
+    console.log('発火');
+
+    observer.disconnect();
+
+    var next_sec = '#' + sections[next_index]['tag'];
+
+    main_cov.style.display = 'block';
+    var page_in = main_cov.animate(
+      main_cov_keyframes(true, current_index < next_index),{
+        duration: 1000,
+        easing: 'ease-in-out'
+      }
+    );
+
+    page_in.onfinish = function(){
+      hide_sections(next_sec);
+      current_sec = next_sec;
+      location.hash = next_sec;
+
+      setWorksSize(); //from grid-animation.js
+      var page_out = main_cov.animate(
+        main_cov_keyframes(false, current_index < next_index),{
+          duration: 1000,
+          easing: 'ease-in-out'
+        }
+      );
+      page_out.onfinish = () => {
+        main_cov.style.display = 'none';
+        setObs();
+      }
+    }
+*/
+
+
+    // Each entry describes an intersection change for one observed
+    // target element:
+    //   entry.boundingClientRect
+    //   entry.intersectionRatio
+    //   entry.intersectionRect
+    //   entry.isIntersecting
+    //   entry.rootBounds
+    //   entry.target
+    //   entry.time
+  });
+};
+
+let observer = new IntersectionObserver(callback, options);
+const obs_top = document.querySelector('.cross-top');
+const obs_bottom = document.querySelector('.cross-bottom');
+setTimeout(setObs, 1000);
+
+function setObs(){
+  observer.observe(obs_top);
+  observer.observe(obs_bottom);
 }
