@@ -1344,4 +1344,12 @@
   .foot_sns img {
     height: 20px;
   }
+
+  #senni-part .launch-mobile{
+    height: 100%;
+    width: auto;
+  }
+  #senni-part .launch-pc{
+    display: none;
+  }
 }
