@@ -50,7 +50,7 @@ if (current_sec == ""){
       video.addEventListener('play', () =>{
         console.log('スタート！')
       });
-      video.setTimeout(() => {
+      setTimeout(() => {
         if (video_current(video) < 100){
           clearInterval(deb_Int);
           senni_fade();
