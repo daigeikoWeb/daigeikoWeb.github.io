@@ -35,31 +35,50 @@ if (current_sec == ""){
   if (window.innerWidth < 560){
     vid_index = 1;
   }
-  const video = senni.children[vid_index];
-  video.addEventListener('play', () =>{
-    console.log('スタート！')
-  });
-  video.addEventListener('ended', () => {
-    console.log('終わったよ！')
-    var senni_fade = senni.animate([
-      {opacity: 1}, {opacity: 0}
-    ],{
-      duration: 3000
-    });
-
-    senni_fade.onfinish = function(){
-      senni.style.display = 'none';
+  for (const video of senni.children) {
+    var vid_disp = document.defaultView.getComputedStyle(video,null).display;
+    console.log(vid_disp);
+    if (vid_disp != 'none'){
+      var dura = 0;
+      const deb_Int = setInterval(()=>{
+        //console.log(video);
+        if (video_current(video) > 8){
+          clearInterval(deb_Int);
+          senni_fade();
+        }
+      }, 500);
+      video.addEventListener('play', () =>{
+        console.log('スタート！')
+      });
+      video.setTimeout(() => {
+        if (video_current(video) < 100){
+          clearInterval(deb_Int);
+          senni_fade();
+        }
+      }, 20000);
     }
-  });
-  video.ended = () => {
-
-  };
-
+  }
   location.hash = 'top';
   current_sec = location.hash;
-
 } else {
   senni.style.display = 'none';
+}
+
+function video_current(video){
+  console.log(video.currentTime);
+  return video.currentTime;
+}
+
+function senni_fade(){
+  var senni_fade = senni.animate([
+    {opacity: 1}, {opacity: 0}
+  ],{
+    duration: 3000
+  });
+
+  senni_fade.onfinish = function(){
+    senni.style.display = 'none';
+  }
 }
 
 hide_sections(current_sec);
