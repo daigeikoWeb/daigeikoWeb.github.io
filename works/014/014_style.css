@@ -114,30 +114,36 @@ main {
 .main-visual img {
   width: 300%;
 }
+.explanation img{
+  width: 40%;
+  margin-bottom: 20px;
+}
 .explanation {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .explanation h1 {
   margin-bottom: 40px;
   font-size: 30px;
 }
 .explanation p {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 .item1,
 .item2 {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-top: 80px;
+  margin-bottom: 100px;
 }
-.item1 h2,
-.item2 h2{
-  margin-bottom: 40px;
+.item3{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 .item p {
   margin-bottom: 30px;

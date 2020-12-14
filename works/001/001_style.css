@@ -102,58 +102,85 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .main-visual {
   width: 100%;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .main-visual img {
-  width: 300%;
+  width: 100%;
 }
 .explanation {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin-top: 80px;
 }
 .explanation h1 {
   margin-bottom: 40px;
   font-size: 30px;
 }
 .explanation p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .item1,
 .item2 {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 .item1 h2,
 .item2 h2{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-.item p {
-  margin-bottom: 30px;
-}
-.photos {
+
+.photos1 {
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-around;
   width: 80%;
-  margin-top: 100px;
 }
-.photos img {
-  width: 350px;
-  height: 100%;
-  margin: 20px 0;
+.photos1 img {
+  width: 40%;
 }
+.photos2 {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.photos2{
+  width: 80%;
+  margin-bottom: 50px;
+}
+.photos2 .photos2-1{
+  display: flex;
+  justify-content: space-around;
+}
+.photos2 .photos2-1 img{
+  width: 25%;
+}
+.photos2 .photos2-2{
+  display: flex;
+  justify-content: space-around;
+}
+.photos2 .photos2-2 img{ 
+  width: 40%;
+}
+.photo6{
+width: 50%;
+}
+.photo7{
+  width:70% ;
+  margin: 20px 0 50px;
+}
+
+
 .profile {
   display: flex;
   flex-direction: column;
