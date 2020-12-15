@@ -1057,7 +1057,7 @@
     overflow: hidden;
   }
   .cooperation-title h1 {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .cooperation-list .cooperation-title h1 {
     margin-bottom: 20px;
@@ -1069,180 +1069,14 @@
     text-align: justify;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .supporters-container {
-    display: grid;
-    position: relative;
     height: 100%;
-    grid-template-rows: 5% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas:
-      "gold1 gold1 gold1 gold1"
-      "silver1 silver1 silver2 silver2"
-      "silver3 silver3 silver4 silver4"
-      "n1 n1 n2 n2"
-      "n3 n3 n4 n4"
-      "n5 n5 n6 n6"
-      "n7 n7 n8 n8"
-      "n9 n9 n10 n10"
-      "n11 n11 n12 n12"
-      "n13 n13 n14 n14"
-      "n15 n15 n16 n16"
-      "n17 n17 n18 n18"
-      "n19 n19 n20 n20"
-      "n21 n21 n22 n22"
-      "n23 n23 n24 n24"
-      "n25 n25 n26 n26"
-      "n27 n27 n28 n28";
   }
-  .area-gold1 {
-    grid-area: gold1;
-    /*background-color: #FFFF00;*/
-  }
-  .area-gold1 img {
-    width: 25%;
-    /* height: 50%; */
-  }
-  .area-silver1 {
-    grid-area: silver1;
-    /*background-color: #DDDDDD;*/
-  }
-  .area-silver1 img {
-    width: 35%;
-    /* height: 50%; */
-  }
-  .area-silver2 {
-    grid-area: silver2;
-    /*background-color: #CCCCCC;*/
-  }
-  .area-silver2 img {
-    width: 35%;
-    /* height: 50%; */
-  }
-  .area-silver3 {
-    grid-area: silver3;
-    /*background-color: #BBBBBB;*/
-  }
-  .area-silver3 img {
-    width: 35%;
-    /* height: 50%; */
-  }
-  .area-silver4 {
-    grid-area: silver4;
-    /*background-color: #AAAAAA;*/
-  }
-  .area-silver4 img {
-    width: 35%;
-    /* height: 50%; */
-  }
-  .area-n1 {
-    grid-area: n1;
-  }
-  .area-n2 {
-    grid-area: n2;
-  }
-  .area-n3 {
-    grid-area: n3;
-  }
-  .area-n4 {
-    grid-area: n4;
-  }
-  .area-n5 {
-    grid-area: n5;
-  }
-  .area-n6 {
-    grid-area: n6;
-  }
-  .area-n7 {
-    grid-area: n7;
-  }
-  .area-n8 {
-    grid-area: n8;
-  }
-  .area-n9 {
-    grid-area: n9;
-  }
-  .area-n10 {
-    grid-area: n10;
-  }
-  .area-n11 {
-    grid-area: n11;
-  }
-  .area-n12 {
-    grid-area: n12;
-  }
-  .area-n13 {
-    grid-area: n13;
-  }
-  .area-n14 {
-    grid-area: n14;
-  }
-  .area-n15 {
-    grid-area: n15;
-  }
-  .area-n16 {
-    grid-area: n16;
-  }
-  .area-n17 {
-    grid-area: n17;
-  }
-  .area-n18 {
-    grid-area: n18;
-  }
-  .area-n19 {
-    grid-area: n19;
-  }
-  .area-n20 {
-    grid-area: n20;
-  }
-  .area-n21 {
-    grid-area: n21;
-  }
-  .area-n22 {
-    grid-area: n22;
-  }
-  .area-n23 {
-    grid-area: n23;
-  }
-  .area-n24 {
-    grid-area: n24;
-  }
-  .area-n25 {
-    grid-area: n25;
-  }
-  .area-n26 {
-    grid-area: n26;
-  }
-  .area-n27 {
-    grid-area: n27;
-  }
-  .area-n28 {
-    grid-area: n28;
-  }
-  .area-n29 {
-    grid-area: n29;
-  }
-  .area-n30 {
-    grid-area: n30;
-  }
-  .area-n31 {
-    grid-area: n31;
-  }
-  .area-n32 {
-    grid-area: n32;
-  }
-  .area-n33 {
-    grid-area: n33;
-  }
-  .area-n34 {
-    grid-area: n34;
-  }
-  .area-n35 {
-    grid-area: n35;
-  }
-  .area-n36 {
-    grid-area: n36;
+  .gold img {
+    width: 80px;
+    margin-top: 5px;
   }
   .supporters-container {
     color: #182987;
@@ -1250,14 +1084,15 @@
     text-align: center;
     align-items: center;
   }
-  .cooperation-list .gold-sponcer-logo img {
-    display: block;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    padding-bottom: 10%;
-    margin: 0 auto;
-    width: 60%;
+  .supporters-container .course {
+    font-size: 13px;
+    margin-top: 8px;
   }
+  .supporters-container .supporter-name {
+    font-weight: 350;
+  }
+
+
 
   #contact {
     display: block;
