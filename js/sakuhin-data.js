@@ -26,21 +26,17 @@ const data = [
   title: '漂い',
   genre: -1,
   author: [{name: '小谷久美',  univ: 0,  grade: -1}],
-  award: 0,
+  award: -1,
   link: 'works/001.html',
-  thomb: ['','','',
-          '','','',
-          'images/works1.png']
+  thomb: ['001_thumbnail_rect.png','001_thumbnail_sq.png']
 },{
   id: 2,
   title: '',
   genre: -1,
   author: [{name: '櫻井風土',  univ: 0,  grade: -1}],
-  award: 1,
+  award: -1,
   link: 'works/002.html',
-  thomb: ['','','',
-          '','','',
-          'images/works2.png']
+  thomb: ['002_thumbnail_rect.png','002_thumbnail_sq.png']
 },{
   id: 3,
   title: 'だれか ト なにか ニ うつりこむ',
@@ -48,9 +44,7 @@ const data = [
   author: [{name: '芝 光彩',  univ: 0,  grade: -1}],
   award: -1,
   link: 'works/003.html',
-  thomb: ['','','',
-          '','','',
-          'images/works3.png']
+  thomb: ['003_thumbnail_rect.png','003_thumbnail_sq.png']
 },{
   id: 4,
   title: 'moon',
@@ -58,9 +52,7 @@ const data = [
   author: [{name: '山地涼介',  univ: 0,  grade: -1}],
   award: -1,
   link: 'works/004.html',
-  thomb: ['','','',
-          '','','',
-          'images/works4.png']
+  thomb: ['004_thumbnail_rect.png','004_thumbnail_sq.png']
 },{
   id: 5,
   title: '',
@@ -68,9 +60,7 @@ const data = [
   author: [{name: '緒方幸之郎',  univ: 0,  grade: -1}],
   award: -1,
   link: 'works/005.html',
-  thomb: ['','','',
-          '','','',
-          'images/works5.png']
+  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
 },{
   id: 6,
   title: 'papp',
@@ -80,9 +70,7 @@ const data = [
            {name: '工藤帆夏',  univ: 1,  grade: -1}],
   award: -1,
   link: 'works/006.html',
-  thomb: ['','','',
-          '','','',
-          'images/works6.png']
+  thomb: ['006_thumbnail_rect.png','006_thumbnail_sq.png']
 },{
   id: 7,
   title: 'mino',
@@ -90,9 +78,7 @@ const data = [
   author: [{name: '相原洸太',  univ: 1,  grade: -1}],
   award: -1,
   link: 'works/007.html',
-  thomb: ['','','',
-          '','','',
-          'images/works7.png']
+  thomb: ['007_thumbnail_rect.png','007_thumbnail_sq.png']
 },{
   id: 8,
   title: '',
@@ -100,9 +86,7 @@ const data = [
   author: [{name: '新井大地',  univ: 1,  grade: -1}],
   award: -1,
   link: 'works/008.html',
-  thomb: ['','','',
-          '','','',
-          'images/works8.png']
+  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
 },{
   id: 9,
   title: 'KOA',
@@ -114,9 +98,7 @@ const data = [
            {name: '松野晴彦',  univ: 1,  grade: -1},],
   award: -1,
   link: 'works/009.html',
-  thomb: ['','','',
-          '','','',
-          'images/works9.png']
+  thomb: ['009_thumbnail_rect.png','009_thumbnail_sq.png']
 },{
   id: 10,
   title: 'emat',
@@ -124,29 +106,15 @@ const data = [
   author: [{name: '甲斐翔',  univ: 1,  grade: -1}],
   award: -1,
   link: 'works/010.html',
-  thomb: ['','','',
-          '','','',
-          'images/works1.png']
+  thomb: ['010_thumbnail_rect.png','010_thumbnail_sq.png']
 },{
   id: 11,
   title: '',
   genre: -1,
-  author: [{name: '寺島悠太郎',  univ: 2,  grade: -1}],
+  author: [{name: '阿部朱夏',  univ: 2,  grade: -1}],
   award: -1,
   link: 'works/011.html',
-  thomb: ['','','',
-          '','','',
-          'images/works2.png']
-},{
-  id: 13,
-  title: '',
-  genre: -1,
-  author: [{name: '安達大策',  univ: 3,  grade: -1}],
-  award: -1,
-  link: 'works/013.html',
-  thomb: ['','','',
-          '','','',
-          'images/works3.png']
+  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
 },{
   id: 14,
   title: '香の音',
@@ -155,9 +123,7 @@ const data = [
            {name: '寺崎薫',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/014.html',
-  thomb: ['','','',
-          '','','',
-          'images/works4.png']
+  thomb: ['014_thumbnail_rect.png','014_thumbnail_sq.png']
 },{
   id: 15,
   title: '気になる木',
@@ -165,9 +131,7 @@ const data = [
   author: [{name: '内尾良太朗',  univ: 3,  grade: 2}],
   award: -1,
   link: 'works/015.html',
-  thomb: ['','','',
-          '','','',
-          'works/015/photos/015_thumbnail.png']
+  thomb: ['015_thumbnail_rect.png','015_thumbnail_sq.png']
 },{
   id: 16,
   title: 'CLAY SOUND',
@@ -175,9 +139,7 @@ const data = [
   author: [{name: '西村息吹',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/016.html',
-  thomb: ['','','',
-          '','','',
-          'images/works5.png']
+  thomb: ['016_thumbnail_rect.png','016_thumbnail_sq.png']
 },{
   id: 17,
   title: '自由気ままに',
@@ -185,9 +147,7 @@ const data = [
   author: [{name: '大嶺太聖',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/017.html',
-  thomb: ['','','',
-          '','','',
-          'images/works6.png']
+  thomb: ['017_thumbnail_rect.png','017_thumbnail_sq.png']
 },{
   id: 18,
   title: '高架下のキラキラ',
@@ -195,20 +155,16 @@ const data = [
   author: [{name: '墨田知世',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/018.html',
-  thomb: ['','','',
-          '','','',
-          'images/works7.png']
+  thomb: ['018_thumbnail_rect.png','018_thumbnail_sq.png']
 },{
   id: 19,
-  title: '',
+  title: '依代のデザイン',
   genre: -1,
   author: [{name: '密岡稜大',  univ: 3,  grade: -1},
            {name: '土肥真維華',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/019.html',
-  thomb: ['','','',
-          '','','',
-          'images/works8.png']
+  thomb: ['019_thumbnail_rect.png','019_thumbnail_sq.png']
 },{
   id: 20,
   title: 'NON NEUTRAL',
@@ -216,9 +172,7 @@ const data = [
   author: [{name: '凌亮太朗',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/020.html',
-  thomb: ['','','',
-          '','','',
-          'images/works9.png']
+  thomb: ['020_thumbnail_rect.png','020_thumbnail_sq.png']
 },{
   id: 21,
   title: 'アートのたねと半農半芸',
@@ -226,9 +180,7 @@ const data = [
   author: [{name: '甲斐隆児',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/021.html',
-  thomb: ['','','',
-          '','','',
-          'images/works1.png']
+  thomb: ['021_thumbnail_rect.png','021_thumbnail_sq.png']
 },{
   id: 22,
   title: 'postmouillette',
@@ -236,9 +188,7 @@ const data = [
   author: [{name: '山田和佳',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/022.html',
-  thomb: ['','','',
-          '','','',
-          'images/works2.png']
+  thomb: ['022_thumbnail_rect.png','022_thumbnail_sq.png']
 },{
   id: 23,
   title: '『Silhouette。』',
@@ -246,9 +196,7 @@ const data = [
   author: [{name: '小濵行秀',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/023.html',
-  thomb: ['','','',
-          '','','',
-          'images/works3.png']
+  thomb: ['023_thumbnail_rect.png','023_thumbnail_sq.png']
 },{
   id: 24,
   title: '「they」',
@@ -256,7 +204,15 @@ const data = [
   author: [{name: '佐名海斗',  univ: 0,  grade: -1}],
   award: -1,
   link: 'works/024.html',
-  thomb: ['','','',
-          '','','',
-          'images/works4.png']
+  thomb: ['024_thumbnail_rect.png','024_thumbnail_sq.png']
+}];
+
+const fake_data = [{
+  id: 0,
+  title: 'Coming Soon…',
+  genre: -1,
+  author: [{name: '',  univ: 0,  grade: -1}],
+  award: -1,
+  link: '',
+  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
 }];
