@@ -150,7 +150,7 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%, -25%);
   }
   .grid-area1 .cover-image img {
@@ -159,10 +159,12 @@
   .grid-area1 .cover-content-container {
     margin: 0;
     position: relative;
+    height: 100%;
   }
   .grid-area1 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area1 .details-wrap {
     left: 50%;
@@ -193,6 +195,7 @@
     top: 220px;
   }
 
+
   .grid-area2 {
     overflow: hidden;
     grid-area: area2;
@@ -203,21 +206,21 @@
     height: 100%;
     object-fit: cover;
     position: relative;
+    overflow: hidden;
     width: 100%;
   }
   .grid-area2 .cover-image img {
-    height: 100%;
+    height: 225%;
   }
   .grid-area2 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: 0;
     position: relative;
+    height: 100%;
   }
   .grid-area2 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area2 .details-wrap {
     left: 50%;
@@ -248,6 +251,7 @@
     top: 100px;
   }
 
+
   .grid-area3 {
     overflow: hidden;
     grid-area: area3;
@@ -259,20 +263,21 @@
     object-fit: cover;
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
   .grid-area3 .cover-image img {
-    height: 100%;
+    height: 225%;
   }
   .grid-area3 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area3 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
+    
   }
   .grid-area3 .details-wrap {
     left: 50%;
@@ -314,22 +319,21 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%, -25%);
   }
   .grid-area4 .cover-image img {
     height: 100%;
   }
   .grid-area4 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
+    height: 100%;
     position: relative;
   }
   .grid-area4 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area4 .details-wrap {
     left: 50%;
@@ -360,6 +364,7 @@
     top: 220px;
   }
 
+
   .grid-area5 {
     overflow: hidden;
     grid-area: area5;
@@ -371,23 +376,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
+    overflow: hidden;
   }
   .grid-area5 .cover-image img {
-    height: 100%;
+    height: 225%;
   }
   .grid-area5 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
+    height: 100%;
     position: relative;
   }
   .grid-area5 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area5 .details-wrap {
     left: 50%;
@@ -429,23 +433,23 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(-50%, 0%);
     width: 100%;
+    overflow: hidden;
   }
   .grid-area6 .cover-image img {
-    height: 100%;
+    height: 225%;
   }
   .grid-area6 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
+    height: 100%;
     position: relative;
   }
   .grid-area6 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area6 .details-wrap {
     left: 50%;
@@ -487,19 +491,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(-50%, 0%);
     width: 100%;
+    overflow: hidden;
   }
   .grid-area7 .cover-image img {
-    height: 100%;
+    height: 225%;
   }
   .grid-area7 .cover-content-container {
     margin: 0;
     position: relative;
+    height: 100%;
   }
   .grid-area7 .cover-image-wrap {
     overflow: hidden;
+    height: 100%;
     position: relative;
   }
   .grid-area7 .details-wrap {
@@ -612,10 +619,7 @@
   .works-covers {
     display: inline-flex;
     flex-wrap: wrap;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding:0;
   }
 
   .works-cover {
@@ -637,10 +641,7 @@
     display: table;
   }
   .works-cover .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: 0;
     position: relative;
     width: 100%;
     height: 100%;
@@ -655,6 +656,7 @@
     float: left;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     object-fit: cover;
     position: relative; /*
   left: 50%;
@@ -663,6 +665,8 @@
   }
   .works-cover .cover-image img {
     width: 100%;
+    height: 100%;
+    
   }
   .works-cover .details-wrap {
     left: 50%;
@@ -712,6 +716,8 @@
     top: 0;
     left: -20px;
   }
+
+
 
   #about {
     display: flex;
