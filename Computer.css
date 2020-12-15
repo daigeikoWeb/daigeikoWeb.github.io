@@ -976,7 +976,7 @@
   }
   .cooperation-cover {
     height: 100%;
-    width: 70%;
+    width: 65%;
     left: 50%;
     object-fit: cover;
     position: relative;
@@ -1007,23 +1007,35 @@
   .supporters-container {
     height: 100%;
   }
+  .gold {
+    display: flex;
+    justify-content: space-around;
+  }
   .gold img {
-    width: 100px;
+    width: 120px;
     margin-top: 5px;
   }
   .supporters-container {
     color: #182987;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     align-items: center;
   }
-  .supporters-container .course {
-    font-weight: 500;
-    font-size: 17px;
-    margin-top: 10px;
+  .supporter-name {
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
-  .supporters-container .supporter-name {
+  .gold .gold1 .supporter-company {
     font-weight: 350;
+    margin-top: 40px;
+    font-weight: 16px;
+  }
+  .thanks{
+    margin-top: 50px;
+  }
+  .thanks p {
+    font-weight: 450;
+    font-size: 16px;
   }
 
   #contact {
