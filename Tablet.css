@@ -153,22 +153,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%, -25%);
+    overflow: hidden;
   }
   .grid-area1 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area1 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area1 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area1 .details-wrap {
     left: 50%;
@@ -199,6 +199,7 @@
     font-size: 20px;
   }
 
+
   .grid-area2 {
     overflow: hidden;
     grid-area: area2;
@@ -210,20 +211,20 @@
     object-fit: cover;
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
   .grid-area2 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area2 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
+    height: 100%;
     position: relative;
   }
   .grid-area2 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area2 .details-wrap {
     left: 50%;
@@ -267,20 +268,20 @@
     object-fit: cover;
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
   .grid-area3 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area3 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
+    height: 100%;
     position: relative;
   }
   .grid-area3 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area3 .details-wrap {
     left: 50%;
@@ -323,22 +324,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%, -25%);
+    overflow: hidden;
   }
   .grid-area4 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area4 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area4 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area4 .details-wrap {
     left: 50%;
@@ -383,23 +384,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, 0%);
-    width: 250%;
+    width: 100%;
+    overflow: hidden;
   }
   .grid-area5 .cover-image img {
-    height: 100%;
+    height: 280%;
   }
   .grid-area5 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area5 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area5 .details-wrap {
     left: 50%;
@@ -441,23 +441,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
+    overflow: hidden;
   }
   .grid-area6 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area6 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area6 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area6 .details-wrap {
     left: 50%;
@@ -500,23 +499,22 @@
     object-fit: cover;
     position: relative;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
+    overflow: hidden;
   }
   .grid-area7 .cover-image img {
-    height: 100%;
+    height: 285%;
   }
   .grid-area7 .cover-content-container {
-    margin-bottom: 0%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin:0;
     position: relative;
+    height: 100%;
   }
   .grid-area7 .cover-image-wrap {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   .grid-area7 .details-wrap {
     left: 50%;
