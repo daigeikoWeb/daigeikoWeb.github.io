@@ -27,10 +27,6 @@ for (var grid of grids) {
   }
   futas.push(futaCopy);
   grid.firstElementChild.appendChild(futaCopy);
-
-  var grid_child = grid.firstElementChild.firstElementChild.children;
-  var grid_img = grid_child[0].firstElementChild;
-  var grid_title = grid_child[1].firstElementChild.firstElementChild;
 }
 
 var fRand = makeRandomArray(futas.length);
@@ -117,19 +113,18 @@ function fillWaku(futa){
   var sakuhin = data[wRand[wCount]];
 
   var thomb_size = 0;
-  if (futa.classList.contains('thomb_M')) thomb_size = 1;
-  else if (futa.classList.contains('thomb_L')) thomb_size = 2;
+  var pathroot = 'images/thumbnails/rect/';
+  if (futa.classList.contains('thomb_M')){
+    thomb_size = 1;
+    pathroot = 'images/thumbnails/sq/';
+  }
 
-  var query = 0;
-  if (isTablet()) query = 3; //タブレット、スマホ版の場合サムネイルのインデックスをずらす
-  // image.src = sakuhin['thomb'][thomb_size + query];
-  image.src = sakuhin['thomb'][6];
+  image.src = pathroot + sakuhin['thomb'][thomb_size];
 
   link.href = sakuhin['link'];
-  //console.log(thomb_size + query);
   title.innerHTML = sakuhin['title'];
   if (sakuhin['title'] == ''){
-    title.innerHTML = 'wakaran';
+    title.innerHTML = 'Coming Soon…'
   }
 
   if (++wCount == wRand.length) wCount = 0;
@@ -151,7 +146,7 @@ for (var d of data){
   var link = detail[0];
   var title = detail[1];
   var award_name = detail[2];
-
+  console.log(d);
 
   if (d['award'] == 0) {
     award_icon.src = 'images/aikon1.png';
@@ -163,12 +158,11 @@ for (var d of data){
     award_icon.remove();
     award_name.remove();
   }
-
-  img.src = d['thomb'][6];
+  img.src = 'images/thumbnails/sq/' + d['thomb'][1];
   link.href = d['link'];
   title.innerHTML = d['title'];
   if (d['title'] == ''){
-    title.innerHTML = 'wakaran';
+    title.innerHTML = 'Coming Soon…'
   }
 
   works_in.appendChild(copy);
