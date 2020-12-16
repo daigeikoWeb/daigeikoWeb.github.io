@@ -145,14 +145,25 @@ main {
 .photos {
 	display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 	justify-content: space-around;
+  align-items: center;
   width: 80%;
   margin-top: 100px;
 }
 .photos img {
-  width: 350px;
-  height: 100%;
+  /*width: 32%;
+  height: auto;*/
   margin: 20px 0;
+}
+img.photo1{
+  width: 31%;
+}
+img.photo2{
+  width: 36%;
+}
+img.photo3{
+  width: 30%;
 }
 .profile {
   display: flex;
@@ -200,4 +211,10 @@ main {
 .back a {
   color: white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  img.photo1, img.photo2,img.photo3{
+    width: 80%;
+  }
 }
