@@ -997,12 +997,13 @@
   }
   .cooperation-list .cooperation-caption p {
     color: #182987;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 350;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
     margin-bottom: 20px;
+
   }
   .supporters-container {
     height: 100%;
@@ -1011,9 +1012,13 @@
     display: flex;
     justify-content: space-around;
   }
-  .gold img {
+  .gold1 img {
+    width: 210px;
+    margin-top: 10px;
+  }
+  .gold2 img {
     width: 120px;
-    margin-top: 5px;
+    margin-top: 40px;
   }
   .supporters-container {
     color: #182987;
@@ -1027,8 +1032,8 @@
   }
   .gold .gold1 .supporter-company {
     font-weight: 350;
-    margin-top: 40px;
-    font-weight: 16px;
+    margin-top: 10px;
+    font-size: 15px;
   }
   .thanks{
     margin-top: 50px;
