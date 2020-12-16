@@ -16,7 +16,6 @@ function sec_index(id_name){
 
 var current_sec = location.hash;
 
-const senni = document.querySelector('#senni-part');
 
 const main_cov = document.querySelector('#main-cover');
 const menu_back = document.querySelector('#menu-back');
@@ -27,27 +26,59 @@ for (var sec of sections) {
 }
 //console.log(sec_nodes);
 
+const senni = document.querySelector('#senni-part');
+
 if (current_sec == ""){
   senni.style.display = 'block';
 
-  //1000ms待機してからfadeout
-  setTimeout(() => {
-    var senni_fade = senni.animate([
-      {opacity: 1}, {opacity: 0}
-    ],{
-      duration: 3000
-    });
-
-    senni_fade.onfinish = function(){
-      senni.style.display = 'none';
+  var vid_index = 0;
+  if (window.innerWidth < 560){
+    vid_index = 1;
+  }
+  for (const video of senni.children) {
+    var vid_disp = document.defaultView.getComputedStyle(video,null).display;
+    console.log(vid_disp);
+    if (vid_disp != 'none'){
+      var dura = 0;
+      const deb_Int = setInterval(()=>{
+        //console.log(video);
+        if (video_current(video) > 8){
+          clearInterval(deb_Int);
+          senni_fade();
+        }
+      }, 500);
+      video.addEventListener('play', () =>{
+        console.log('スタート！')
+      });
+      setTimeout(() => {
+        if (video_current(video) < 100){
+          clearInterval(deb_Int);
+          senni_fade();
+        }
+      }, 20000);
     }
-  }, 1000);
-
+  }
   location.hash = 'top';
   current_sec = location.hash;
-
 } else {
   senni.style.display = 'none';
+}
+
+function video_current(video){
+  console.log(video.currentTime);
+  return video.currentTime;
+}
+
+function senni_fade(){
+  var senni_fade = senni.animate([
+    {opacity: 1}, {opacity: 0}
+  ],{
+    duration: 3000
+  });
+
+  senni_fade.onfinish = function(){
+    senni.style.display = 'none';
+  }
 }
 
 hide_sections(current_sec);
@@ -162,7 +193,7 @@ for (const btn of sp_menus) {
     var last_menu = document.querySelector('.smart-nav .current');
     last_menu.classList.remove('current');
     btn.classList.add('current');
-    
+
     menu_closing(); //from toggle-display.js
 
     var last_index = sec_index(last_menu.firstElementChild.getAttribute('href'));

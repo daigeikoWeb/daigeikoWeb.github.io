@@ -112,11 +112,11 @@ function fillWaku(futa){
   var title = detail[1].firstElementChild;
   var sakuhin = data[wRand[wCount]];
 
-  var thomb_size = 0;
-  var pathroot = 'images/thumbnails/rect/';
+  var thomb_size = 1;
+  var pathroot = 'images/thumbnails/sq/';
   if (futa.classList.contains('thomb_M')){
-    thomb_size = 1;
-    pathroot = 'images/thumbnails/sq/';
+    thomb_size = 0;
+    pathroot = 'images/thumbnails/rect/';
   }
 
   image.src = pathroot + sakuhin['thomb'][thomb_size];

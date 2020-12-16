@@ -1189,4 +1189,11 @@
   .foot_sns img {
     height: 20px;
   }
+  #senni-part .launch-pc{
+    display: none;
+  }
+  #senni-part .launch-mobile{
+    height: 100%;
+    width: auto;
+  }
 }
