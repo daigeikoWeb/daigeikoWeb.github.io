@@ -1,4 +1,4 @@
-een and (max-width: 560px) {
+@media screen and (max-width: 560px) {
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +22,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
+  height: 8vh;
   z-index: 10;
 }
 main {
@@ -118,7 +119,7 @@ p {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 8vh;
 }
 .thumbnail {
   width: 100%;
@@ -182,7 +183,7 @@ p {
 
 }
 .article1 {
-  display: flex;
+  display: block;
   width: 80%;
   margin-top: 80px;
 }
