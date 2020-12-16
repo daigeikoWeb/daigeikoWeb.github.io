@@ -215,6 +215,6 @@ img.photo3{
 
 @media screen and (max-width: 900px) {
   img.photo1, img.photo2,img.photo3{
-    width: 80%;
+    width: 100%;
   }
 }

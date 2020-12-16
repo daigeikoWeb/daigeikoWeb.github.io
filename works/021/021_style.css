@@ -150,6 +150,7 @@ main {
 .item p {
   margin-bottom: 30px;
 }
+
 .photos {
 	display: flex;
   flex-wrap: wrap;
@@ -213,6 +214,11 @@ main {
 }
 }
 
+.pdf{
+  margin-top: 80px;
+  width: 80%;
+  height: 500px;
+}
 
 @media screen and (max-width: 560px) {
   * {
