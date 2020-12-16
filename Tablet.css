@@ -1019,7 +1019,7 @@
     color: #182987;
     font-size: 16px;
     font-weight: 350;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
     margin-bottom: 20px;
@@ -1031,9 +1031,13 @@
     display: flex;
     justify-content: space-around;
   }
-  .gold img {
+  .gold1 img {
+    width: 210px;
+    margin-top: 10px;
+  }
+  .gold2 img {
     width: 120px;
-    margin-top: 5px;
+    margin-top: 45px;
   }
   .supporters-container {
     color: #182987;
@@ -1047,8 +1051,8 @@
   }
   .gold .gold1 .supporter-company {
     font-weight: 350;
-    margin-top: 40px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 14px;
   }
   .thanks{
     margin-top: 50px;
