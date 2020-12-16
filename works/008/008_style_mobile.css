@@ -1,3 +1,4 @@
+@media screen and (max-width: 560px) {
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,6 @@
 }
 html {
   width: 100%;
-  overscroll-behavior: none;
 }
 body {
   width: 100%;
@@ -22,7 +22,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
-  height: 10%;
+  height: 8vh;
   z-index: 10;
 }
 main {
@@ -31,6 +31,23 @@ main {
   align-items: center;
   flex-direction: column;
   position: relative;
+}
+h1 {
+  font-size: 20px;
+  line-height: 40px;
+}
+h2 {
+  line-height: 40px;
+  font-size: 16px;
+}
+h3 {
+  line-height: 40px;
+  font-size: 12px;
+}
+p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
 }
 .hide-menu {
 	display: flex;
@@ -102,81 +119,163 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 8vh;
 }
-.main-visual {
+.thumbnail {
   width: 100%;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-visual img {
-  width: 300%;
+.thumbnail img {
+  width: 100%;
+  height: auto;
 }
-.explanation {
+.video {
+  width:100%;
+  padding-bottom: 56.25%;
+  height:0px;
+  position: relative;
+}
+.video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
-.explanation h1 {
-  margin-bottom: 40px;
-  font-size: 30px;
+.title h1 {
+  margin-bottom: 5px;
+  text-align: center;
 }
-.explanation p {
+.title p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.title-logo {
+  align-items: center;
   margin-bottom: 20px;
 }
-.item1,
-.item2 {
-  display: flex;
-  flex-direction: column;
+.title-logo img {
+  width: 70%;
+  margin: 0 auto;
+}
+.concept {
+  width: 80%;
+  text-align: justify;
+}
+.concept h2 {
+}
+.concept h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.concept p {
+
+}
+.article1 {
+  display: block;
   width: 80%;
   margin-top: 80px;
 }
-.item1 h2,
-.item2 h2{
-  margin-bottom: 40px;
+.article1 p {
+  margin-bottom: 10px;
 }
-.item p {
-  margin-bottom: 30px;
+.article1 img {
+  width: 100%;
+  margin-bottom: 20px;
 }
-.photos {
-	display: flex;
-  flex-wrap: wrap;
-	justify-content: space-around;
+.article2 {
+  display: block;
   width: 80%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
-.photos img {
-  width: 350px;
-  height: 100%;
-  margin: 20px 0;
+.article2 p {
+  margin-bottom: 10px;
 }
+.article2 img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .profile {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
 	margin-top: 100px;
 	width: 80%;
 }
-.profile img {
-  width: 250px;
-  margin-bottom: 50px;
+.profile-team {
+  align-items: center;
+  margin:  0 auto;
+  width: 60%;
 }
-.profile-name {
-  font-size: 25px;
-  margin-bottom: 5px;
+.profile-team .profile-img {
+  margin-bottom: 30px;
 }
-.frigana {
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-.belonging {
+.profile-team .profile-name {
   margin-bottom: 20px;
 }
-.sns a {
+.profile-indivisual {
+  width: 100%;
+  align-items: center;
+}
+.profile-p {
+  display: block;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  clear: left;
+}
+.profile-img img {
+  width: 250px;
+  margin: 5%;
+  align-items: center;
+}
+.profile-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.profile-frigana {
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profile-belonging {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.profile-sns {
+	width: 100%;
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.profile-sns ul{
+  display: flex;
+  justify-content: space-around;
+	width: 50%;
+}
+.profile-sns i{
+	color: #182987;
+	font-size: 25px;
+}
+.profile-sns img{
+	width:20px;
+}
+.profile-sns a {
   color: #182987;
   font-size: 30px;
 }
@@ -200,4 +299,5 @@ main {
 .back a {
   color: white;
   text-decoration: none;
+}
 }
