@@ -1,4 +1,4 @@
-@media screen and (max-width: 615px) {
+een and (max-width: 560px) {
 * {
   margin: 0;
   padding: 0;
@@ -186,75 +186,9 @@ p {
   width: 80%;
   margin-top: 80px;
 }
-/*
-.video {
-  width:100%;
-  padding-bottom: 56.25%;
-  height:0px;
-  position: relative;
-}
-.video iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
+.article1 img {
   width: 100%;
-  height: 100%;
-
-}
-*/
-.article2 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
-}
-.article2 h2 {
-  margin-bottom: 10px;
-}
-.article2 p {
-  margin-bottom: 30px;
-}
-
-.article3 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
-}
-.article3 h2 {
-  margin-bottom: 10px;
-}
-.article3 p {
-  margin-bottom: 30px;
-}
-.article-column-image img {
-  width: 100%;
-}
-
-.article4 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
-}
-.article4 h2 {
-  margin-bottom: 10px;
-}
-.article4 p {
-  margin-bottom: 30px;
-}
-
-.article5 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
-}
-.article5 h2 {
-  margin-bottom: 10px;
-}
-.article5 p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .profile {
   align-items: center;
