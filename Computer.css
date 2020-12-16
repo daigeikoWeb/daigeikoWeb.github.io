@@ -1091,16 +1091,33 @@
   .foot_sns {
     display: none;
   }
+  #senni-part .launch-pc{
+    height: 100%;
+    width: auto;
+  }
+  #senni-part .launch-mobile{
+    display: none;
+  }
+}
+
+#senni-part .launch-pc, #senni-part .launch-mobile{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 #senni-part {
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 6;
-  background-color: #555;
+  z-index: 10;
+  background-color: #fff;
+  overflow: hidden;
+
   display: none;
 }
 
