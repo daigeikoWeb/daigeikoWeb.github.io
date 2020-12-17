@@ -212,6 +212,7 @@
 }
 .article2 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .article3 {
@@ -225,6 +226,7 @@
 }
 .article3 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article-column-image img {
   width: 100%;
@@ -241,6 +243,7 @@
 }
 .article4 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .article5 {
@@ -254,6 +257,7 @@
 }
 .article5 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .profile {
   align-items: center;

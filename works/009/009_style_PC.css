@@ -164,7 +164,7 @@
   margin-bottom: 10px;
 }
 .concept p {
-
+  text-align: justify;
 }
 .article1 {
   display: flex;
@@ -177,6 +177,7 @@
 }
 .article1 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article1-img {
 
@@ -195,6 +196,7 @@
 }
 .article2 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article2-img-column {
   display: inline-flex;

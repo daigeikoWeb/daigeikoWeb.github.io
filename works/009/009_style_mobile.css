@@ -163,7 +163,7 @@
   margin-bottom: 10px;
 }
 .concept p {
-
+  text-align: justify;
 }
 .article1 {
   display: flex;
@@ -176,6 +176,7 @@
 }
 .article1 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article1-img {
 
@@ -194,6 +195,7 @@
 }
 .article2 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article2-img-column {
   display: inline-flex;
@@ -234,7 +236,7 @@
 .profile-team {
   align-items: center;
   margin:  0 auto;
-  width: 60%;
+  width: 100%;
 }
 .profile-team .profile-img {
   margin-bottom: 30px;
@@ -251,11 +253,11 @@
   position: relative;
   align-items: center;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   clear: left;
 }
 .profile-img img {
-  width: 80%;
+  width: 250px;
   margin: 5%;
   align-items: center;
 }

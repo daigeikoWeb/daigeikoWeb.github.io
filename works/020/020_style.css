@@ -408,7 +408,8 @@
   .explanation p {
     margin-bottom: 40px;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;

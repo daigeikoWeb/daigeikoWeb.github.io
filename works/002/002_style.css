@@ -158,6 +158,7 @@
 }
 .item1 p {
   font-weight: 350;
+  text-align: justify;
 }
 .photos {
 	display: flex;
@@ -423,8 +424,9 @@
     font-size: 17px;
   }
   .item1 p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 350;
+    text-align: justify;
   }
   .photos {
     display: flex;

@@ -145,6 +145,7 @@
   margin-bottom: 40px;
   text-align: center;
   font-weight: 350;
+  text-align: justify;
 }
 .explanation .name {
   text-align: center;
@@ -320,7 +321,7 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
-    text-align:
+    text-align: justify;
 
   }
   .hide-menu {
@@ -417,7 +418,8 @@
     margin-bottom: 40px;
     text-align: center;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;
@@ -437,7 +439,8 @@
   .item1 p,
   .item2 p{
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .item p {
     margin-bottom: 30px;

@@ -162,6 +162,7 @@ p {
 }
 .article1 p {
   margin-bottom: 0px;
+  text-align: justify;
 }
 .article1-img-column {
   display: flex;
@@ -184,6 +185,7 @@ p {
 .article2 p {
   margin-top: 0px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .article2-img-column {
   /*width: 100%;*/

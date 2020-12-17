@@ -172,6 +172,7 @@
 }
 .article1 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article1-img-column {
   display: flex;
@@ -194,6 +195,7 @@
 .article2 p {
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .article2-img1-column {
   display: inline-flex;

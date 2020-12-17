@@ -48,6 +48,7 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
+    text-align: justify;
   }
 
 .hide-menu {
@@ -142,6 +143,7 @@
 .explanation p {
   margin-bottom: 20px;
   font-weight: 350;
+  text-align: justify;
 }
 .explanation .name {
   text-align: center;
@@ -160,9 +162,11 @@
 .item1 p,
 .item2 p{
   font-weight: 350;
+  text-align: justify;
 }
 .item p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .photos {
 	display: flex;
@@ -314,6 +318,7 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
+    text-align: justify;
   }
   .hide-menu {
     display: flex;
@@ -407,11 +412,13 @@
   .explanation p {
     margin-bottom: 40px;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;
   }
+  
   .item1,
   .item2 {
     display: flex;
@@ -423,12 +430,14 @@
   .item1 h2,
   .item2 h2{
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 18px;
   }
   .item1 p,
   .item2 p{
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align:
+
   }
   .photos {
     display: flex;

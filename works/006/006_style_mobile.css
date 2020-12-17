@@ -149,7 +149,7 @@
   text-align: justify;
 }
 .concept p {
-  font-weight: bold;
+  text-align:justify;
 }
 .article1 {
   display: flex;
