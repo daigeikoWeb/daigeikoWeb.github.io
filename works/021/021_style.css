@@ -60,6 +60,7 @@
 	background-color: white;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -118,10 +119,9 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .main-visual {
-  width: 80%;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -336,6 +336,7 @@
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -394,10 +395,9 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
-    width: 80%;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -420,7 +420,8 @@
   .explanation p {
     margin-bottom: 40px;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;
@@ -445,7 +446,8 @@
   .item2 p,
   .sub-profile p{
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .item p {
     margin-bottom: 30px;

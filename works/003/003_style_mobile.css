@@ -59,6 +59,7 @@ p {
   background-color: white;
   height: 100vh;
   display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -117,7 +118,6 @@ p {
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .thumbnail {
   width: 100%;
@@ -162,6 +162,7 @@ p {
 }
 .article1 p {
   margin-bottom: 0px;
+  text-align: justify;
 }
 .article1-img-column {
   display: flex;
@@ -184,6 +185,7 @@ p {
 .article2 p {
   margin-top: 0px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .article2-img-column {
   /*width: 100%;*/

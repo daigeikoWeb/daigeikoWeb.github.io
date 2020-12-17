@@ -60,6 +60,7 @@
 	background-color: white;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -118,7 +119,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .main-visual {
   width: 100%;
@@ -145,6 +145,7 @@
   margin-bottom: 40px;
   text-align: center;
   font-weight: 350;
+  text-align: justify;
 }
 .explanation .name {
   text-align: center;
@@ -320,7 +321,7 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
-    text-align:
+    text-align: justify;
 
   }
   .hide-menu {
@@ -332,6 +333,7 @@
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -390,7 +392,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
     width: 100%;
@@ -417,7 +418,8 @@
     margin-bottom: 40px;
     text-align: center;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;
@@ -437,7 +439,8 @@
   .item1 p,
   .item2 p{
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .item p {
     margin-bottom: 30px;

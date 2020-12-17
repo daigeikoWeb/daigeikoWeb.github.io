@@ -58,6 +58,7 @@
 	background-color: white;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -116,7 +117,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .main-visual {
   width: 100%;
@@ -168,6 +168,7 @@
 }
 .item1 p {
   font-weight: 350;
+  text-align: center;
 }
 .photos1 {
   display: flex;
@@ -352,6 +353,7 @@
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -414,7 +416,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
     width: 100%;
@@ -451,7 +452,7 @@
     text-align: center;
     color: #293F8F;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
   }
   .item1 {
     display: flex;
@@ -467,7 +468,8 @@
   }
   .item1 p {
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .photos1 {
     display: flex;

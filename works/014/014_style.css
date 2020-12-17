@@ -60,6 +60,7 @@
 	background-color: white;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -118,7 +119,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
   .main-visual {
     width: 100%;
@@ -138,7 +138,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .explanation h1 {
     margin-bottom: 40px;
@@ -149,17 +149,15 @@
     text-align: center;
     font-weight: 350;
   }
+  .explanation img {
+    width: 60%;
+  }
   .item1,
   .item2 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-bottom: 100px;
-  }
-  .item3 {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+    margin-bottom: 40px;
   }
   .item p {
     margin-bottom: 30px;
@@ -169,6 +167,24 @@
   .item3 p {
     font-weight: 350;
   }
+  .betimage1-2 {
+    width: 80%;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .betimage1-2 img {
+    width: 100%;
+  }
+  .item3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .item3 p {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
   .photos {
     display: flex;
     flex-wrap: wrap;
@@ -177,15 +193,23 @@
     margin-top: 100px;
   }
   .photos img {
-    width: 350px;
-    height: 100%;
-    margin: 20px 0;
+    width: 100%;
+  }
+  .image3-1 {
+    width: 100%;
+  }
+  .image3-2 {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .image3-3 {
+    width: 50%;
   }
   .profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  	margin-top: 100px;
+  	margin-top: 80px;
   	width: 80%;
   }
   .profile-team {
@@ -344,6 +368,7 @@
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -402,7 +427,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
     width: 100%;
@@ -421,22 +445,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-top: 40px;
+    width: 100%;
+    margin-top: 20px;
   }
   .explanation p {
     margin-top: 10px;
     margin-bottom: 50px;
     text-align: center;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .explanation img {
+    width: 100%;
   }
   .item1,
   .item2 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .betimage1-2 {
+    width: 80%;
+    align-items: center;
+  }
+  .betimage1-2 img {
+    width: 100%;
   }
   .item3 {
     display: flex;
@@ -450,85 +485,94 @@
   .item2 p,
   .item3 p {
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
   }
   .photos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80%;
     margin-top: 50px;
+    width: 80%;
   }
   .photos img {
-    width: 350px;
-    height: 100%;
-    margin: 10px 0;
+    width: 100%;
   }
-    .profile {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    	margin-top: 100px;
-    	width: 80%;
-    }
-    .profile-team {
+  .image3-1 {
+    width: 100%;
+  }
+  .image3-2 {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .image3-3 {
+    width: 50%;
+  }
 
-    }
-    .profile-indivisual {
-      width: 100%;
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .profile-p {
-      display: block;
-      position: relative;
-      width: 100%;
-      clear: left;
-    }
-    .profile-img img {
-      width: 250px;
-      margin: 5%;
-      align-items: center;
-    }
-    .profile-name {
-      font-size: 20px;
-      margin-bottom: 5px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .profile-frigana {
-      font-size: 13px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    .profile-belonging {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .profile-sns {
-    	width: 100%;
-    	display: flex;
-      align-items: center;
-    	flex-direction: column;
-    	margin-bottom: 20px;
-    }
-    .profile-sns ul{
-      display: flex;
-      justify-content: space-around;
-    	width: 50%;
-    }
-    .profile-sns i{
-    	color: #182987;
-    	font-size: 25px;
-    }
-    .profile-sns img{
-    	width:20px;
-    }
-    .profile-sns a {
-      color: #182987;
-      font-size: 30px;
-    }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  	margin-top: 100px;
+  	width: 80%;
+  }
+  .profile-team {
+
+  }
+  .profile-indivisual {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .profile-p {
+    display: block;
+    position: relative;
+    width: 100%;
+    clear: left;
+  }
+  .profile-img img {
+    width: 250px;
+    margin: 5%;
+    align-items: center;
+  }
+  .profile-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .profile-frigana {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .profile-belonging {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .profile-sns {
+  	width: 100%;
+  	display: flex;
+    align-items: center;
+  	flex-direction: column;
+  	margin-bottom: 20px;
+  }
+  .profile-sns ul{
+    display: flex;
+    justify-content: space-around;
+  	width: 50%;
+  }
+  .profile-sns i{
+  	color: #182987;
+  	font-size: 25px;
+  }
+  .profile-sns img{
+  	width:20px;
+  }
+  .profile-sns a {
+    color: #182987;
+    font-size: 30px;
+  }
   .before-next {
     display: flex;
     justify-content: space-between;
