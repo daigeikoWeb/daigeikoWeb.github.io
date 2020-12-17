@@ -39,7 +39,7 @@ for (var fu of futas) {
   fillWaku(fu);
 }
 
-setInterval(futaSlide, 5000);
+setInterval(futaSlide, 10000);
 
 function futaSlide(){
   for (var i=0; i < futas.length; i++) {
