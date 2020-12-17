@@ -108,7 +108,6 @@ main {
 }
 .main-visual {
   width: 100%;
-  background-color: black;
   display: flex;
   position: relative;
 }
@@ -352,7 +351,6 @@ main {
   }
   .main-visual {
     width: 100%;
-    background-color: black;
     display: flex;
     position: relative;
     overflow: hidden;

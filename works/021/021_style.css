@@ -107,7 +107,6 @@ main {
 }
 .main-visual {
   width: 80%;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,7 +328,6 @@ main {
   }
   .main-visual {
     width: 80%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;

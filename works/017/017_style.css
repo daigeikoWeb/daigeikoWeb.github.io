@@ -107,7 +107,6 @@
   }
   .main-visual {
     width: 100%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,8 +127,9 @@
     font-size: 30px;
   }
   .explanation p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 350;
+    text-align: center;
   }
   .item1,
   .item2 {
@@ -321,7 +321,6 @@
   }
   .main-visual {
     width: 100%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
