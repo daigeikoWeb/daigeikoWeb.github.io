@@ -151,7 +151,7 @@
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, 0%);
   }
   .grid-area1 .cover-image img {
     height: 100%;
@@ -315,7 +315,7 @@
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, 0%);
   }
   .grid-area4 .cover-image img {
     height: 100%;
@@ -1152,16 +1152,4 @@
   width: 100%;
   display: block;
   position: absolute;
-}
-
-.cross-top,
-.cross-bottom {
-  /*height: 1%;*/
-  width: 100%;
-  /*
-  position: absolute;
-  right: 0px;
-}
-.cross-top{top: -30px;}
-.cross-bottom{bottom: -30px;*/
 }

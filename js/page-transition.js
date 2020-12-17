@@ -51,11 +51,11 @@ if (current_sec == ""){
         console.log('スタート！')
       });
       setTimeout(() => {
-        if (video_current(video) < 100){
+        if (video_current(video) < 1){
           clearInterval(deb_Int);
           senni_fade();
         }
-      }, 20000);
+      }, 5000);
     }
   }
   location.hash = 'top';

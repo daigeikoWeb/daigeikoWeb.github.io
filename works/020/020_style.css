@@ -160,14 +160,14 @@
 }
 .photos .large{
   width: 100%;
-}
+}/*
 .pdf{
   width: 80%;
   margin-top: 30px;
 }
 .pdf p{
   font-weight: 350;
-}
+}*/
 .profile {
   flex-direction: column;
   align-items: center;
@@ -257,6 +257,11 @@
 }
 }
 
+.pdf{
+  margin-top: 80px;
+  width: 96%;
+  height: 600px;
+}
 
 @media screen and (max-width: 560px) {
   * {

@@ -31,7 +31,7 @@ const data = [
   thomb: ['001_thumbnail_rect.png','001_thumbnail_sq.png']
 },{
   id: 2,
-  title: '',
+  title: 'tie',
   genre: -1,
   author: [{name: '櫻井風土',  univ: 0,  grade: -1}],
   award: -1,

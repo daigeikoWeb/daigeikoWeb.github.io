@@ -270,8 +270,8 @@
 
 .pdf{
   margin-top: 80px;
-  width: 80%;
-  height: 500px;
+  width: 96%;
+  height: 600px;
 }
 
 @media screen and (max-width: 560px) {
