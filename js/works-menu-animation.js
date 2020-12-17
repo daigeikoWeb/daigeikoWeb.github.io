@@ -1,6 +1,6 @@
 //console.log('読めた！');
 
-const toggler = document.querySelector('.smart-btn');
+const toggler = document.querySelector('.btn-trigger');
 const open_btn = document.querySelector('i.fas');
 const close_btn = document.querySelector('img.close');
 const menu = document.querySelector('.hide-menu');

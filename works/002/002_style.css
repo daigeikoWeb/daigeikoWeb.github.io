@@ -1,37 +1,54 @@
 @media screen and (min-width: 561px) {
   * {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 550;
-  letter-spacing: 0.1em;
-  line-height: 30px;
-}
-html {
-  width: 100%;
-  overscroll-behavior: none;
-}
-body {
-  width: 100%;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  z-index: 10;
-}
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 550;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+  }
+  html {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 8vh;
+    z-index: 10;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    line-height: 40px;
+    font-size: 16px;
+  }
+  h3 {
+    line-height: 40px;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+  }
 .hide-menu {
 	display: flex;
   align-items: center;
@@ -81,11 +98,6 @@ main {
   width:17px;
   margin: 0 20px;
 }
-.logo {
-  margin: 5px 13px;
-  width: 100px;
-}
-
 .smart-btn i {
   color: #182987;
   font-size: 35px;
@@ -103,11 +115,11 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 8vh;
+  z-index: -1;
 }
 .main-visual {
   width: 100%;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +142,10 @@ main {
 .explanation p {
   margin-bottom: 20px;
   font-weight: 350;
+}
+.explanation .name {
+  text-align: center;
+  margin-bottom: 80px;
 }
 .item1 {
   display: flex;
@@ -156,30 +172,68 @@ main {
   margin: 10px 0;
 }
 .profile {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 	margin-top: 100px;
 	width: 80%;
 }
-.profile img {
+.profile-team {
+
+}
+.profile-indivisual {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile-p {
+  display: block;
+  position: relative;
+  width: 100%;
+  clear: left;
+}
+.profile-img img {
   width: 250px;
-  margin-bottom: 50px;
+  margin: 5%;
+  align-items: center;
 }
 .profile-name {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
 }
-.frigana {
+.profile-frigana {
   font-size: 13px;
   margin-bottom: 10px;
-  font-weight: 350;
+  text-align: center;
 }
-.belonging {
+.profile-belonging {
   margin-bottom: 20px;
-  font-weight: 350;
+  text-align: center;
 }
-.sns a {
+.profile-sns {
+	width: 100%;
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+  margin-top: 20px;
+}
+.profile-sns ul{
+  display: flex;
+  justify-content: space-around;
+	width: 50%;
+}
+.profile-sns i{
+	color: #182987;
+	font-size: 25px;
+}
+.profile-sns img{
+	width:20px;
+}
+.profile-sns a {
   color: #182987;
   font-size: 30px;
 }
@@ -217,11 +271,10 @@ main {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 550;
     letter-spacing: 0.1em;
-    line-height: 27px;
+    line-height: 30px;
   }
   html {
     width: 100%;
-    overscroll-behavior: none;
   }
   body {
     width: 100%;
@@ -233,6 +286,7 @@ main {
     position: fixed;
     background-color: white;
     width: 100%;
+    height: 8vh;
     z-index: 10;
   }
   main {
@@ -241,6 +295,23 @@ main {
     align-items: center;
     flex-direction: column;
     position: relative;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    line-height: 40px;
+    font-size: 16px;
+  }
+  h3 {
+    line-height: 40px;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
   }
   .hide-menu {
     display: flex;
@@ -291,11 +362,7 @@ main {
     width:17px;
     margin: 0 20px;
   }
-  .logo {
-    margin: 5px 13px;
-    width: 100px;
-  }
-  
+
   .smart-btn i {
     color: #182987;
     font-size: 35px;
@@ -313,7 +380,8 @@ main {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 8vh;
+    z-index: -1;
   }
   .main-visual {
     width: 100%;
@@ -330,7 +398,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .explanation h1 {
     margin-bottom: 40px;
@@ -339,6 +407,10 @@ main {
   .explanation p {
     font-weight: 350;
     font-size: 13px;
+  }
+  .explanation .name {
+    text-align: center;
+    margin-bottom: 40px;
   }
   .item1 {
     display: flex;
@@ -366,35 +438,72 @@ main {
     height: 100%;
     margin: 10px 0;
   }
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    width: 80%;
-  }
-  .profile img {
-    width: 150px;
-    margin-bottom: 50px;
-  }
-  .profile-name {
-    margin-bottom: 5px;
-    font-size: 17px;
-  }
-  .frigana {
-    font-size: 11px;
-    margin-bottom: 10px;
-    font-weight: 350;
-  }
-  .belonging {
-    margin-bottom: 20px;
-    font-weight: 350;
-    font-size: 13px;
-  }
-  .sns a {
-    color: #182987;
-    font-size: 30px;
-  }
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    	margin-top: 100px;
+    	width: 80%;
+    }
+    .profile-team {
+
+    }
+    .profile-indivisual {
+      width: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .profile-p {
+      display: block;
+      position: relative;
+      width: 100%;
+      clear: left;
+    }
+    .profile-img img {
+      width: 250px;
+      margin: 5%;
+      align-items: center;
+    }
+    .profile-name {
+      font-size: 20px;
+      margin-bottom: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .profile-frigana {
+      font-size: 13px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .profile-belonging {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .profile-sns {
+    	width: 100%;
+    	display: flex;
+      align-items: center;
+    	flex-direction: column;
+    	margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .profile-sns ul{
+      display: flex;
+      justify-content: space-around;
+    	width: 50%;
+    }
+    .profile-sns i{
+    	color: #182987;
+    	font-size: 25px;
+    }
+    .profile-sns img{
+    	width:20px;
+    }
+    .profile-sns a {
+      color: #182987;
+      font-size: 30px;
+    }
   .before-next {
     display: flex;
     justify-content: space-between;
