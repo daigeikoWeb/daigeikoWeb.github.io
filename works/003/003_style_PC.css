@@ -59,6 +59,7 @@ p {
 	background-color: #fff;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
 	margin-top: 120px;
