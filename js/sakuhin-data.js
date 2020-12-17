@@ -55,12 +55,12 @@ const data = [
   thomb: ['004_thumbnail_rect.png','004_thumbnail_sq.png']
 },{
   id: 5,
-  title: '',
+  title: 'おうつり',
   genre: -1,
   author: [{name: '緒方幸之郎',  univ: 0,  grade: -1}],
   award: -1,
   link: 'works/005.html',
-  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
+  thomb: ['005_thumbnail_rect.png','005_thumbnail_sq.png']
 },{
   id: 6,
   title: 'papp',
@@ -81,12 +81,12 @@ const data = [
   thomb: ['007_thumbnail_rect.png','007_thumbnail_sq.png']
 },{
   id: 8,
-  title: '',
+  title: 'LUMINO',
   genre: -1,
   author: [{name: '新井大地',  univ: 1,  grade: -1}],
   award: -1,
   link: 'works/008.html',
-  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
+  thomb: ['008_thumbnail_rect.png','008_thumbnail_sq.png']
 },{
   id: 9,
   title: 'KOA',
