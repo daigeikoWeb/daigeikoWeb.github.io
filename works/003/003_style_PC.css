@@ -59,6 +59,7 @@ p {
 	background-color: #fff;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
 	margin-top: 120px;
@@ -156,6 +157,7 @@ p {
 }
 .article1 p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 .article1-img-column {
   display: flex;
@@ -178,6 +180,7 @@ p {
 .article2 p {
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .article2-img-column {
   width: 100%;

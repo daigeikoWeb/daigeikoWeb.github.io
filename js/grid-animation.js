@@ -39,7 +39,7 @@ for (var fu of futas) {
   fillWaku(fu);
 }
 
-setInterval(futaSlide, 5000);
+setInterval(futaSlide, 10000);
 
 function futaSlide(){
   for (var i=0; i < futas.length; i++) {
@@ -51,7 +51,7 @@ function futaSlide(){
 
       slideIn.onfinish = function(){
         fillWaku(fu);
-        fu.animate( futaKey(toRight, false), futaOpt(false, false));
+        fu.animate( futaKey(toRight, false), futaOpt(true, false));
 
         if (toRight) {
           fu.classList.remove('slided');
@@ -92,10 +92,10 @@ function futaOpt(is_delay, is_in){
   }
 
   if (is_delay) {
-    option['duration'] = 1300;
-    if (is_in) option['delay'] = 500;
+    option['duration'] = 1600;
+    if (is_in) option['delay'] = 3000;
   } else {
-    option['duration'] = 1300;
+    option['duration'] = 1600;
   }
   option['fill'] = 'forwards';
   return option;
@@ -146,7 +146,6 @@ for (var d of data){
   var link = detail[0];
   var title = detail[1];
   var award_name = detail[2];
-  console.log(d);
 
   if (d['award'] == 0) {
     award_icon.src = 'images/aikon1.png';
@@ -185,6 +184,7 @@ window.onresize = function(){
 }
 
 function setWorksSize(){
+  works[0].style.height = '1px';
   var work_width = works[0].clientWidth;
   var work_margin = window.innerWidth * 0.01;
 
@@ -199,6 +199,18 @@ function setWorksSize(){
 
   for (var judge of judge_images) {
     judge.style.height = judge_width + 'px';
+  }
+  for (var grid of grids) {
+    var image = grid.firstElementChild.firstElementChild.firstElementChild.firstElementChild;
+    image.style.width = '';
+    image.style.height = '';
+  }
+
+  for (var grid of grids) {
+    var image = grid.firstElementChild.firstElementChild.firstElementChild.firstElementChild;
+    image.style.objectFit = 'cover';
+    image.style.width = grid.clientWidth + 'px';
+    image.style.height = grid.clientHeight + 'px';
   }
 }
 

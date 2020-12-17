@@ -60,6 +60,7 @@
 	background-color: white;
 	height: 100vh;
 	display: none;
+  z-index: 5;
 }
 .hide-nav {
   margin-top: 100px;
@@ -118,7 +119,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .main-visual {
   width: 100%;
@@ -160,14 +160,14 @@
 }
 .photos .large{
   width: 100%;
-}
+}/*
 .pdf{
   width: 80%;
   margin-top: 30px;
 }
 .pdf p{
   font-weight: 350;
-}
+}*/
 .profile {
   flex-direction: column;
   align-items: center;
@@ -257,6 +257,11 @@
 }
 }
 
+.pdf{
+  margin-top: 80px;
+  width: 96%;
+  height: 600px;
+}
 
 @media screen and (max-width: 560px) {
   * {
@@ -320,6 +325,7 @@
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -378,7 +384,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
     width: 100%;
@@ -403,7 +408,8 @@
   .explanation p {
     margin-bottom: 40px;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: justify;
   }
   .explanation .name {
     text-align: center;

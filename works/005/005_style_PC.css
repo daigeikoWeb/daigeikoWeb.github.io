@@ -59,6 +59,7 @@
   	background-color: white;
   	height: 100vh;
   	display: none;
+    z-index: 5;
   }
   .hide-nav {
     margin-top: 100px;
@@ -117,7 +118,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 8vh;
-  z-index: -1;
 }
 .thumbnail {
   width: 100%;
@@ -164,7 +164,7 @@
   margin-bottom: 10px;
 }
 .concept p {
-
+  text-align: center;
 }
 .article1 {
   display: block;
