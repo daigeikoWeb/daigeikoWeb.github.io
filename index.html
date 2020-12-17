@@ -2,43 +2,488 @@
 <html lang="ja" prefix="">
   <head>
     <meta charset="utf-8">
-    <title>大芸工展</title>
-    <meta name="description" content="" />
+    <title>大芸工展2020</title>
+    <meta name="description" content="「大芸工展」とは九州大学芸術工学部、神戸芸術工科大学、東北芸術工科大学、名古屋市立大学芸術工学部、4つの芸術工学を学ぶ大学生による合同展示会です！">
     <html lang="ja"></html>
-    <meta property="og:title" content="">
+    <meta property="og:title" content="大芸工展2020">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="「大芸工展」とは九州大学芸術工学部、神戸芸術工科大学、東北芸術工科大学、名古屋市立大学芸術工学部、4つの芸術工学を学ぶ大学生による合同展示会です！">
     <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:image" content="">
+    <meta property="og:site_name" content="大芸工展2020">
+    <meta property="og:image" content="images/ogp_image.png">
     <meta property="og:locale" content="ja_JP">
-    <link rel="shortcut icon" href="favicon.ico" type="">
-    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel=”icon” href=/images/favicon.ico”>
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name= "twitter:image" content="">
+    <meta name="twitter:site" content="https://twitter.com/daigeikouten">
+    <meta name= "twitter:image" content="images/ogp_image.png">
     <link href="Computer.css" rel="stylesheet" type="text/css">
+    <link href="Tablet.css" rel="stylesheet" type="text/css">
+    <link href="Smartphone.css" rel="stylesheet" type="text/css">
     <meta name="keywords" content="大芸工展">
     <script src="https://kit.fontawesome.com/45d6264d1d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/sakuhin-data.js" defer></script>
     <script type="text/javascript" src="js/grid-animation.js" defer></script>
     <script type="text/javascript" src="js/page-transition.js" defer></script>
+    <script type="text/javascript" src="js/toggle-display.js" defer></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-THK8L0SXQB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-THK8L0SXQB');
+    </script>
   </head>
+
   <body>
-     <header>
-        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
-        <nav class="header-nav">
+    <div id="senni-part">
+      <video class="launch-pc" src="movies/launch/launchScreen01_PC.mp4" muted autoplay playsinline></video>
+      <video class="launch-mobile" src="movies/launch/launchScreen01_mobile.mp4" muted autoplay playsinline></video>
+    </div>
+   <header>
+      <a href="index.html"><img src="images/daigeiko2020_logo_offwhite.png" class="logo" alt="logo"></a>
+      <nav class="header-nav">
+        <li id="menu-back">あ</li>
+        <ul>
+          <li id="Top" class="current"><a href="#top">トップ</a></li>
+          <li id="Works"><a href="#works">作品一覧</a></li>
+          <li id="About"><a href="#about">大芸工展について</a></li>
+          <li id="Judge"><a href="#judge">審査員紹介</a></li>
+          <li id="Message"><a href="#message">代表挨拶</a></li>
+          <li id="Cooperation"><a href="#cooperation">ご支援者の皆さま</a></li>
+          <li id="Contact"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+        <div id="menu-back">
+          <!-- セクション移動用のパーツです -->
+        </div>
+      </nav>
+      <div class="head_sns">
+        <ul>
+          <li>
+            <a href="https://twitter.com/daigeikouten"   target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/daigeikoten/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/daigeikouten2020/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://note.com/daigeikouten2020/" target="_blank"><img src="images/note.png" alt="note"/></a>
+          </li>
+        </ul>
+      </div>
+      <div class="smart-btn">
+        <i class="fas fa-bars"></i>
+        <div class="close">
+          <img src="images/cross.png" alt="">
+        </div>
+      </div>
+   </header>
+
+   <main>
+     <div class="cross-top"></div>
+
+     <div id="main-cover">
+      <!-- セクション移動用のパーツです -->
+     </div>
+
+     <div class="smart-menu hide">
+       <!-- <img src="images/cross.png" class="close" alt="close"> -->
+        <nav class="smart-nav">
           <ul>
-            <li id="Exhibition" class="current"><a href="index.html">トップ</a></li>
-            <li id="Exhibition2020"><a href="Exhibition2020.html">作品一覧</a></li>
-             <li id="About"><a href="About.html">大芸工展について</a></li>
-             <li id="Judge"><a href="Judge.html">審査員紹介</a></li>
-             <li id="Message"><a href="Message.html">代表挨拶</a></li>
-             <li id="Cooperation"><a href="Cooperation.html">ご協力</a></li>
-            <li id="Contact"><a href="Contact.html">お問い合わせ</a></li>
+            <li id="Top" class="current"><a href="#top">トップ</a></li>
+            <li id="Works"><a href="#works">作品一覧</a></li>
+            <li id="About"><a href="#about">大芸工展について</a></li>
+            <li id="Judge"><a href="#judge">審査員紹介</a></li>
+            <li id="Message"><a href="#message">代表挨拶</a></li>
+            <li id="Cooperation"><a href="#cooperation">ご支援者の皆さま</a></li>
+            <li id="Contact"><a href="#contact">お問い合わせ</a></li>
           </ul>
         </nav>
-        <div class="head_sns">
+     </div>
+
+     </div>
+     <div id="top">
+       <div class="grid-container">
+
+         <div class="grid-area1 thomb_M">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works1.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">紅葉見に行きたい</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area2 thomb_S">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works2.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">Furin</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area3 thomb_S">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works3.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">八女の川</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area4 thomb_M">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works4.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">Happa no Design</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area5 thomb_L">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works5.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">農業マシン</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area6 thomb_S">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works6.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">ぼくの原付</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="grid-area7 thomb_S">
+           <div class="cover-content-container">
+             <div class="cover-image-wrap">
+               <div class="cover-image"><img src="images/works7.png"></div>
+               <div class="details-wrap">
+                 <a href="works/001.html"></a>
+                 <div class="details">
+                   <div class="details-title">岩</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+       </div>
+     </div>
+
+
+      <!--テーマ_OK-->
+
+      <div id="theme">
+        <div class="theme-cover">
+          <div class="theme-content">
+            <img src="images/daigeiko2020_logo.png" class="logo-theme" alt="logo-white">
+            <h1>“うつる”</h1>
+            <p>今年のテーマは「うつる」です。
+               うつる。映る。憑る。写る。移る。感染る。遷る...情報や感情、考え⽅が伝わっていく時代のなかでそれぞれの「うつる」を表現します。
+               芸術工学を学ぶ学生の個性ある「うつる」により、素敵な作品が集まった展示会を開催できるよう励んでおります。<br>
+               アンケートへのご協力もよろしくお願いいたします。
+             </p>
+          </div>
+          <div class="questionnaire-btn-cover">
+            <a href="https://forms.gle/V4A8dWBBFK7JLEFd6" alt="アンケートに回答する">
+              <div class="questionnaire-btn">
+                アンケートに回答する
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--作品一覧_OK-->
+      <div id="works">
+        <div class="works-content">
+          <div class="works-covers">
+
+            <div class="works-cover">
+              <div class="cover-content-container">
+                <img src="images/aikon1.png" class="award" alt="logo-white">
+                <div class="cover-image-wrap">
+                  <div class="cover-image">
+                     <img src="images/works1.png" alt="works-image">
+                  </div>
+                </div>
+                <div class="details-wrap">
+                  <div class="details">
+                    <a href="works/001.html"></a>
+                    <div class="details-title">紅葉見に行きたい</div>
+                    <div class="details-award">審査員賞（糸目華賞）</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--大芸工展について_OK-->
+      <div id="about">
+        <div class="about-cover">
+          <h1>大芸工展について</h1>
+          <p>
+            皆様は、全国の芸術工学を学ぶ学生による展示会「大芸工展」をご存知でしょうか？
+            「大芸工展」とは九州大学芸術工学部、神戸芸術工科大学、東北芸術工科大学、名古屋市立大学芸術工学部、4つの芸術工学を学ぶ大学生による合同展示会です!
+            昨年度の「大芸工展2019」では審査員として、江口海里氏（KAIRI EGUCHI DESIGN）畑友洋氏（畑友洋建築設計事務所）堀田純希氏（株式会社博展）を招き講評会を行いました。
+            プロとしてぞれぞれの方面で活躍をされている方からの、作品を見る視点や貴重な意見をいただくことで様々な気づきを得ることができたと感じています。<br>
+            建築、プロダクト、映像表現、ビジュアル、アート、さまざまな分野を学んでいる学生が大芸工展2020に参加しています。<br>
+            芸術工学を学ぶ学生の、うつるをテーマにした作品をどうぞお楽しみください！
+           <!-- daigeiko.netとかのリンク載せますか？ -->
+          </p>
+        </div>
+      </div>
+
+      <!--審査員_OK-->
+      <div id="judge">
+        <div class="judge-cover">
+          <div class="judge-abstract">
+            <h1>審査員紹介</h1>
+            <p>大芸工展では、現役でご活躍されているデザイナーから講評をいただきます。審査員の皆さまには19日（土）に行われる講評会LIVEにてご登壇していただきます。</p>
+          </div>
+          <div class="judge-content">
+            <div class="judge-content-container">
+              <div class="judge-image-wrap">
+                <div class="judge-image">
+                  <img src="images/judge1.png">
+                </div>
+                <div class="judge-details-wrap">
+                  <div class="judge-details">詳しい紹介</div>
+                </div>
+              </div>
+
+              <div class="judge-name-wrap">
+                <div class="judge-name">堀内 康広</div>
+              </div>
+            </div>
+
+            <div class="judge-content-container">
+              <div class="judge-image-wrap">
+                <div class="judge-image">
+                  <img src="images/judge2.png">
+                </div>
+                <div class="judge-details-wrap">
+                  <div class="judge-details">詳しい紹介</div>
+                </div>
+              </div>
+
+              <div class="judge-name-wrap">
+                <div class="judge-name">二俣 公一</div>
+              </div>
+            </div>
+
+            <div class="judge-content-container">
+              <div class="judge-image-wrap">
+                <div class="judge-image">
+                  <img src="images/judge3.png">
+                </div>
+                <div class="judge-details-wrap">
+                  <div class="judge-details">詳しい紹介</div>
+                </div>
+              </div>
+
+              <div class="judge-name-wrap">
+                <div class="judge-name">原田 祐馬</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="introduction1">
+          <img src="images/cross.png" class="close" alt="close">
+          <div class="explanation">
+            <img src="images/judge1.png" alt="judge1">
+            <p class="explanation-name">堀内 康広</p>
+            <p class="explanation-title">トランクデザイン株式会社 代表取締役/クリエイティブディレクター</p>
+            <p>2009年に「トランクデザイン」を、神戸垂水・商大筋にオフィス＆ショップをオープン。
+              2011年には兵庫県のモノづくりを紹介する「Hyogo craft」を立ち上げ、アパレル・お香・木工・陶磁器など地域産業を活かしたオリジナルプロダクトを手掛け、国内外のセレクトショップへの販路開拓も行っている。近年は兵庫県のみならず、日本全国の伝統工芸のプロデュースやシティプロモーションに携わっている。2018年台湾のデザインアワード「Golden Pin Design Award」3プロジェクト入賞、1プロジェクト最優秀賞受賞。2019年Good design award best100・best focus受賞。
+              </p>
+            <a href="https://trunkdesign-web.com/" alt="堀内 康広 url" target="_blank">https://trunkdesign-web.com</a>
+          </div>
+          <div class="judge-arts">
+            <div class="judge-art1">
+              <img src="images/judge1-1.jpg" alt="judge-art1">
+              <p>hibi</p>
+            </div>
+            <div class="judge-art2">
+              <img src="images/judge1-2.png" alt="judge-art2">
+              <p>Ku</p>
+            </div>
+            <div class="judge-art3">
+              <img src="images/judge1-3.jpg" alt="judge-art3">
+              <p>王地山焼</p>
+            </div>
+          </div>
+        </div>
+        <div class="introduction2">
+          <img src="images/cross.png" class="close" alt="close">
+          <div class="explanation">
+            <img src="images/judge2.png" alt="judge2">
+            <p class="explanation-name">二俣 公一</p>
+            <p class="explanation-title">空間・プロダクトデザイナー</p>
+            <p>1975年鹿児島生まれ。福岡と東京を拠点に空間設計を軸とする「ケース・リアル (CASE-
+              REAL)」とプロダクトデザインに特化する「二俣スタジオ (KOICHI FUTATSUMATASTUDIO)」両主宰。1998年より自身の活動を始め、国内外でインテリア・建築から家具・プロダクトに至るまで多岐に渡るデザインを手がける。近作に「DDD HOTEL」「ヨーガンレール青山店」「イソップ新宿店」「キウルベンチ(Artek)」などがある。</p>
+              <a href="http://www.casereal.com" alt="二俣 公一 url" target="_blank">http://www.casereal.com</a>
+              <a href="http://www.futatsumata.com" alt="二俣 公一 url" target="_blank">http://www.futatsumata.com</a>
+          </div>
+          <div class="judge-arts">
+            <div class="judge-art1">
+              <img src="images/judge2-1.png" alt="judge-art1">
+              <p>KIULU BENCH</p>
+            </div>
+            <div class="judge-art2">
+              <img src="images/judge2-2.jpg" alt="judge-art2">
+              <p>イソップ新宿店</p>
+            </div>
+            <div class="judge-art3">
+              <img src="images/judge2-3.jpg" alt="judge-art3">
+              <p>DDD HOTEL</p>
+            </div>
+          </div>
+        </div>
+        <div class="introduction3">
+          <img src="images/cross.png" class="close" alt="close">
+          <div class="explanation">
+            <img src="images/judge3.png" alt="judge3">
+            <p class="explanation-name">原田 祐馬</p>
+            <p class="explanation-title">UMA / design farm代表（アートディレクター/デザイナー）</p>
+            <p>1979年大阪生まれ。UMA / design farm代表。大阪を拠点に文化や福祉、地域に関わるプロジェクトを中心に、グラフィック、空間、展覧会や企画開発などを通して、理念を可視化し新しい体験をつくりだすことを目指している。「共に考え、共につくる」を大切に、対話と実験を繰り返すデザインを実践。グッドデザイン賞審査委員、京都造形芸術大学空間演出デザイン学科客員教授。愛犬の名前はワカメ。</p>
+            <a href="http://umamu.jp" alt="原田 祐馬 url" target="_blank">http://umamu.jp</a>
+          </div>
+          <div class="judge-arts">
+            <div class="judge-art1">
+              <img src="images/judge3-1.png" alt="judge-art1">
+              <p>BED & LOCAL SHIBAMATA FU-TEN</p>
+            </div>
+            <div class="judge-art2">
+              <img src="images/judge3-2.png" alt="judge-art2">
+              <p>ochocochoco</p>
+            </div>
+            <div class="judge-art3">
+              <img src="images/judge3-3.png" alt="judge-art3">
+              <p>find.fUKUI / make.fUKUI WONDERS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--代表あいさつ_OK-->
+      <div id="message">
+        <div class="message-cover">
+          <h1>代表あいさつ</h1>
+          <div class="representative-cover">
+            <div class="representative-img">
+              <img src="images/representative-img.png" alt="representative-img">
+            </div>
+            <div class="words">
+              <h2>大芸工展2020代表  糸目 華</h2>
+              <p>
+                こんにちは。大芸工展運営委員代表 糸目華です。この度は「大芸工展2020」の展示会を見ていただき誠にありがとうございます。うつる をデザインテーマのもと、学生が様々なうつるをデザイン、表現しています。<br>
+                「大芸工展2020」は私たち運営委員だけでは到底実現しませんでした。
+                協賛・協力していただいた企業の皆様、クラウドファンディングにご協力してくださった支援者の皆様、そしてお忙しい中審査員を引き受けてくださったデザイナーの方々や、卒業生など多くの方々に支えられ、無事に開催を迎えることができました。この場をお借りして、厚くお礼申し上げます。<br>
+                この展示会を通して、出展された作品の思いを感じ、楽しんでいただければ幸いです。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ご支援者の皆さま_OK-->
+      <div id="cooperation">
+        <div class="cooperation-cover">
+          <div class="cooperation-list">
+            <div class="cooperation-title">
+              <h1>ご支援者の皆さま</h1>
+            </div>
+            <div class="cooperation-caption">
+              <p>敬称略</p>
+            </div>
+            <div class="supporters-container">
+              <div class="supporters-number">
+                <div class="gold">
+                    <div class="gold1">
+                      <p class="supporter-name" style="font-weight:bold;">安田幸司 様</p>
+                      <p class="supporter-company">PIPELINE株式会社</p>
+                      <img src="images/supporter-logo1.png" alt="gold-sponcer-img">
+                    </div>
+                    <div class="gold2">
+                      <img src="images/supporter-logo2.png" alt="gold-sponcer-img">
+                    </div>
+                 </div>
+                <div class="cheer">
+                  <p class="supporter-name" style="font-weight:bold;">中西えみ 様</p>
+                </div>
+                <div class="thanks">
+                  <p>計61名の方にご協力いただきました。<br>
+                     ご支援いただいた皆様に心より御礼申し上げます。<br><br>
+                    引き続き大芸工展を宜しくお願い申し上げます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="contact-cover">
+          <div class="contact-content">
+            <h1>お問い合わせ</h1>
+            <p>大芸工展2020運営へご要望がございましたら、こちらのフォームからお送りください。
+             </p>
+          </div>
+          <div class="contact-btn-cover">
+            <a href="https://forms.gle/qbNGHdpKQcQgBNDKA" alt="アンケートに回答する">
+              <div class="contact-btn">
+                お問い合わせページへ
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="cross-bottom"></div>
+        <div class="foot_sns">
           <ul>
             <li>
               <a href="https://twitter.com/daigeikouten"   target="_blank"><i class="fab fa-twitter"></i></a>
@@ -49,59 +494,12 @@
             <li>
               <a href="https://www.instagram.com/daigeikouten2020/" target="_blank"><i class="fab fa-instagram"></i></a>
             </li>
+            <li>
+              <a href="https://note.com/daigeikouten2020/" target="_blank"><img src="images/note.png" alt="note"/></a>
+            </li>
           </ul>
         </div>
-     </header>
-     <main>
-       <div id="main-cover">
-         <!--ページ移動のアニメーションで使っています！消さないようにお願いします！-->
-       </div>
-       <div class="arts">
-         <div class="arts-left">
-            <div class="arts-left-left">
-              <div class="art1 arts-tate">
-                <a href="art1.html"><img src="images/art1.png" alt="art1" /></a>
-              </div>
-              <div class="art2 arts-cube-mini">
-                <a href="art2.html"><img src="images/art2.png" alt="art2"/></a>
-              </div>
-            </div>
 
-            <div class="arts-left-right">
-              <div class="art3 arts-cube-mini">
-                <a href="art3.html"><img src="images/art2.png" alt="art3"/></a>
-              </div>
-              <div class="art4 arts-tate">
-                <a href="art4.html" ><img src="images/art1.png" alt="art4"/></a>
-              </div>
-            </div>
-          </div>
-
-         <div class="arts-right">
-
-           <div class="arts-right-top">
-             <div class="art5 arts-cube-dai">
-               <a href="art5.html"><img src="images/art3.png" alt="art5"/></a>
-             </div>
-           </div>
-           <div class="arts-right-bottom">
-             <div class="arts-right-bottom-child">
-               <div class="art6 arts-cube-mini">
-                 <a href="art6.html"><img src="images/art2.png" alt="art6"/></a>
-               </div>
-             </div>
-             <div class="arts-right-bottom-child">
-               <div class="art7 arts-cube-mini">
-                 <a href="art7.html"><img src="images/art2.png" alt="art7"/></a>
-               </div>
-             </div>
-          </div>
-
-        </div>
-        <div class="more">
-          <a href="index.html">作品一覧</a>
-        </div>
-       </main>
-      </div>
-   </body>
-   </html>
+    </main>
+  </body>
+</html>

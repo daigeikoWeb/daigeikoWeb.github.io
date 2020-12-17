@@ -1,107 +1,71 @@
-var selector = 'div.arts-tate, div.arts-cube-mini, div.arts-cube-dai';
+const grids = document.querySelectorAll('.grid-area1, .grid-area2, .grid-area3, .grid-area4,' +
+                                         '.grid-area5, .grid-area6, .grid-area7');
 
-const grids = document.querySelectorAll(selector);
+const grids_size = [1, 0, 0, 1, 2, 0, 0];
+
+function isTablet(){
+  //タブレット、スマホ版ページの時にtrueを返す
+  return window.innerWidth < 1024;
+}
+
+const futas = [];
 
 const futaTemplate = document.createElement('div');
 futaTemplate.classList.add('futa');
 
-const futas = [];
-
-const main = document.querySelector('main');
-
-for (var gr of grids) {
+for (var grid of grids) {
   const futaCopy = futaTemplate.cloneNode(true);
-  if (Math.random() < 0.5){
-    futaTemplate.classList.add('slided');
+  if (Math.random() > 0.5){
+    futaCopy.classList.add('slided');
   }
-  gr.appendChild(futaCopy);
+  if (grid.classList.contains('thomb_L')){
+    futaCopy.classList.add('thomb_L');
+  } else if (grid.classList.contains('thomb_M')){
+    futaCopy.classList.add('thomb_M');
+  } else {
+    futaCopy.classList.add('thomb_S');
+  }
   futas.push(futaCopy);
-
-  grid_sizing(gr);
+  grid.firstElementChild.appendChild(futaCopy);
 }
 
-window.onresize = function(){
-  for (var gr of grids) {
-    grid_sizing(gr);
-  }
-}
+var fRand = makeRandomArray(futas.length);
 
-function grid_sizing(grid) {
-  var margin = main.clientWidth * 4 / 704;
-  grid.style.margin = margin + 'px';
-  if (grid.classList.contains('arts-cube-dai')){
-    grid.style.height = grid.clientWidth / 331 * 321 + 'px';
-  } else if (grid.classList.contains('arts-tate')){
-    grid.style.height = grid.clientWidth / 161 * 321 + 'px';
-  } else if (grid.classList.contains('arts-cube-mini')){
-    grid.style.height = grid.clientWidth + 'px';
-  }
-}
 
+var wRand = makeRandomArray(data.length);
+var wCount = 0;
+
+for (var fu of futas) {
+  fillWaku(fu);
+}
 
 setInterval(futaSlide, 5000);
 
 function futaSlide(){
   for (var i=0; i < futas.length; i++) {
-    futas[i].style.display = 'block';
-    //const ur = uras[wRand[i]];
-    setTimeout(() => {
-      const toRight = futas[i].classList.contains('slided');
-
-      //ur.animate(futaKey(!toRight, true) ,futaOpt(false, true));
-      const slin = futas[i].animate(futaKey(!toRight, true) ,futaOpt(false, true));
-
-      slin.onfinish = function(){
-        //var target = fu.previousElementSibling;
-        //fillWaku(target);
-
-        //ur.animate( futaKey(toRight, false), futaOpt(false, false));
-        futas[i].animate( futaKey(toRight, false), futaOpt(false, false));
-
-        if (toRight) {
-          futas[i].classList.remove('slided');
-          //ur.classList.remove('slided');
-        } else {
-          futas[i].classList.add('slided');
-          //ur.classList.add('slided');
-        }
-      }
-    }, 0 * i);
-  }
-}
-
-
-function futaSlide(){
-  for (var i=0; i < futas.length; i++) {
-    const fu = futas[i];
-    fu.style.display = 'block';
-    //const ur = uras[wRand[i]];
+    const fu = futas[fRand[i]];
     setTimeout(() => {
       const toRight = fu.classList.contains('slided');
 
-      //ur.animate(futaKey(!toRight, true) ,futaOpt(false, true));
-      const slideIn = fu.animate(futaKeyframe(toRight, true) ,futaOption(false, true));
+      const slideIn = fu.animate(futaKey(toRight, true) ,futaOpt(false, true));
 
       slideIn.onfinish = function(){
-        //var target = fu.previousElementSibling;
-        //fillWaku(target);
-
-        //ur.animate( futaKey(toRight, false), futaOpt(false, false));
-        fu.animate( futaKeyframe(toRight, false), futaOption(false, false));
+        fillWaku(fu);
+        fu.animate( futaKey(toRight, false), futaOpt(false, false));
 
         if (toRight) {
           fu.classList.remove('slided');
-          //ur.classList.remove('slided');
         } else {
           fu.classList.add('slided');
-          //ur.classList.add('slided');
         }
       }
-    }, 0 * i);
+    }, 100 * i);
   }
+  fRand = makeRandomArray(fRand.length);
 }
 
-function futaKeyframe(is_right, is_in){
+
+function futaKey(is_right, is_in){
   //キーフレームを格納する配列
   const key = [{transform: 'translateX(0%)'}];
   if (is_right == is_in) transition = {transform: 'translateX(100%)'};
@@ -118,21 +82,136 @@ function futaKeyframe(is_right, is_in){
   return key;
 }
 
-function futaOption(is_delay, is_in){
+function futaOpt(is_delay, is_in){
   option = {};
   if (is_in){
-    option['easing'] = 'cubic-bezier(.21,.68,.44,1)';
+    option['easing'] = 'cubic-bezier(.49,.01,.31,.99)';
   } else {
-    option['easing'] = 'cubic-bezier(.56,0,.79,.32)';
+    option['easing'] = 'cubic-bezier(.49,.01,.31,.99)';
     option['delay'] = 100;
   }
 
   if (is_delay) {
-    option['duration'] = 600;
-    if (is_in) option['delay'] = 100;
+    option['duration'] = 1300;
+    if (is_in) option['delay'] = 500;
   } else {
-    option['duration'] = 700;
+    option['duration'] = 1300;
   }
   option['fill'] = 'forwards';
   return option;
+}
+
+var wRand = makeRandomArray(data.length);
+var wCount = 0;
+
+function fillWaku(futa){
+  var children = futa.previousElementSibling.children;
+  var image = children[0].firstElementChild;
+  var detail = children[1].children;
+  var link = detail[0];
+  var title = detail[1].firstElementChild;
+  var sakuhin = data[wRand[wCount]];
+
+  var thomb_size = 1;
+  var pathroot = 'images/thumbnails/sq/';
+  if (futa.classList.contains('thomb_M')){
+    thomb_size = 0;
+    pathroot = 'images/thumbnails/rect/';
+  }
+
+  image.src = pathroot + sakuhin['thomb'][thomb_size];
+
+  link.href = sakuhin['link'];
+  title.innerHTML = sakuhin['title'];
+  if (sakuhin['title'] == ''){
+    title.innerHTML = 'Coming Soon…'
+  }
+
+  if (++wCount == wRand.length) wCount = 0;
+}
+
+
+const works_in = document.querySelector('.works-covers');
+const work_temp = document.querySelector('.works-cover');
+work_temp.remove();
+//console.log(work_temp);
+
+for (var d of data){
+  var copy = work_temp.cloneNode(true);
+  var children = copy.firstElementChild.children;
+  //console.log(children);
+  var award_icon = children[0];
+  var img = children[1].firstElementChild.firstElementChild;
+  var detail = children[2].firstElementChild.children;
+  var link = detail[0];
+  var title = detail[1];
+  var award_name = detail[2];
+  console.log(d);
+
+  if (d['award'] == 0) {
+    award_icon.src = 'images/aikon1.png';
+    award_name.innerHTML = 'グランプリ';
+  } else if (d['award'] == 1){
+    award_icon.src = 'images/aikon2.png';
+    award_name.innerHTML = '審査員賞（糸目華賞）';
+  } else {
+    award_icon.remove();
+    award_name.remove();
+  }
+  img.src = 'images/thumbnails/sq/' + d['thomb'][1];
+  link.href = d['link'];
+  title.innerHTML = d['title'];
+  if (d['title'] == ''){
+    title.innerHTML = 'Coming Soon…'
+  }
+
+  works_in.appendChild(copy);
+}
+
+
+
+const works = document.querySelectorAll('.works-cover');
+
+setWorksSize();
+
+window.onload = function(){
+  setWorksSize();
+}
+
+window.onresize = function(){
+  setWorksSize();
+  find_menu(location.hash); // from page-page-transition.js
+  move_menu(""); // from page-page-transition.js
+}
+
+function setWorksSize(){
+  var work_width = works[0].clientWidth;
+  var work_margin = window.innerWidth * 0.01;
+
+  //console.log(work_margin);
+  for (var work of works) {
+    work.style.height = work_width + 'px';
+    work.style.marginBottom = work_margin + 'px';
+  }
+
+  var judge_images = document.querySelectorAll('.judge-image-wrap');
+  var judge_width = judge_images[0].clientWidth;
+
+  for (var judge of judge_images) {
+    judge.style.height = judge_width + 'px';
+  }
+}
+
+
+function makeRandomArray(length){
+  const array = [];
+  for (var i = 0; i < length; i++) {
+    array.push(i);
+  }
+  for (var i = length - 1; i >= 0; i--) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+    [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
+  }
+  //console.log(array);
+  return array;
 }
