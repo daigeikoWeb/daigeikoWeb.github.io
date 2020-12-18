@@ -199,6 +199,10 @@
 .article2 p {
   margin-bottom: 30px;
 }
+.article2 .article-column-text {
+  padding-left: 0 !important;
+  width: 100% !important;
+}
 
 .article3 {
   display: flex;
