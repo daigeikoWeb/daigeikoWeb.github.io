@@ -22,13 +22,8 @@
     position: fixed;
     background-color: white;
     width: 100%;
-    height: 10%;
+    height: 8vh;
     z-index: 10;
-    overflow: hidden;
-  }
-  .logo{
-    margin: 10px;
-    width: 100px;
   }
   main {
     width: 100%;
@@ -53,8 +48,6 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
-    text-align:center;
-
   }
   .hide-menu {
     display: flex;
@@ -119,11 +112,11 @@
     display: none;
   }
   .works {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8vh;
   }
 .thumbnail {
   width: 100%;
@@ -135,19 +128,6 @@
   width: 100%;
   height: auto;
 }
-.video {
-  width:100%;
-  padding-bottom: 56.25%;
-  height:0px;
-  position: relative;
-}
-.video iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .title {
   display: flex;
   flex-direction: column;
@@ -157,24 +137,31 @@
   margin-bottom: 80px;
 }
 .title h1 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .title p {
-  margin-bottom: 20px;
+  margin-bottom: 4%;
   text-align: center;
 }
 .title-logo {
+  display: block;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
-.title-logo img {
-  width: 70%;
-  margin: 0 auto;
+.title-logo .rubi p{
+  text-align: center;
+}
+.poem p {
+  font-weight: 550;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40%;
 }
 .concept {
-  width: 80%;
   text-align: justify;
+  width: 80%;
+  margin-bottom: 10%;
 }
 .concept h2 {
 }
@@ -185,177 +172,150 @@
 .concept p {
 
 }
-.article1 {
+.artworks {
+  width: 80%;
+}
+.artworks img {
+  width: 100%;
+}
+.artworks-column {
   display: flex;
   width: 80%;
-  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-/*
-.video {
-  width:100%;
-  padding-bottom: 56.25%;
-  height:0px;
+.art1 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.art2 {
+  width: 48%;
+  margin-right: 4%;
+}
+.art3 {
+  width: 48%;
+}
+.art4 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.art5 {
+  width: 48%;
+  margin-right: 26%;
+  margin-left: 26%;
+}
+.art6 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.art7 {
+  width: 48%;
+  margin-right: 4%;
+}
+.art8 {
+  width: 48%;
+}
+.artworks-title {
+  margin-top: 2%;
+}
+.artworks-title p {
+  font-weight: 550;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30%;
+}
+.profile {
+  align-items: center;
+  text-align: center;
+	margin-top: 100px;
+	width: 80%;
+}
+.profile-team {
+  align-items: center;
+  margin:  0 auto;
+  width: 60%;
+}
+.profile-team .profile-img {
+  margin-bottom: 30px;
+}
+.profile-team .profile-name {
+  margin-bottom: 20px;
+}
+.profile-indivisual {
+  width: 100%;
+  align-items: center;
+}
+.profile-p {
+  display: block;
   position: relative;
-}
-.video iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
-
+  clear: left;
 }
-*/
-.article2 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
+.profile-img img {
+  width: 250px;
+  margin: 5%;
+  align-items: center;
 }
-.article2 h2 {
+.profile-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.profile-frigana {
+  font-size: 13px;
   margin-bottom: 10px;
+  text-align: center;
 }
-.article2 p {
-  margin-bottom: 30px;
-  text-align: justify;
+.profile-belonging {
+  margin-bottom: 20px;
+  text-align: center;
 }
-
-.article3 {
+.profile-sns {
+	width: 100%;
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+  margin-top: 20px;
+}
+.profile-sns ul{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+	width: 50%;
+}
+.profile-sns i{
+	color: #182987;
+	font-size: 25px;
+}
+.profile-sns img{
+	width:20px;
+}
+.profile-sns a {
+  color: #182987;
+  font-size: 30px;
+}
+.before-next {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
-  margin-top: 80px;
+  margin: 100px 0;
 }
-.article3 h2 {
-  margin-bottom: 10px;
+.before-next a {
+  color: #182987;
+  text-decoration: none;
+  font-size: 20px;
 }
-.article3 p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-.article-column-image img {
+.back {
   width: 100%;
+  background-color: #182987;
+  text-align: center;
+  padding: 10px 0;
 }
-
-.article4 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
+.back a {
+  color: white;
+  text-decoration: none;
 }
-.article4 h2 {
-  margin-bottom: 10px;
-}
-.article4 p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-
-.article5 {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 80px;
-}
-.article5 h2 {
-  margin-bottom: 10px;
-}
-.article5 p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-  .profile {
-    align-items: center;
-    text-align: center;
-  	margin-top: 100px;
-  	width: 80%;
-  }
-  .profile-team {
-    align-items: center;
-    margin:  0 auto;
-    width: 60%;
-  }
-  .profile-team .profile-img {
-    margin-bottom: 30px;
-  }
-  .profile-team .profile-name {
-    margin-bottom: 20px;
-  }
-  .profile-indivisual {
-    width: 100%;
-    align-items: center;
-  }
-  .profile-p {
-    display: block;
-    position: relative;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    clear: left;
-  }
-  .profile-img img {
-    width: 250px;
-    margin: 5%;
-    align-items: center;
-  }
-  .profile-name {
-    font-size: 20px;
-    margin-bottom: 5px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .profile-frigana {
-    font-size: 13px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .profile-belonging {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .profile-sns {
-  	width: 100%;
-  	display: flex;
-    align-items: center;
-  	flex-direction: column;
-  	margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .profile-sns ul{
-    display: flex;
-    justify-content: space-around;
-  	width: 50%;
-  }
-  .profile-sns i{
-  	color: #182987;
-  	font-size: 25px;
-  }
-  .profile-sns img{
-  	width:20px;
-  }
-  .profile-sns a {
-    color: #182987;
-    font-size: 30px;
-  }
-  .before-next {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 100px 0;
-  }
-  .before-next a {
-    color: #182987;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  .back {
-    width: 100%;
-    background-color: #182987;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .back a {
-    color: white;
-    text-decoration: none;
-  }
 }
