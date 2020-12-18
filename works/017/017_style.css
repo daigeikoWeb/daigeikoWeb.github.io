@@ -144,6 +144,7 @@
   .explanation p {
     margin-bottom: 30px;
     font-weight: 350;
+    text-align: center;
   }
   .explanation .name {
     text-align: center;
