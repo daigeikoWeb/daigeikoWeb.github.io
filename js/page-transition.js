@@ -52,6 +52,7 @@ if (current_sec == ""){
       });
       setTimeout(() => {
         if (video_current(video) < 1){
+          video.pause();
           clearInterval(deb_Int);
           senni_fade();
         }
