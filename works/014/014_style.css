@@ -203,7 +203,7 @@
     width: 100%;
   }
   .image3-3 {
-    width: 50%;
+    width: 100%;
   }
   .profile {
     flex-direction: column;
@@ -481,6 +481,10 @@
   .item p {
     margin-bottom: 30px;
   }
+  .item3 p {
+    text-align: center;
+    font-weight: 550 !important;
+  }
   .item1 p,
   .item2 p,
   .item3 p {
@@ -505,7 +509,7 @@
     width: 100%;
   }
   .image3-3 {
-    width: 50%;
+    width: 100%;
   }
 
   .profile {
