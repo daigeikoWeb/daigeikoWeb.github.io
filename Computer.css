@@ -1143,7 +1143,7 @@
 #senni-part .launch-mobile{
   display: none;
 }
-
+}
 
 #senni-part .launch-pc, #senni-part .launch-mobile{
   position: absolute;
@@ -1192,5 +1192,4 @@
   width: 100%;
   display: block;
   position: absolute;
-}
 }
