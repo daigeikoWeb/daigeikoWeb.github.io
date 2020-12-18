@@ -1022,6 +1022,10 @@
 .g1 img {
   width: 80%;
   margin-top: 20%;;
+  margin-bottom: 18%;
+}
+.g1 p {
+  font-size: 16px;
 }
 .g2 {
   width: 44%;
@@ -1032,6 +1036,9 @@
   width: 40%;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+.g2 p {
+  font-size: 16px;
 }
 .g-name {
   margin-bottom: 40px;
@@ -1054,6 +1061,9 @@
 .s1 {
 
 }
+.s1 p {
+  font-size: 16px;
+}
 .s p {
 
 }
@@ -1062,7 +1072,7 @@
   margin-bottom: 10%;
 }
 .others p {
-
+  font-size: 16px;
 }
 .kid {
 
@@ -1074,6 +1084,7 @@
 }
 .kid p {
   margin-bottom: 10%;
+  font-size: 16px;
 }
 .thanks{
   margin-top: 50px;

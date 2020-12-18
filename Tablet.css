@@ -993,74 +993,112 @@
     height: 100%;
   }
   .cooperation-cover {
-    height: 100%;
     width: 80%;
-    left: 50%;
-    object-fit: cover;
-    position: relative;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
   }
-  .cooperation-list {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    overflow: hidden;
+.cooperation-title h1 {
+    margin-bottom: 10%;
+    margin-top: 10%;
   }
-  .cooperation-title h1 {
-    margin-top: 20%;
-  }
-  .cooperation-list .cooperation-title h1 {
-    margin-bottom: 20px;
-  }
-  .cooperation-list .cooperation-caption p {
+.cooperation-caption p {
     color: #182987;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 350;
     text-align: center;
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
   }
-  .supporters-container {
-    height: 100%;
-  }
-  .gold {
-    display: flex;
-    justify-content: space-around;
-  }
-  .gold1 img {
-    width: 210px;
-    margin-top: 10px;
-  }
-  .gold2 img {
-    width: 120px;
-    margin-top: 45px;
-  }
-  .supporters-container {
-    color: #182987;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-  }
-  .supporter-name {
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
-  .gold .gold1 .supporter-company {
-    font-weight: 350;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  .thanks{
-    margin-top: 50px;
-  }
-  .thanks p {
-    font-weight: 450;
-    font-size: 16px;
-  }
+.supporters-container {
+  background-color: white;
+  color: #182987;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+.g {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+}
+.g1 {
+  width: 44%;
+  margin-left: 4%;
+  margin-right: 2%;
+}
+.g1 img {
+  width: 80%;
+  margin-top: 20%;;
+  margin-bottom: 18%;
+}
+.g1 p {
+  font-size: 14px;
+}
+.g2 {
+  width: 44%;
+  margin-left: 2%;
+  margin-right: 4%;
+}
+.g2 img {
+  width: 40%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.g2 p {
+  font-size: 14px;
+}
+.g-name {
+  margin-bottom: 40px;
+  display: flex;
+}
+.g-name p {
+  font-size: 18px;
+}
+.line {
+  width: 100%;
+  align-items: center;
+}
+.line img {
+  width: 100%;
+}
+.s {
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+.s1 {
+
+}
+.s p {
+  font-size: 14px;
+}
+.others {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.others p {
+  font-size: 14px;
+}
+.kid {
+
+}
+.kid img {
+  width: 30%;
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
+.kid p {
+  margin-bottom: 10%;
+  font-size: 14px;
+}
+.thanks{
+  margin-top: 50px;
+}
+.thanks p {
+  font-weight: 450;
+  font-size: 16px;
+}
 
 
   #contact {

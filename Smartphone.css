@@ -602,16 +602,14 @@
     transform: translate(-50%, -50%);
   }
   .daigeiko_logo {
-      width: 100%;
+      width: 80%;
       margin: 0 auto;
     }
     .daigeiko_logo img {
       width: 100%;
     }
     .logo-image {
-      padding-top: 10%;
-      padding-bottom: 10%;
-      margin-bottom: 5%;
+      margin-bottom: 10%;
     }
     .logo-theme {
       display: block;
