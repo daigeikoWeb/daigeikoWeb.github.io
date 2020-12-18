@@ -577,6 +577,13 @@
     margin: 0 auto;
     width: 60%;
   }
+  .daigeiko_logo {
+    width: 100%;
+    margin: 0 0;
+  }
+  .daigeiko_logo img {
+    width: 100%;
+  }
   .theme-cover h1 {
     margin-bottom: 20px;
   }
