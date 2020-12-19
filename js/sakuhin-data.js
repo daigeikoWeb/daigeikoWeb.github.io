@@ -42,7 +42,7 @@ const data = [
   title: 'だれか ト なにか ニ うつりこむ',
   genre: -1,
   author: [{name: '芝 光彩',  univ: 0,  grade: -1}],
-  award: -1,
+  award: 3,
   link: 'works/003.html',
   thomb: ['003_thumbnail_rect.png','003_thumbnail_sq.png']
 },{
@@ -122,7 +122,7 @@ const data = [
   genre: -1,
   author: [{name: '富嶋菜々香',  univ: 3,  grade: -1},
            {name: '寺崎薫',  univ: 3,  grade: -1}],
-  award: -1,
+  award: 2,
   link: 'works/014.html',
   thomb: ['014_thumbnail_rect.png','014_thumbnail_sq.png']
 },{
@@ -154,7 +154,7 @@ const data = [
   title: '高架下のキラキラ',
   genre: -1,
   author: [{name: '墨田知世',  univ: 3,  grade: -1}],
-  award: -1,
+  award: 4,
   link: 'works/018.html',
   thomb: ['018_thumbnail_rect.png','018_thumbnail_sq.png']
 },{
@@ -163,7 +163,7 @@ const data = [
   genre: -1,
   author: [{name: '密岡稜大',  univ: 3,  grade: -1},
            {name: '土肥真維華',  univ: 3,  grade: -1}],
-  award: -1,
+  award: 1,
   link: 'works/019.html',
   thomb: ['019_thumbnail_rect.png','019_thumbnail_sq.png']
 },{
@@ -203,7 +203,7 @@ const data = [
   title: '「they」',
   genre: -1,
   author: [{name: '佐名海斗',  univ: 0,  grade: -1}],
-  award: -1,
+  award: 0,
   link: 'works/024.html',
   thomb: ['024_thumbnail_rect.png','024_thumbnail_sq.png']
 }];
