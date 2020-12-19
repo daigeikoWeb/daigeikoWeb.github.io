@@ -109,12 +109,13 @@ const data = [
   thomb: ['010_thumbnail_rect.png','010_thumbnail_sq.png']
 },{
   id: 11,
-  title: '',
+  title: '不安と伝染',
   genre: -1,
-  author: [{name: '阿部朱夏',  univ: 2,  grade: -1}],
+  author: [{name: '阿部朱夏',  univ: 2,  grade: -1},
+           {name: '北島春乃',  univ: 2,  grade: -1}],
   award: -1,
   link: 'works/011.html',
-  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
+  thomb: ['011_thumbnail_rect.png','011_thumbnail_sq.png']
 },{
   id: 14,
   title: '香の音',
