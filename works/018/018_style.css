@@ -408,7 +408,6 @@ img.photo3{
     flex-direction: column;
     width: 100%;
     margin-top: 10vh;
-    z-index: -1;
   }
   .explanation .name {
     text-align: center;
