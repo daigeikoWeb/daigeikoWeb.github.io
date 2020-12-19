@@ -212,6 +212,11 @@ function setWorksSize(){
     image.style.width = grid.clientWidth + 'px';
     image.style.height = grid.clientHeight + 'px';
   }
+
+  var header_nav = document.querySelector('.header-nav');
+  var header_rect = header_nav.getBoundingClientRect();
+  var window_margin = window.innerHeight * 0.93;
+  header_nav.style.height = (window_margin - header_rect.y) + 'px';
 }
 
 

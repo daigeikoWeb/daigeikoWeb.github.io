@@ -944,8 +944,12 @@
     justify-content: center;
     align-items: center;
   }
-  .explanation img {
+  .explanation .exp-img-wrap {
     width: 130px;
+    height: 130px;
+  }
+  .explanation .exp-img-wrap img{
+    width: 100%;
   }
   .explanation p {
     margin-top: 10px;
