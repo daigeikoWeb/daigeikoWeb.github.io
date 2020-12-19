@@ -714,6 +714,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   .works-cover .cover-image {
     float: left;
@@ -746,7 +747,6 @@
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    z-index: 1;
   }
   .works-cover .details-wrap:active {
     opacity: 0.6;
@@ -759,7 +759,6 @@
     user-select: none;
     height: 100%;
     width: 100%;
-    overflow: hidden;
   }
   .works-cover .details a {
     height: 100%;
@@ -779,11 +778,10 @@
 
   .award {
     width: 80px;
+    z-index: 3;
     position: absolute;
-    z-index: -1;
-    top: 0;
-    right:-15px;
-    display: none;
+    bottom: -5px;
+    right:-20px;
   }
 
   #about {

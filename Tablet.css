@@ -726,12 +726,11 @@
   }
 
   .award {
-    width: 70px;
+    width: 80px;
     position: absolute;
     z-index: 3;
-    top: 0;
-    right: -10px;
-    display: none;
+    bottom: -5px;
+    right: -20px;
   }
 
   #about {
