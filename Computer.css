@@ -594,6 +594,7 @@
     color: #182987;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: 12%;
     text-align: center;
     transition: all 0.3s ease 0s;
   }
@@ -620,6 +621,7 @@
     margin-left: 1%;
     margin-right: 1%;
     width: 98%;
+    top: 20%;
   }
   .works-covers {
     display: inline-flex;
@@ -718,11 +720,13 @@
   }
 
   .award {
-    width: 135px;
+    width: 100px;
     position: absolute;
     z-index: 3;
     top: 0;
-    left: -20px;
+    right: -20px;
+    top:-5px;
+    display: none;
   }
 
   #about {

@@ -605,6 +605,7 @@
     color: #182987;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: 15%;
     text-align: center;
     transition: all 0.3s ease 0s;
   }
@@ -626,6 +627,7 @@
     display: block;
     justify-content: center;
     position: relative;
+    top:30%;
   }
   .works-content {
     margin-left: 1%;
@@ -728,7 +730,8 @@
     position: absolute;
     z-index: 3;
     top: 0;
-    left: -10px;
+    right: -10px;
+    display: none;
   }
 
   #about {

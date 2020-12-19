@@ -746,6 +746,7 @@
     color: #eee;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    z-index: 1;
   }
   .works-cover .details-wrap:active {
     opacity: 0.6;
@@ -777,11 +778,12 @@
     }
 
   .award {
-    width: 100px;
+    width: 80px;
     position: absolute;
-    z-index: 3;
+    z-index: -1;
     top: 0;
-    left: -20px;
+    right:-15px;
+    display: none;
   }
 
   #about {
