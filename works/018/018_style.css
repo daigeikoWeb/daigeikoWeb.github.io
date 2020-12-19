@@ -350,6 +350,7 @@ img.photo3{
     background-color: white;
     height: 100vh;
     display: none;
+    z-index: 3;
   }
   .hide-nav {
     margin-top: 100px;
