@@ -43,6 +43,7 @@
   .header-nav {
     margin-top: 50px;
     position: relative;
+    overflow-y: scroll;
   }
   .header-nav li {
     list-style: none;
@@ -911,9 +912,13 @@
   .explanation .explanation-title{
     font-weight: 550;
   }
-  .explanation img {
+  .explanation .exp-img-wrap {
     width: 200px;
     height: 200px;
+    overflow-y: scroll;
+  }
+  .explanation .exp-img-wrap img{
+    width: 100%;
   }
   .explanation p {
     margin-top: 15px;

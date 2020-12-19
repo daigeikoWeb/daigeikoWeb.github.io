@@ -31,32 +31,27 @@ const senni = document.querySelector('#senni-part');
 if (current_sec == ""){
   senni.style.display = 'block';
 
-  var vid_index = 0;
-  if (window.innerWidth < 560){
-    vid_index = 1;
-  }
   for (const video of senni.children) {
     var vid_disp = document.defaultView.getComputedStyle(video,null).display;
-    console.log(vid_disp);
+    //console.log(vid_disp);
     if (vid_disp != 'none'){
-      var dura = 0;
       const deb_Int = setInterval(()=>{
-        //console.log(video);
         if (video_current(video) > 8){
-          clearInterval(deb_Int);
-          senni_fade();
+          remove_vid(video, deb_Int);
         }
       }, 500);
-      video.addEventListener('play', () =>{
-        console.log('スタート！')
-      });
+
       setTimeout(() => {
         if (video_current(video) < 1){
-          video.pause();
-          clearInterval(deb_Int);
-          senni_fade();
+          remove_vid(video, deb_Int);
         }
       }, 5000);
+
+      video.addEventListener('ended', () => {
+        var vid_opac = document.defaultView.getComputedStyle(video,null).opacity;
+        if (vid_opac < 1) return;
+        else remove_vid(video, deb_Int);
+      });
     }
   }
   location.hash = 'top';
@@ -68,6 +63,12 @@ if (current_sec == ""){
 function video_current(video){
   console.log(video.currentTime);
   return video.currentTime;
+}
+
+function remove_vid(video, intervalId){
+  video.pause();
+  clearInterval(intervalId);
+  senni_fade();
 }
 
 function senni_fade(){
@@ -104,10 +105,13 @@ function hide_sections(current_id){
 
 function move_menu(last){
   var last_top = menu_back.style.top;
-  var menu_top = document.querySelector('.header-nav').getBoundingClientRect();
+  //var menu_top = document.querySelector('.header-nav').getBoundingClientRect();
+  var ul_top = document.querySelector('.header-nav ul').getBoundingClientRect();
   var current_menu = document.querySelector('.header-nav .current');
   var btn_rect = current_menu.getBoundingClientRect();
-  var goal = (btn_rect.top - menu_top.top) + 'px';
+  var goal = (btn_rect.top - ul_top.top) + 'px';
+  console.log(ul_top);
+  console.log(btn_rect);
   //console.log( last_top );
   //console.log( menu_top.top );
   if (last != ""){

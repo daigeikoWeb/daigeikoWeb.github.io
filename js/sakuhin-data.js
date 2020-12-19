@@ -184,17 +184,17 @@ const data = [
   thomb: ['021_thumbnail_rect.png','021_thumbnail_sq.png']
 },{
   id: 22,
-  title: 'postmouillette',
+  title: '『Silhouette。』',
   genre: -1,
-  author: [{name: '山田和佳',  univ: 3,  grade: -1}],
+  author: [{name: '小濵行秀',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/022.html',
   thomb: ['022_thumbnail_rect.png','022_thumbnail_sq.png']
 },{
   id: 23,
-  title: '『Silhouette。』',
+  title: 'postmouillette',
   genre: -1,
-  author: [{name: '小濵行秀',  univ: 3,  grade: -1}],
+  author: [{name: '山田和佳',  univ: 3,  grade: -1}],
   award: -1,
   link: 'works/023.html',
   thomb: ['023_thumbnail_rect.png','023_thumbnail_sq.png']
@@ -206,14 +206,4 @@ const data = [
   award: -1,
   link: 'works/024.html',
   thomb: ['024_thumbnail_rect.png','024_thumbnail_sq.png']
-}];
-
-const fake_data = [{
-  id: 0,
-  title: 'Coming Soon…',
-  genre: -1,
-  author: [{name: '',  univ: 0,  grade: -1}],
-  award: -1,
-  link: '',
-  thomb: ['wakaran_thumbnail_rect.png','wakaran_thumbnail_sq.png']
 }];
