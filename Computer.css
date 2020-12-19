@@ -720,13 +720,11 @@
   }
 
   .award {
-    width: 100px;
+    width: 120px;
     position: absolute;
     z-index: 3;
-    top: 0;
-    right: -20px;
-    top:-5px;
-    display: none;
+    bottom:-5px;
+    right: -25px;
   }
 
   #about {
