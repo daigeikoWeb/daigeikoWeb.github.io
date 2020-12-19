@@ -32,6 +32,7 @@
     position: fixed;
     z-index: 5;
     top: 0;
+    overflow: hidden;
   }
   main {
     display: block;
@@ -590,7 +591,7 @@
   #theme {
     display: block;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     height: 100%;
   }
   .theme-cover {
@@ -602,22 +603,26 @@
     transform: translate(-50%, -50%);
   }
   .daigeiko_logo {
-      width: 80%;
-      margin: 0 auto;
-    }
-    .daigeiko_logo img {
-      width: 100%;
-    }
-    .logo-image {
-      margin-bottom: 10%;
-    }
-    .logo-theme {
-      display: block;
-      margin-top: 40%;
-      margin-bottom: 40%;
-      margin: 0 auto;
-      width: 50%;
-    }
+    position: absolute;
+    width: 80%;
+    margin: 0 10%;
+    top: 10%;
+  }
+  .daigeiko_logo img {
+    width: 100%;
+  }
+  .logo-image {
+    margin-bottom: 10%;
+    top: 25%;
+    position: absolute;
+  }
+  .logo-theme {
+    display: block;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    margin: 0 auto;
+    width: 50%;
+  }
   .theme-cover h1 {
     margin-bottom: 20px;
   }
@@ -629,6 +634,7 @@
     text-justify: inter-ideograph;
     -ms-text-justify: inter-ideograph;
     margin-bottom: 20px;
+    margin-top: 85%;
   }
   .theme-cover .questionnaire-btn-cover {
     padding-top: 5%;
@@ -639,6 +645,7 @@
     color: #182987;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: 10%;
     text-align: center;
     transition: all 0.3s ease 0s;
   }
@@ -713,7 +720,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative; /*
+    position: relative; 
+    overflow: hidden;/*
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);*/
@@ -743,25 +751,30 @@
     opacity: 0.6;
   }
   .works-cover .details {
-    position: absolute;
+    position: relative;
+    display: flex;
     justify-content: center;
     text-align: center;
-    /* padding-left: 5%;
-    padding-right: 5%; */
     user-select: none;
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
-  .works-cover .details a{
+  .works-cover .details a {
     height: 100%;
     width: 100%;
     display: block;
     position: absolute;
   }
   .works-cover .details-award {
-    padding-top: 10%;
+    position: absolute;
+    top: 65%;
     font-size: 12px;
   }
+  .details-title{
+    position: absolute;
+    top: 40%;
+    }
 
   .award {
     width: 100px;
@@ -909,7 +922,6 @@
     font-size: 16px;
   }
 
-
   .introduction1,
   .introduction2,
   .introduction3 {
@@ -948,7 +960,7 @@
     width: 130px;
     height: 130px;
   }
-  .explanation .exp-img-wrap img{
+  .explanation .exp-img-wrap img {
     width: 100%;
   }
   .explanation p {
@@ -969,7 +981,7 @@
     font-size: 20px;
     font-weight: 550;
   }
-  .explanation .explanation-title{
+  .explanation .explanation-title {
     font-weight: 550;
   }
   .judge-arts {
@@ -986,10 +998,10 @@
   }
   .judge-art1 p,
   .judge-art2 p,
-  .judge-art3 p{
+  .judge-art3 p {
     font-weight: 550;
     font-size: 12px;
-    font-feature-settings:"palt";
+    font-feature-settings: "palt";
   }
   .judge-art1 img,
   .judge-art2 img,
@@ -1002,7 +1014,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
   }
   .message-cover {
     width: 80%;
@@ -1059,11 +1070,11 @@
     margin-right: 10%;
     margin-bottom: 20%;
   }
-.cooperation-title h1 {
+  .cooperation-title h1 {
     margin-bottom: 20%;
     margin-top: 30%;
   }
-.cooperation-caption p {
+  .cooperation-caption p {
     color: #182987;
     font-size: 12px;
     font-weight: 350;
@@ -1072,95 +1083,91 @@
     -ms-text-justify: inter-ideograph;
     margin-bottom: 20%;
   }
-.supporters-container {
-  background-color: white;
-  color: #182987;
-  font-size: 20px;
-  text-align: center;
-  align-items: center;
-}
-.g {
-  margin-top: 5%;
-  width: 100%;
-}
-.g1 {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.g1 img {
-  width: 80%;
-  margin-top: 20%;
-  margin-bottom: 20%;
-}
-.g1 p {
-  font-size: 14px;
-  margin-bottom: 20%;
-}
-.g2 {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.g2 img {
-  width: 40%;
-  margin-top: 20%;
-  margin-bottom: 10%;
-}
-.g2 p {
-  font-size: 14px;
-  margin-bottom: 20%;
-}
+  .supporters-container {
+    background-color: white;
+    color: #182987;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .g {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .g1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .g1 img {
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .g1 p {
+    font-size: 14px;
+    margin-bottom: 20%;
+  }
+  .g2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .g2 img {
+    width: 40%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+  .g2 p {
+    font-size: 14px;
+    margin-bottom: 20%;
+  }
 
-.line {
-  width: 100%;
-  align-items: center;
-}
-.line img {
-  width: 100%;
-}
-.s {
-  margin-top: 10%;
-  margin-bottom: 8%;
-}
-.s1 {
-
-}
-.s p {
-  font-size: 14px;
-}
-.others {
-  margin-top: 10%;
-  margin-bottom: 8%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-}
-.others p {
-  width: 100%;
-  font-size: 14px;
-}
-.kid {
-
-}
-.kid img {
-  width: 40%;
-  margin-top: 10%;
-  margin-bottom: 4%;
-}
-.kid p {
-  margin-bottom: 10%;
-  font-size: 14px;
-}
-.thanks{
-  margin-top: 50px;
-}
-.thanks p {
-  font-weight: 450;
-  font-size: 16px;
-}
-
-
+  .line {
+    width: 100%;
+    align-items: center;
+  }
+  .line img {
+    width: 100%;
+  }
+  .s {
+    margin-top: 10%;
+    margin-bottom: 8%;
+  }
+  .s1 {
+  }
+  .s p {
+    font-size: 14px;
+  }
+  .others {
+    margin-top: 10%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  .others p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .kid {
+  }
+  .kid img {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 4%;
+  }
+  .kid p {
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+  .thanks {
+    margin-top: 50px;
+  }
+  .thanks p {
+    font-weight: 450;
+    font-size: 16px;
+  }
 
   #contact {
     display: block;
@@ -1199,7 +1206,7 @@
     text-align: center;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover .contact-btn:active{
+  .contact-cover .contact-btn:active {
     color: #eee;
     background-color: #182987;
   }
@@ -1209,7 +1216,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .contact-cover a:active{
+  .contact-cover a:active {
     color: #182987;
   }
   .contact-btn {
@@ -1239,15 +1246,15 @@
   .foot_sns i {
     color: #eee;
     font-size: 20px;
-    line-height: 50px
+    line-height: 50px;
   }
   .foot_sns img {
     height: 20px;
   }
-  #senni-part .launch-pc{
+  #senni-part .launch-pc {
     display: none;
   }
-  #senni-part .launch-mobile{
+  #senni-part .launch-mobile {
     height: 100%;
     width: auto;
   }

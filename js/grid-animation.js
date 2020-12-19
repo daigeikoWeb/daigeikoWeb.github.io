@@ -152,8 +152,17 @@ for (var d of data){
     award_name.innerHTML = 'グランプリ';
   } else if (d['award'] == 1){
     award_icon.src = 'images/aikon2.png';
-    award_name.innerHTML = '審査員賞（糸目華賞）';
-  } else {
+    award_name.innerHTML = '準グランプリ';
+  } else if (d['award'] == 2){
+    award_icon.src = 'images/aikon3.png';
+    award_name.innerHTML = '堀内康広賞';
+  }else if (d['award'] == 3){
+    award_icon.src = 'images/aikon3.png';
+    award_name.innerHTML = '二俣公一賞';
+  }else if (d['award'] == 4){
+    award_icon.src = 'images/aikon3.png';
+    award_name.innerHTML = '原田祐馬賞';
+  }else {
     award_icon.remove();
     award_name.remove();
   }
