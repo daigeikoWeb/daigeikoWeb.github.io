@@ -392,7 +392,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 8vh;
-    z-index: -1;
   }
   .main-visual {
     width: 100%;
