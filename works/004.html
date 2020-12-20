@@ -19,6 +19,16 @@
     <meta name= "twitter:image" content="004/images/main-visual.png">
     <link href="004/004_style.css" rel="stylesheet" type="text/css">
     <link href="hbgmenu.css" rel="stylesheet" type="text/css">
+
+    <!-- コメント部分 -->
+    <link rel="stylesheet" href="../comment/comment.css">
+    <script type="text/javascript">
+      const sakuhin_id = 4;
+      const login_id = '-1';
+    </script>
+    <script type="text/javascript" src="../comment/comment.js" defer></script>
+    <!-- コメント部分 -->
+
     <meta name="keywords" content="大芸工展">
     <script src="https://kit.fontawesome.com/45d6264d1d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -137,6 +147,45 @@
            </div>
          </div>
 			 </div>
+
+
+       <!--コメント部分-->
+       <div class="comments-wrapper">
+         <div class="comment-count" style="font-weight:bold;">
+           コメント(<span></span>)
+         </div>
+
+         <div class="comment-zone">
+             <div class="comment cf" data-id="66">
+               <div class="comment-icon">
+                 <img src="../comment/img/icon-guest.png" alt="">
+               </div>
+               <div class="content-names">
+                   <div class="content-name" style="font-weight:bold;">糸目華</div>
+                   <img src="../comment/img/hand.png" alt="">
+               </div>
+               <div class="comment-contents">感想ありがとうございます。
+                 今回私は、テーマを「映る」として制作にあたりました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+               </div>
+               <div class="rep-open">
+                 返信する
+               </div>
+               <div class="reply-wrap cf open">
+                 <textarea class="reply-in" name="reply" rows="2" placeholder="コメントを入力する"></textarea>
+                 <div class="rep-send" style="font-weight:bold;">
+                   リプライを送信
+                 </div>
+               </div>
+             </div>
+         </div>
+         <br>
+         <div class="sousin-wrapper">
+           <textarea id="comment-in" name="honbun" rows="3" placeholder="コメントを入力…"></textarea>
+           <input id="sousin" type="image" name="sousin" src="../comment/img/submit.png">
+         </div>
+       </div>
+     <!--コメント部分-->
+
 
 		 </div>
 		 <div class="before-next">
