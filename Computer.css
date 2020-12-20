@@ -1158,11 +1158,12 @@
 .foot_sns {
   display: none;
 }
-#senni-part .launch-pc{
+.launch-pc{
   height: 100%;
   width: auto;
+  object-fit: cover;
 }
-#senni-part .launch-mobile{
+.launch-mobile{
   display: none;
 }
 }
